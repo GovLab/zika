@@ -11,6 +11,7 @@
   topic_description_summary: Los problemas fueron expuestos en un informe resumido con el objetivo de describir la causa del problema, los enfoques actuales en los diferentes países y las lecciones aprendidas de otros campos.
   problem_description_summary: Cada una de las sesiones en línea se centra en un problema específico, que fue desarrollado en un informe resumido que describe las causas del problema, los enfoques actuales en los distintos países y las lecciones aprendidas de otros campos.
   problem_description_link: https://docs.google.com/document/d/1JsbhW2nXFRCxqC_jxv-VFjyBHtqM7QwmG25Hu1v8E1Y/edit
+  problem_description_link_spanish: https://docs.google.com/document/d/1CF4dH-jP_MQ9wEh2o8PCbD3qWhLKmTEY7p8yxNHMiEQ/edit
   conference:
     is_active: false
     is_active_info: 
@@ -263,6 +264,7 @@
   problem_description_summary: >
     Cada una de las sesiones en línea se centra en un problema específico, que fue desarrollado en un informe resumido que describe las causas del problema, los enfoques actuales en los distintos países y las lecciones aprendidas de otros campos.
   problem_description_link: https://docs.google.com/document/d/1ko2hAnGHc5DjihNFfXjDbXPLA3x--shod0auwj6ZGTI/edit
+  problem_description_link_spanish: https://docs.google.com/document/d/13i0xoV4AK0smdKtqNJovBDaV6xevbKtovsN_iznO0Oo/edit
   conference:
     is_active: false
     date: September 7, 2016 #7 DE SEPTIEMBRE DE 2016
@@ -491,6 +493,7 @@
   focus: 
   problem_description_summary: 
   problem_description_link: 
+  problem_description_link_spanish:
   conference:
     is_active: false
     date: 
@@ -514,7 +517,8 @@
     ¿Cuáles son las mejores estrategias para asegurar la colaboración y evitar la duplicación de esfuerzos entre las agencias involucradas en responder a una crisis de salud pública compleja? ¿Quién debería estar a cargo?
   focus: 
   problem_description_summary: 
-  problem_description_link: 
+  problem_description_link:
+  problem_description_link_spanish: 
   conference:
     is_active: false
     date: 
@@ -538,7 +542,8 @@
     ¿Cuáles son las opciones innovadoras para usar datos de nuevas tecnologías para predecir y por lo tanto, prevenir brotes? 
   focus: 
   problem_description_summary: 
-  problem_description_link: 
+  problem_description_link:
+  problem_description_link_spanish: 
   conference:
     is_active: true
     is_active_info: false
@@ -565,6 +570,7 @@
   topic_description_summary: Los problemas fueron expuestos en un informe resumido con el objetivo de describir la causa del problema, los enfoques actuales en los diferentes países y las lecciones aprendidas de otros campos.
   problem_description_summary: Cada una de las sesiones en línea se centra en un problema específico, que fue desarrollado en un informe resumido que describe las causas del problema, los enfoques actuales en los distintos países y las lecciones aprendidas de otros campos.
   problem_description_link: https://docs.google.com/document/d/1FGhvl935iBNKW9UA5Tt3iw9n3YakIFf_hat-5x7tIe8/edit
+  problem_description_link_spanish: https://docs.google.com/document/d/1VSFj6BGAJrXWMYTosR2dthvjw3vSbx5lCfrgKNVQdD0/edit
   conference:
     is_active: false
     date: September 21, 2016 #21 DE SEPTIEMBRE DE 2016
@@ -771,6 +777,7 @@
   focus: 
   problem_description_summary: 
   problem_description_link: 
+  problem_description_link_spanish:
   conference:
     is_active: false
     date: 
@@ -796,6 +803,7 @@
   topic_description_summary: Los problemas fueron expuestos en un informe resumido con el objetivo de describir la causa del problema, los enfoques actuales en los diferentes países y las lecciones aprendidas de otros campos.
   problem_description_summary: Cada una de las sesiones en línea se centra en un problema específico, que fue desarrollado en un informe resumido que describe las causas del problema, los enfoques actuales en los distintos países y las lecciones aprendidas de otros campos.
   problem_description_link: https://docs.google.com/document/d/1LZlg7w_JW3JbDqoyRBE2OzjqGIw3Fq5dgd-1OchQ-iQ/edit
+  problem_description_link_spanish: https://docs.google.com/document/d/1_IkNVJNASTCw_fgRyNw4EtRToBdZXwngtl97Qdip9Hs/edit
   conference:
     is_active: false
     is_active_info: true
@@ -1015,6 +1023,7 @@
   focus: 
   problem_description_summary: 
   problem_description_link: 
+  problem_description_link_spanish:
   conference:
     is_active: false
     date: 
@@ -1038,6 +1047,7 @@
   focus: 
   problem_description_summary: 
   problem_description_link: 
+  problem_description_link_spanish:
   conference:
     is_active: false
     date: 
@@ -1063,6 +1073,7 @@
   topic_description_summary: 
   problem_description_summary: Cada una de las sesiones en línea se centra en un problema específico, que fue desarrollado en un informe resumido que describe las causas del problema, los enfoques actuales en los distintos países y las lecciones aprendidas de otros campos.
   problem_description_link: 
+  problem_description_link_spanish:
   conference:
     is_active: false
     date: 
@@ -1087,6 +1098,7 @@
   focus: 
   problem_description_summary: 
   problem_description_link: 
+  problem_description_link_spanish:
   conference:
     is_active: false
     date: 
@@ -1112,6 +1124,7 @@
   topic_description_summary: Las condiciones crónicas causadas por las enfermedades transmitidas por mosquitos, particularmente para los bebés expuestos al zika mientras están en el vientre materno, con diferentes niveles de malformación —serios problemas de articulaciones, convulsiones, deficiencia visual, dificultad para alimentarse y, en el peor de los casos, microcefalia—, son potencialmente abrumadoras. Estos bebés necesitarán un seguimiento constante con neurólogos, oftalmólogos, otorrinolaringólogos y terapeutas físicos entre muchos otros especialistas. El síndrome de Guillain-Barré, otro resultado potencial de la infección, también puede causar largos periodos de recuperación.
   problem_description_summary: Cada una de las sesiones en línea se centra en un problema específico, que fue desarrollado en un informe resumido que describe las causas del problema, los enfoques actuales en los distintos países y las lecciones aprendidas de otros campos.
   problem_description_link: https://docs.google.com/document/d/1L-COQDnskgiT0EMx_BIWGOlpbvAUU0rJ1WIcMaMo1Mk
+  problem_description_link_spanish: https://docs.google.com/document/d/1ineGTTXL1LdvFkTENCVFvMMRg0GF6quLA-IlG4LH2yo/edit
   conference:
     is_active: true
     is_active_info: true
