@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="filters1" style="display: inline-block; vertical-align: top; margin-right: 30px;">
+    <label><input type="checkbox" class="checkbox" checked value="Academia"> Academia</label><br>
+    <label><input type="checkbox" class="checkbox" checked value="Nonprofit"> Nonprofit</label><br>
+    <label><input type="checkbox" class="checkbox" checked value="Government"> Government</label><br>
+    <label><input type="checkbox" class="checkbox" checked value="Business"> Business</label><br>
+    <label><input type="checkbox" class="checkbox" checked value="International Organization"> International Organization</label><br>
+  </div>
+
+  <div class="filters2" style="display: inline-block">
+    <label><input type="checkbox" class="checkbox" checked value="Trash and Standing Water"> Trash and Standing Water</label><br>
+    <label><input type="checkbox" class="checkbox" checked value="Assesing Public Awareness"> Assesing Public Awareness</label><br>
+    <label><input type="checkbox" class="checkbox" checked value="Information Collection/Data Governance"> Information Collection/Data Governance</label><br>
+    <label><input type="checkbox" class="checkbox" checked value="Long Term Care"> Long Term Care</label><br>
+    <label><input type="checkbox" class="checkbox" checked value="Predictive Analytics"> Predictive Analytics</label><br>
+    <label><input type="checkbox" class="checkbox" checked value="Communication and Behavior Change"> Communication and Behavior Change</label><br>
+    <label><input type="checkbox" class="checkbox" checked value="Digital Listening"> Digital Listening</label><br>
+  </div>
+
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="/data.js"></script>
+  <script>
+    var width = 1000;
+    var height = 700;
+    var circle = null;
+    var x = d3.scale.ordinal().rangePoints([0, width], 1);
+    var continents = {
+      'Latin America and the Caribbean': {x: 320, y: 420, color: '#2196F3'},
+      'Oceania': {x: 860, y: 480, color: '#9C27B0'},
+      'Northern America': {x: 220, y: 180, color: '#009688'},
+      'Europe': {x: 510, y: 200, color: '#FF9800'},
+      'Asia': {x: 730, y: 250, color: '#E91E63'},
+      'Africa': {x: 540, y: 370, color: '#CDDC39'}
+    }
+    var visibleData = expertsData.map(function(obj, y) {
+      obj.id = y;
+      obj.radius = 6;
+      obj.color = continents[obj['AFFILIATION 1']].color;
+      obj.cx = continents[obj['AFFILIATION 1']].x;
+      obj.cy = continents[obj['AFFILIATION 1']].y;
+
+      return obj;
+    });
+    var svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+    var force = d3.layout.force()
+        .nodes(visibleData)
+        .size([width, height])
+        .gravity(0)
+        .charge(0);
+
+    svg.append("svg:image")
+        .attr("width", width)
+        .attr("height", height)
+        .attr('xlink:href', '/images/world_map_bg.svg');
+
+    function update() {
+      circle = svg.selectAll("circle")
+        .data(visibleData, function(d) { return d.id; });
+
+      circle.enter()
+        .append("circle")
+        .attr("r", function(d) { return d.radius; })
+        .style("fill", function(d) { return d.color; })
+        .call(force.drag);
+
+      circle.exit().remove();
+
+      force.on("tick", function(e) {
+        circle.each(gravity(0.005))
+          .each(collide(0.3))
+          .attr("cx", function(d) { return d.x; })
+          .attr("cy", function(d) { return d.y; });
+      })
+
+      force.start();
+    }
+
+    function gravity(alpha) {
+      return function(d, i) {
+        d.y += (d.cy - d.y) * alpha;
+        d.x += (d.cx - d.x) * alpha;
+      };
+    }
+
+    function collide(alpha) {
+      var quadtree = d3.geom.quadtree(visibleData);
+      return function(d) {
+        var r = d.radius,
+            nx1 = d.x - r,
+            nx2 = d.x + r,
+            ny1 = d.y - r,
+            ny2 = d.y + r;
+        quadtree.visit(function(quad, x1, y1, x2, y2) {
+          if (quad.point && (quad.point !== d)) {
+            var x = d.x - quad.point.x,
+                y = d.y - quad.point.y,
+                l = Math.sqrt(x * x + y * y),
+                r = d.radius + quad.point.radius + (d.color !== quad.point.color);
+            if (l < r) {
+              l = (l - r) / l * alpha;
+              d.x -= x *= l;
+              d.y -= y *= l;
+              quad.point.x += x;
+              quad.point.y += y;
+            }
+          }
+          return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+        });
+      };
+    }
+
+    update();
+
+    // Filters
+    // -------
+
+    d3.selectAll(".filters1 .checkbox").on("change", function() {
+      var val = this.value;
+
+      if (!this.checked) {
+        var aux = [];
+
+        visibleData.forEach(function(obj) {
+          if (obj['AFFILIATION 2'] !== val) {
+            aux.push(obj);
+          }
+        });
+        visibleData = aux;
+      } else {
+        var filters2 = d3.selectAll('.filters2 .checkbox:checked')[0].map(function(elem) {
+          return elem.value;
+        });
+
+        expertsData.forEach(function(obj) {
+          var bit1 = filters2.indexOf(obj['CONFERENCE 2 ATTENDED']) >= 0;
+          var bit2 = filters2.indexOf(obj['CONFERENCE 3 ATTENDED']) >= 0;
+
+          if (val === obj['AFFILIATION 2'] && (bit1 || bit2)) {
+            delete obj.x;
+            delete obj.px;
+            delete obj.y;
+            delete obj.py;
+            visibleData.push(obj);
+          }
+        });
+      }
+      update();
+    });
+
+    d3.selectAll(".filters2 .checkbox").on("change", function() {
+      var val = this.value;
+
+      if (!this.checked) {
+        var aux = [];
+
+        visibleData.forEach(function(obj) {
+          if (obj['CONFERENCE 2 ATTENDED'] !== val && obj['CONFERENCE 3 ATTENDED'] !== val) {
+            aux.push(obj);
+          }
+        });
+        visibleData = aux;
+
+      } else {
+        var filters1 = d3.selectAll('.filters1 .checkbox:checked')[0].map(function(elem) {
+          return elem.value;
+        });
+
+        expertsData.forEach(function(obj) {
+          var bit1 = filters1.indexOf(obj['AFFILIATION 2']) >= 0;
+          var bit2 = val === obj['CONFERENCE 2 ATTENDED'];
+          var bit3 = val === obj['CONFERENCE 3 ATTENDED'];
+
+          if ((bit2 || bit3) && bit1) {
+            delete obj.x;
+            delete obj.px;
+            delete obj.y;
+            delete obj.py;
+            visibleData.push(obj);
+          }
+        });
+      }
+      update();
+    });
+  </script>
+</body>
+</html>
