@@ -1,15 +1,15 @@
 $(document).ready(function() {
     var width = 1000;
-    var height = 700;
+    var height = 560;
     var circle = null;
     var x = d3.scale.ordinal().rangePoints([0, width], 1);
     var continents = {
-      'Latin America and the Caribbean': {x: 300, y: 380, color: '#2196F3'},
-      'Oceania': {x: 840, y: 450, color: '#9C27B0'},
-      'Northern America': {x: 220, y: 180, color: '#009688'},
-      'Europe': {x: 500, y: 190, color: '#FF9800'},
-      'Asia': {x: 730, y: 250, color: '#E91E63'},
-      'Africa': {x: 510, y: 320, color: '#CDDC39'}
+      'Latin America and the Caribbean': {x: 300, y: 380, color: '#FFAA00'},
+      'Oceania': {x: 840, y: 450, color: '#FFAA00'},
+      'Northern America': {x: 220, y: 180, color: '#FFAA00'},
+      'Europe': {x: 500, y: 190, color: '#FFAA00'},
+      'Asia': {x: 730, y: 250, color: '#FFAA00'},
+      'Africa': {x: 510, y: 320, color: '#FFAA00'}
     }
     var visibleData = expertsData.map(function(obj, y) {
       obj.id = y;
@@ -20,7 +20,7 @@ $(document).ready(function() {
 
       return obj;
     });
-    var svg = d3.select("#map").append("svg")
+    var svg = d3.select("#map-wrapper").append("svg")
         .attr("width", width)
         .attr("height", height)
         .style("position", "absolute");

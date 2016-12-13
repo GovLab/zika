@@ -1,35 +1,74 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-</head>
+{% extends "_base.html" %}
 
-<body>
-  <div class="filters1" style="display: inline-block; vertical-align: top; margin-right: 30px;">
-    <label><input type="checkbox" class="checkbox" checked value="Academia"> Academia</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Nonprofit"> Nonprofit</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Government"> Government</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Business"> Business</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="International Organization"> International Organization</label><br>
+{% block content %}
+<section class="top-section top-section--main-color">
+  <div class="row">
+    <div class="large-12 column">
+      <div id="map-wrapper">
+        <div id="map"></div>
+      </div>  
+    </div>
   </div>
-
-  <div class="filters2" style="display: inline-block">
-    <label><input type="checkbox" class="checkbox" checked value="Trash and Standing Water"> Trash and Standing Water</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Assesing Public Awareness"> Assesing Public Awareness</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Information Collection/Data Governance"> Information Collection/Data Governance</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Long Term Care"> Long Term Care</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Predictive Analytics"> Predictive Analytics</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Communication and Behavior Change"> Communication and Behavior Change</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Digital Listening"> Digital Listening</label><br>
+  <div class="row expanded form filters-wrapper">
+    <div class="large-5 column">
+      <h5>Expert Sector</h5>
+      <div class="filters1">
+        <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Academia">Academia</label>
+        <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Nonprofit">Nonprofit</label>
+        <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Government">Government</label>
+        <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Business">Business</label>
+        <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="International Organization">International Organization</label>
+      </div>
+    </div>
+    <div class="large-7 column">
+      <h5>Expert Topic</h5>
+      <div class="filters2">
+        <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Trash and Standing Water"> Trash and Standing Water</label>
+        <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Assesing Public Awareness"> Assesing Public Awareness</label>
+        <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Information Collection/Data Governance"> Information Collection/Data Governance</label>
+        <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Long Term Care"> Long Term Care</label>
+        <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Predictive Analytics"> Predictive Analytics</label>
+        <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Communication and Behavior Change"> Communication and Behavior Change</label>
+        <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Digital Listening"> Digital Listening</label>
+      </div>
+    </div>
   </div>
+</section>
 
-  <div id="map" style="width: 1000px; height: 700px; background-image: url('/images/world_map_bg.svg'); position: absolute">
-  </div>
+<div class="page-section">
+  <table class="table">
+    <tbody>
+      <tr>
+        <th>Expert Name</th>
+        <th>Topic</th>
+        <th>Sector</th>
+      </tr>
+    
+      <tr>
+        <td>Expert Name</td>
+        <td>Topic</td>
+        <td>Sector</td>
+      </tr>
+      <tr>
+        <td>Expert Name</td>
+        <td>Topic</td>
+        <td>Sector</td>
+      </tr>
+      <tr>
+        <td>Expert Name</td>
+        <td>Topic</td>
+        <td>Sector</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="divider">
+  
+</div>
+{% endblock %}
 
-  <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script src="/scripts/jquery-2.1.4.min.js"></script>
-  <script src="/data.js"></script>
-  <script src="/map.js"></script>
-</body>
-</html>
+{% block scripts %}
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="data.js"></script>
+<script src="map.js"></script>
+{% endblock %}
