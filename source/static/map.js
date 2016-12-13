@@ -1,43 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-</head>
-
-<body>
-  <div class="filters1" style="display: inline-block; vertical-align: top; margin-right: 30px;">
-    <label><input type="checkbox" class="checkbox" checked value="Academia"> Academia</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Nonprofit"> Nonprofit</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Government"> Government</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Business"> Business</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="International Organization"> International Organization</label><br>
-  </div>
-
-  <div class="filters2" style="display: inline-block">
-    <label><input type="checkbox" class="checkbox" checked value="Trash and Standing Water"> Trash and Standing Water</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Assesing Public Awareness"> Assesing Public Awareness</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Information Collection/Data Governance"> Information Collection/Data Governance</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Long Term Care"> Long Term Care</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Predictive Analytics"> Predictive Analytics</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Communication and Behavior Change"> Communication and Behavior Change</label><br>
-    <label><input type="checkbox" class="checkbox" checked value="Digital Listening"> Digital Listening</label><br>
-  </div>
-
-  <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script src="/data.js"></script>
-  <script>
+$(document).ready(function() {
     var width = 1000;
     var height = 700;
     var circle = null;
     var x = d3.scale.ordinal().rangePoints([0, width], 1);
     var continents = {
-      'Latin America and the Caribbean': {x: 320, y: 420, color: '#2196F3'},
-      'Oceania': {x: 860, y: 480, color: '#9C27B0'},
+      'Latin America and the Caribbean': {x: 300, y: 380, color: '#2196F3'},
+      'Oceania': {x: 840, y: 450, color: '#9C27B0'},
       'Northern America': {x: 220, y: 180, color: '#009688'},
-      'Europe': {x: 510, y: 200, color: '#FF9800'},
+      'Europe': {x: 500, y: 190, color: '#FF9800'},
       'Asia': {x: 730, y: 250, color: '#E91E63'},
-      'Africa': {x: 540, y: 370, color: '#CDDC39'}
+      'Africa': {x: 510, y: 320, color: '#CDDC39'}
     }
     var visibleData = expertsData.map(function(obj, y) {
       obj.id = y;
@@ -48,19 +20,15 @@
 
       return obj;
     });
-    var svg = d3.select("body").append("svg")
+    var svg = d3.select("#map").append("svg")
         .attr("width", width)
-        .attr("height", height);
+        .attr("height", height)
+        .style("position", "absolute");
     var force = d3.layout.force()
         .nodes(visibleData)
         .size([width, height])
         .gravity(0)
         .charge(0);
-
-    svg.append("svg:image")
-        .attr("width", width)
-        .attr("height", height)
-        .attr('xlink:href', '/images/world_map_bg.svg');
 
     function update() {
       circle = svg.selectAll("circle")
@@ -190,6 +158,4 @@
       }
       update();
     });
-  </script>
-</body>
-</html>
+});
