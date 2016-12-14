@@ -54,6 +54,16 @@ left: -60px;
 
 }
 
+.expert-list-section {
+  padding-top: 0;
+
+  .table-sortable__head-cell {
+    background-color: darken($main-color, 3);
+  }
+}
+
+.table-sortable__head-cell .material-icons {color: white;}
+
 .button--small {
   font-size: .8rem;
   padding: 7px 12px;
