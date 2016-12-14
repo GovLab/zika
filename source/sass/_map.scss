@@ -1,13 +1,13 @@
 #map-wrapper {
 position: relative;
-height: 410px;
+height: 430px;
   svg {
     top: -100px;
     left: -60px;
 
     circle {
       stroke-opacity: .1;
-    }  
+    }
   }
 }
 
@@ -40,7 +40,7 @@ left: -60px;
   }
 }
 
-.table {
+.table-sortable {
   th {
     background-color: $main-color;
   }
