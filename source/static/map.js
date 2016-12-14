@@ -117,6 +117,7 @@ $(document).ready(function() {
       visibleData = aux;
 
       $('tr.' + slug(val)).hide();
+      updateRowsColor();
       $(this).parent().removeClass('button--active');
       $(this).parent().addClass('button--inactive');
 
@@ -140,6 +141,7 @@ $(document).ready(function() {
       });
 
       $('tr.' + slug(val)).show();
+      updateRowsColor();
       $(this).parent().removeClass('button--inactive');
       $(this).parent().addClass('button--active');
     }
@@ -166,6 +168,7 @@ $(document).ready(function() {
       visibleData = aux;
 
       $('tr.' + slug(val)).hide();
+      updateRowsColor();
       $(this).parent().removeClass('button--active');
       $(this).parent().addClass('button--inactive');
 
@@ -190,6 +193,7 @@ $(document).ready(function() {
       });
 
       $('tr.' + slug(val)).show();
+      updateRowsColor();
       $(this).parent().removeClass('button--inactive');
       $(this).parent().addClass('button--active');
     }
@@ -224,9 +228,9 @@ $(document).ready(function() {
     }
 
     $tr.append($('<td>'));
-    $tr.append($('<td>').text(obj['NAME']));
-    $tr.append($('<td>').text(obj['AFFILIATION 1']).addClass('sector'));
-    $tr.append($('<td>').text(lst.join(', ')));
+    $tr.append($('<td>').text(obj['NAME']).addClass('name-column'));
+    $tr.append($('<td>').text(obj['AFFILIATION 1']).addClass('sector-column'));
+    $tr.append($('<td>').text(lst.join(', ')).addClass('topic-column'));
 
     $('.table-sortable').append($tr);
   });
@@ -268,6 +272,8 @@ $(document).ready(function() {
         $(row).hide();
       }
     });
+
+    updateRowsColor();
   });
 
   // Sort icons
@@ -309,5 +315,15 @@ $(document).ready(function() {
 
   function slug(string) {
     return string.toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'');
+  }
+
+  function updateRowsColor() {
+    $('tr:visible').each(function(i, row) {
+      if (i % 2) {
+        $(row).css('background-color', '#f2f2f2');
+      } else {
+        $(row).css('background-color', '#ffffff');
+      }
+    });
   }
 });

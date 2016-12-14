@@ -44,6 +44,22 @@ left: -60px;
   th {
     background-color: $main-color;
   }
+
+  .name-cloumn {
+    width: 40%;
+  }
+
+  .sector-column {
+    width: 30%;
+  }
+
+  .topic-column {
+    width: 30%;
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
 .filters1 {
