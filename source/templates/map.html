@@ -1,0 +1,75 @@
+{% extends "_base.html" %}
+
+{% block content %}
+  <section class="top-section top-section--main-color">
+    <div class="row">
+      <div class="large-12 column">
+        <div id="map-wrapper">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row expanded form filters-wrapper">
+      <div class="large-5 column">
+        <h5>Expert Sector</h5>
+        <div class="filters1">
+          <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Academia">Academia</label>
+          <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Nonprofit">Nonprofit</label>
+          <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Government">Government</label>
+          <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Business">Business</label>
+          <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="International Organization">International Organization</label>
+        </div>
+      </div>
+      <div class="large-7 column">
+        <h5>Expert Topic</h5>
+        <div class="filters2">
+          <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Trash and Standing Water"> Trash and Standing Water</label>
+          <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Assesing Public Awareness"> Assesing Public Awareness</label>
+          <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Information Collection/Data Governance"> Information Collection/Data Governance</label>
+          <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Long Term Care"> Long Term Care</label>
+          <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Predictive Analytics"> Predictive Analytics</label>
+          <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Communication and Behavior Change"> Communication and Behavior Change</label>
+          <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Digital Listening"> Digital Listening</label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-section expert-list-section">
+    <table class="table-sortable">
+      <thead>
+        <th class="table-sortable__head-cell">&nbsp;</th>
+        <th class="table-sortable__head-cell name-column">
+          <span>Expert Name</span>
+          <div class="table-sortable__control-group">
+            <span class="table-sortable__control table-sortable__control--simple js-open-table-search"><i class="material-icons">search</i></span>
+            <span class="table-sortable__control table-sortable__control--simple sort"><i class="material-icons">keyboard_arrow_down</i></span>
+          </div>
+          <form class="table-sortable__search ">
+            <input id="expert__name--input" class="fuzzy-search" type="text" placeholder="Filter by text">
+            <button type="submit" class=""><i class="material-icons">close</i></button>
+          </form>
+        </th>
+        <th class="table-sortable__head-cell sector sector-column">
+          <span>Sector</span>
+          <div class="table-sortable__control-group">
+            <span class="table-sortable__control table-sortable__control--simple sort"><i class="material-icons">keyboard_arrow_down</i></span>
+          </div>
+        </th>
+        <th width="25%" class="table-sortable__head-cell"><span>Topic</span></th>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <div class="divider">
+
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="sortElements.js"></script>
+  <script src="experts_data.js"></script>
+  <script src="map.js"></script>
+{% endblock %}
