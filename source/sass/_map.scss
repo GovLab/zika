@@ -1,6 +1,6 @@
 #map-wrapper {
-position: relative;
-height: 470px;
+  position: relative;
+  height: 470px;
   svg {
     top: -100px;
     left: -60px;
@@ -9,7 +9,13 @@ height: 470px;
       stroke-opacity: .1;
     }
   }
+
+  @include breakpoint(max-width 960px) { transform: scale(.7); }
+  
 }
+
+#map-wrapper,
+.filters-wrapper { @include breakpoint(max-width 600px) { display: none; } }
 
 #map {
 width: 1000px;
@@ -101,6 +107,33 @@ left: -60px;
     background-color: darken($theme-color, 6);
   }
 }
+
+.table-sortable {
+  .name-column {
+
+  }
+
+  .sector-column {
+    width: 250px;
+    @include breakpoint(max-width 600px) {
+      display: none;
+    }
+
+  }
+
+  .topic-column {
+
+  }
+
+  .organization-column {
+    @include breakpoint(max-width 960px) {
+      display: none;
+    }
+  }
+
+}
+
+
 
 
 .dashboard {
