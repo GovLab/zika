@@ -135,13 +135,24 @@ left: -60px;
 
 .explore-map {
   text-align: center;
-  background-color: $theme-color;
+  background-image: url('/images/map-banner.png');
   display: block;
+  padding: 115px 0 40px;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  background-color: darken($main-color, 3);
+
+  h5 {
+    font-size: 1.7rem;
+  }
 
   &:hover {
-    background-color: $accent-color;
-    text-decoration: none;
-    color: white;
+    background-color: darken($main-color, 3);
+    text-decoration: none;    
+    h5 {color: $theme-color;}
+
+
   }
 }
 
