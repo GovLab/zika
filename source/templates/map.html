@@ -6,14 +6,14 @@
       <div class="large-12 column">
         <div id="map-wrapper">
           <div class="dashboard dashboard--left">
-            <div class="dashboard__item"><span>33</span>North America</div>
-            <div class="dashboard__item"><span>18</span>Latin America and Caribbean</div>
-            <div class="dashboard__item"><span>1</span>Africa</div>
+            <div class="dashboard__item northern-america"><span></span>Northern America</div>
+            <div class="dashboard__item latin-america-and-the-caribbean"><span></span>Latin America and the Caribbean</div>
+            <div class="dashboard__item africa"><span></span>Africa</div>
           </div>
           <div class="dashboard dashboard--right">
-            <div class="dashboard__item"><span>12</span>Europe</div>
-            <div class="dashboard__item"><span>4</span>Asia</div>
-            <div class="dashboard__item"><span>1</span>Oceania</div>
+            <div class="dashboard__item europe"><span></span>Europe</div>
+            <div class="dashboard__item asia"><span></span>Asia</div>
+            <div class="dashboard__item oceania"><span></span>Oceania</div>
           </div>
           <div id="map"></div>
         </div>
@@ -21,7 +21,7 @@
     </div>
     <div class="row expanded form filters-wrapper">
       <div class="large-5 column">
-        <h5>Expert Sector <span class="reset-filters">Reset Filters</span></h5>
+        <h5>Expert Sector <span class="reset-filters1">Reset Filters</span></h5>
         <div class="filters1">
           <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Academia">Academia</label>
           <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Nonprofit">Nonprofit</label>
@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="large-7 column">
-        <h5>Expert Topic <span class="reset-filters">Reset Filters</span></h5>
+        <h5>Expert Topic <span class="reset-filters2">Reset Filters</span></h5>
         <div class="filters2">
           <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Trash and Standing Water"> Trash and Standing Water</label>
           <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Assesing Public Awareness"> Assesing Public Awareness</label>
@@ -48,7 +48,7 @@
   <div class="page-section expert-list-section">
     <table class="table-sortable">
       <thead>
-        <th class="table-sortable__head-cell">&nbsp;</th>
+        <th width="20px" class="table-sortable__head-cell">&nbsp;</th>
         <th class="table-sortable__head-cell name-column">
           <span>Expert Name</span>
           <div class="table-sortable__control-group">
@@ -66,7 +66,18 @@
             <span class="table-sortable__control table-sortable__control--simple sort"><i class="material-icons">keyboard_arrow_down</i></span>
           </div>
         </th>
-        <th width="25%" class="table-sortable__head-cell"><span>Topic</span></th>
+        <th class="table-sortable__head-cell sector topic-column">
+          <span>Topic</span>
+          <div class="table-sortable__control-group">
+            <span class="table-sortable__control table-sortable__control--simple sort"><i class="material-icons">keyboard_arrow_down</i></span>
+          </div>
+        </th>
+        <th class="table-sortable__head-cell sector organization-column">
+          <span>Organization</span>
+          <div class="table-sortable__control-group">
+            <span class="table-sortable__control table-sortable__control--simple sort"><i class="material-icons">keyboard_arrow_down</i></span>
+          </div>
+        </th>
       </thead>
       <tbody>
       </tbody>

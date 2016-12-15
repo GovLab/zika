@@ -98,6 +98,7 @@ $(document).ready(function() {
   }
 
   updateForce();
+  updateCounters();
 
   // Map filters
   // -----------
@@ -117,7 +118,6 @@ $(document).ready(function() {
       visibleData = aux;
 
       $('tr.' + slug(val)).hide();
-      updateRowsColor();
       $(this).parent().removeClass('button--active');
       $(this).parent().addClass('button--inactive');
 
@@ -141,12 +141,19 @@ $(document).ready(function() {
       });
 
       $('tr.' + slug(val)).show();
-      updateRowsColor();
       $(this).parent().removeClass('button--inactive');
       $(this).parent().addClass('button--active');
     }
 
+    if ($('.filters1 .checkbox:checked').length === 0) {
+      resetFilters('filters1');
+
+      return false;
+    }
+
     updateForce();
+    updateCounters();
+    updateRowsColor();
   });
 
   $('.filters2 .checkbox').on('change', function() {
@@ -168,7 +175,6 @@ $(document).ready(function() {
       visibleData = aux;
 
       $('tr.' + slug(val)).hide();
-      updateRowsColor();
       $(this).parent().removeClass('button--active');
       $(this).parent().addClass('button--inactive');
 
@@ -176,14 +182,20 @@ $(document).ready(function() {
       var filters1 = d3.selectAll('.filters1 .checkbox:checked')[0].map(function(elem) {
         return elem.value;
       });
+      var filters2 = d3.selectAll('.filters2 .checkbox:checked')[0].map(function(elem) {
+        return elem.value;
+      });
 
       expertsData.forEach(function(obj) {
         var bit1 = val === obj['CONFERENCE 1 ATTENDED'];
         var bit2 = val === obj['CONFERENCE 2 ATTENDED'];
-        var bit3 = val === obj['CONFERENCE 3 ATTENDED'];
-        var bit4 = filters1.indexOf(obj['AFFILIATION 1']) >= 0;
+        var bit3 = val == obj['CONFERENCE 3 ATTENDED'];
+        var bit4 = !obj['CONFERENCE 1 ATTENDED'] || filters2.indexOf(obj['CONFERENCE 1 ATTENDED']) >= 0;
+        var bit5 = !obj['CONFERENCE 2 ATTENDED'] || filters2.indexOf(obj['CONFERENCE 2 ATTENDED']) >= 0;
+        var bit6 = !obj['CONFERENCE 3 ATTENDED'] || filters2.indexOf(obj['CONFERENCE 3 ATTENDED']) >= 0;
+        var bit7 = filters1.indexOf(obj['AFFILIATION 1']) >= 0;
 
-        if ((bit1 || bit2 || bit3) && bit4) {
+        if ((bit1 || bit2 || bit3) && bit4 && bit5 && bit6 && bit7) {
           delete obj.x;
           delete obj.px;
           delete obj.y;
@@ -193,12 +205,27 @@ $(document).ready(function() {
       });
 
       $('tr.' + slug(val)).show();
-      updateRowsColor();
       $(this).parent().removeClass('button--inactive');
       $(this).parent().addClass('button--active');
     }
 
+    if ($('.filters2 .checkbox:checked').length === 0) {
+      resetFilters('filters2');
+
+      return false;
+    }
+
     updateForce();
+    updateCounters();
+    updateRowsColor();
+  });
+
+  $('.reset-filters1').click(function() {
+    resetFilters('filters1');
+  });
+
+  $('.reset-filters2').click(function() {
+    resetFilters('filters2');
   });
 
   // Table
@@ -231,6 +258,7 @@ $(document).ready(function() {
     $tr.append($('<td>').text(obj['NAME']).addClass('name-column'));
     $tr.append($('<td>').text(obj['AFFILIATION 1']).addClass('sector-column'));
     $tr.append($('<td>').text(lst.join(', ')).addClass('topic-column'));
+    $tr.append($('<td>').text(obj['ORGANIZATION']).addClass('organization-column'));
 
     $('.table-sortable').append($tr);
   });
@@ -288,12 +316,12 @@ $(document).ready(function() {
   });
 
   // Sort
-  $('thead .sort').each(function() {
+  $('thead th').each(function() {
     var th = $(this).closest('th');
     var thIndex = th.index();
     var inverse = false;
 
-    th.click(function() {
+    th.find('.sort').click(function() {
       $('table').find('td').filter(function() {
         return $(this).index() === thIndex;
       }).sortElements(function(a, b){
@@ -324,6 +352,24 @@ $(document).ready(function() {
       } else {
         $(row).css('background-color', '#ffffff');
       }
+    });
+  }
+
+  function updateCounters() {
+    Object.keys(continents).forEach(function(val, i) {
+      var count = visibleData.filter(function(obj) { return obj['REGION'] === val }).length;
+
+
+      $('.dashboard__item.' + slug(val) + ' span').text(count);
+    });
+  }
+
+  function resetFilters(filter) {
+    $('.' + filter + ' .button--inactive').each(function() {
+      $(this).removeClass('button--inactive');
+      $(this).addClass('button--active');
+      $(this).find('.checkbox').prop('checked', true);
+      $(this).find('.checkbox').trigger('change');
     });
   }
 });

@@ -1,6 +1,6 @@
 #map-wrapper {
 position: relative;
-height: 430px;
+height: 470px;
   svg {
     top: -100px;
     left: -60px;
@@ -46,15 +46,23 @@ left: -60px;
   }
 
   .name-cloumn {
-    width: 40%;
+    width: 25%;
   }
 
   .sector-column {
-    width: 30%;
+    width: 25%;
   }
 
   .topic-column {
-    width: 30%;
+    width: 25%;
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .organization-column {
+    width: 25%;
     max-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -123,7 +131,7 @@ left: -60px;
   }
 }
 
-.reset-filters {
+.reset-filters1, .reset-filters2 {
   font-size: 1rem;
   font-weight: 400;
   text-transform: none;

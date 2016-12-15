@@ -1617,7 +1617,7 @@ var expertsData = [
   {
     "ID": 87,
     "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
-    "CONFERENCE 2 ATTENDED": "Communication & Behavior Change",
+    "CONFERENCE 2 ATTENDED": "Communication and Behavior Change",
     "CONFERENCE 3 ATTENDED": "Long Term Care",
     "NAME": "Albert Ko",
     "GENDER": "M",
