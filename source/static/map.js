@@ -335,9 +335,8 @@ $(document).ready(function() {
       });
 
       inverse = !inverse;
+      updateRowsColor();
     });
-
-    updateRowsColor();
   });
 
   // Etc
