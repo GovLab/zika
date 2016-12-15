@@ -8,7 +8,7 @@ $theme-color: #04ccb7;
   background-color: $main-color;
 
   .top-bar__button {
-    background-color: $theme-color;
+    background-color: lighten($main-color, 4);
 
     &:hover {
       background-color: $accent-color;
