@@ -4,7 +4,7 @@
 - partner_name: Argentina
   people:
     - name: Rudi Borrmann
-      title: Subsecretario de Innovación Pública y Gobierno Abierto 
+      title: Subsecretario de Innovación Pública y Gobierno Abierto
       affiliation: Ministerio de Modernización
     - name: Aranzazu Echezarreta
       title: Directora Nacional de Innovación Pública
@@ -22,7 +22,7 @@
       title: Superintendenta de Vigilancia Sanitaria
       affiliation: Ciudad de Río de Janeiro
     - name: Daniel Soranz
-      title: Secretario Municial de Salud 
+      title: Secretario Municial de Salud
       affiliation: Ciudad de Río de Janeiro
 
 - partner_name: Colombia
@@ -52,7 +52,7 @@
       title: Sub Director General
       affiliation: Instituto Conmemorativo Gorgas de Estudios de la Salud
     - name: Eric Ulloa
-      title: 
+      title:
       affiliation: Vice Ministro de Salud
 
 - partner_name: Banco Interamericano de Desarrollo
@@ -77,6 +77,12 @@
       affiliation: The GovLab
     - name: Dr. Rafael Ayoub
       title: Asesor de Investigación en Salud
+      affiliation: The GovLab
+    - name: Peter Suwondo
+      title: Asistente de Investigación
+      affiliation: The GovLab
+    - name: Jesse Marks
+      title: Asistente de Investigación
       affiliation: The GovLab
 
 # Partner_names
@@ -106,7 +112,7 @@
 
 # - partner_name: Colombia
 #   people:
-#     - name: Dr. María Mercedes Muñoz 
+#     - name: Dr. María Mercedes Muñoz
 #       title: Coordinator of the Public Health Surveillance Group, Demography and Epidemiology Department
 #       affiliation: Ministry of Health and Social Protection
 #     - name: Fernando Ruiz
@@ -118,20 +124,20 @@
 
 # - partner_name: Panama
 #   people:
-#     - name: Dr. María Eugenia Barnett de Antinori 
+#     - name: Dr. María Eugenia Barnett de Antinori
 #       title: Global Health Security Project Coordinator
 #       affiliation: The Gorgas Memorial Institute for Health Studies
 #     - name: Dr. Israel Cedeño
 #       title: International Epidemiological Surveillance Coordinator
 #       affiliation: Ministry of Health
-#     - name: Dr. Lizbeth Cerezo 
+#     - name: Dr. Lizbeth Cerezo
 #       title: National Coordinator of Epidemiological Surveillance of Arbovirosis and Malaria
 #       affiliation: Ministry of Health
 #     - name: Dr. Juan Miguel Pascale
-#       title: Deputy Director 
+#       title: Deputy Director
 #       affiliation: The Gorgas Memorial Institute for Health Studies
 #     - name: Eric Ulloa
-#       title: 
+#       title:
 #       affiliation: Vice-Minister of Health
 
 # - partner_name: Inter-American Development Bank
@@ -161,38 +167,38 @@
 #       title: Health Research Advisor
 #       affiliation: The GovLab
 
-  # - partner_name: 
+  # - partner_name:
   #   people:
-  #     - name: 
-  #       title: 
-  #       affiliation: 
-  #     - name: 
-  #       title: 
-  #       affiliation: 
-  #     - name: 
-  #       title: 
-  #       affiliation: 
-  #     - name: 
-  #       title: 
-  #       affiliation: 
-  #     - name: 
-  #       title: 
-  #       affiliation: 
-  #     - name: 
-  #       title: 
-  #       affiliation: 
-  #     - name: 
-  #       title: 
-  #       affiliation: 
-  #     - name: 
-  #       title: 
-  #       affiliation: 
-  #     - name: 
-  #       title: 
-  #       affiliation: 
-  #     - name: 
-  #       title: 
-  #       affiliation: 
-  #     - name: 
-  #       title: 
-  #       affiliation: 
+  #     - name:
+  #       title:
+  #       affiliation:
+  #     - name:
+  #       title:
+  #       affiliation:
+  #     - name:
+  #       title:
+  #       affiliation:
+  #     - name:
+  #       title:
+  #       affiliation:
+  #     - name:
+  #       title:
+  #       affiliation:
+  #     - name:
+  #       title:
+  #       affiliation:
+  #     - name:
+  #       title:
+  #       affiliation:
+  #     - name:
+  #       title:
+  #       affiliation:
+  #     - name:
+  #       title:
+  #       affiliation:
+  #     - name:
+  #       title:
+  #       affiliation:
+  #     - name:
+  #       title:
+  #       affiliation:
