@@ -327,7 +327,7 @@ gulp.task('push-gh-pages', function () {
 gulp.task('deploy', function (callback) {
   runSequence(
     'clean',
-    ['sass', 'js', 'image', 'cname', 'nunjucksGenerated', 'nunjucksData', 'scripts'],
+    ['sass', 'js', 'pdf', 'image', 'cname', 'nunjucksGenerated', 'nunjucksData', 'scripts'],
     'push-gh-master',
     'push-gh-pages',
     callback
