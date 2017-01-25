@@ -2,6 +2,9 @@ $main-color: #2c4758;
 $accent-color: #FFAA00;
 $theme-color: #04ccb7;
 
+
+// .extra-padding { padding-top: 25px; background-color: darken($main-color, 3); }
+
 .text-centered { text-align: center; }
 
 .top-bar--main-color {
@@ -176,16 +179,18 @@ $theme-color: #04ccb7;
   margin-bottom: -55px;
   position: relative;
   z-index: 1;
-  .button {
-    margin: 0 5px;
-    box-shadow: 2px 2px 10px rgba(black, .1);
-  }
   &__index {
     // @media only screen 
     // and (max-device-width: 1200px)
     // and (-webkit-min-device-pixel-ratio: 2) {
     //     display: none;
     // }
+    .button {
+    margin: 0 5px;
+    box-shadow: 2px 2px 10px rgba(black, .1);
+    background-color: $main-color;
+    &:hover { background-color: $theme-color;}
+  }
   }
   .nodisplay { 
     @media only screen 
@@ -262,3 +267,20 @@ $theme-color: #04ccb7;
 .main-video {
   text-align:center;
 }
+
+.side-buttons { 
+  height: 240px; 
+  padding-top: 23px; 
+  padding-bottom: 23px;
+
+  .button { width: 290px; }
+
+}
+
+.button--map { 
+  width: 130px; 
+  margin-left: 20px; 
+  margin-right: 20px;
+}
+
+.main-buttons__map { margin-bottom: 0px; margin-top: -40px}
