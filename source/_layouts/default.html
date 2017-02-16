@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include head.html %}
+    </head>
+
+    <body class="{{page.custom_body}}">
+      {% include header.html %}
+
+      {{content}}
+      
+      <div id="overlay" class="js-overlay"></div>
+      {% include footer.html %}
+      {% include footer-scripts.html %}
+    </body>
+</html>

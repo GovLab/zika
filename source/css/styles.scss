@@ -1,0 +1,64 @@
+---
+---
+
+// =========================
+// Site Specific Styles Here
+// =========================
+
+
+
+@import 'variables.scss';
+@import 'breakpoint.scss';
+@import 'utils.scss';
+@import 'base.scss';
+
+
+@import 'custom.scss';
+@import 'topic.scss';
+@import 'form.scss';
+@import 'people.scss';
+@import 'map.scss';
+@import 'table-sortable.scss';
+
+*{ box-sizing: border-box; }
+
+.footer-alt {
+
+  bottom:0;
+  background-color: rgba(black, .8);
+  text-align: center;
+  color: rgba(white, .8);
+  font-size: 18px;
+  h4 {
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom:0;
+  }
+  .footer__partner-logo {
+    text-align:center;
+    img {
+      max-height: 80px;
+    }
+  padding-bottom: 30px;
+  }
+}
+
+
+// FORM EDITS
+
+.checkbox label{
+    display: inline-block;
+    margin-left: 2.5em;
+}
+.checkbox label:before{
+    margin-left: -40px;
+}
+
+// Nav-menu fix
+.main-menu:not(.m-active) {
+  box-shadow: none;
+}
+
+.main-menu {
+  overflow-y: auto;
+}

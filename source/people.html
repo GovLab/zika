@@ -1,0 +1,32 @@
+---
+layout: default
+
+---
+<section class="top-section top-section--main-color">
+    <!-- <h1>People</h1> -->
+    <h1></h1>
+    <div class="main-buttons">
+      <a href="https://docs.google.com/document/d/10QaG4S_gKRUi4hy0ENnVs6Ky-ZmPPl_ndZvIy93R4N0/edit" class="button button--accent-color">READ THIS PAGE IN ENGLISH</a>
+    </div>
+</section>
+
+<div class="page-section">
+{% for partner in  site.data.partners %}
+  <div class="row partner-container">
+    <div class="columns large-3 small-12 partner-country">
+      <h3>{{ partner.partner_name }}</h3>
+    </div>
+    <div class="columns large-9 small-12">
+      {% for person in partner.people %}
+      <ul class="partner">
+        <li class="partner-name">{{ person.name }}</li>
+        <li class="partner-title">{{ person.title }}</li>
+        <li class="partner-affiliation">{{ person.affiliation }}</li>
+      </ul>
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+
