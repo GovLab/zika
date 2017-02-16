@@ -1,0 +1,56 @@
+---
+layout: default
+
+---
+
+<section class="top-section top-section--main-color top-section--background-panel" style="background-image: url(./images/topics/{{image}});">
+  <div class="row expanded align-center">
+    <div class="medium-10 large-9 column top-section__content">
+      <h1>{{page.title}}</h1>
+      <h3>{{page.short_description}}</h3>  
+    </div>
+  </div>
+  <div class="main-buttons">
+    {% if page.is_active and page.conference %}<!-- <a href="{{title | slug}}-conference.html" class="button button--accent-color">Conference</a> --><a href="{{ page.slug }}-conference.html" class="button button--accent-color">CONFERENCIA</a>{% endif %}
+    <!-- <a href="./call-for-participants.html" class="button button--accent-color">Participate</a> -->
+    <a href="./call-for-participants.html" class="button button--accent-color">Participa</a>
+    {% if english_document_link %}
+    <a href="{{page.english_document_link}}" class="button button--accent-color">Read this page in English</a>
+    {% endif %}
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="row align-center">
+    <div class="column large-9 medium-10">
+      <!-- <h5>Focus</h5> -->
+      <h5>FOCO</h5>
+      <p class="page-section__highlight">{{page.focus}}</p>
+    </div>
+  </div>
+  {% if page.problem_description_link %}
+  <div class="row align-center">
+    <div class="column large-9 medium-10">
+      <!-- <h5>Problem Description</h5> -->
+      <h5>DESCRIPCIÓN DEL PROBLEMA</h5>
+      <p class="page-section__highlight">{{page.topic_description_summary}}</p>
+      <!-- <a href="{{ problem_description_link }}" target="_blank" class="button button--accent-color">Read the Problem Description</a> -->
+      <p><a href="{{ page.problem_description_link_spanish }}" target="_blank" class="button button--accent-color">LEER LA DESCRIPCIÓN DEL PROBLEMA</a>
+      <a href="{{ page.problem_description_link }}" target="_blank" class="button button--accent-color">Read the problem description in English</a></p>
+    </div>
+  </div>
+  {% endif %}
+  
+  {% if page.resources %}
+  <div class="row align-center">
+    <div class="column large-9 medium-10">
+      <h5>RECURSOS</h5>
+      {% for resource in page.resources %}
+      <a class="resource-link" href="{{resource.url}}" target="_blank">{{resource.name}}</a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</section>
+
+
