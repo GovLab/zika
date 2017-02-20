@@ -3,6 +3,7 @@
 
 - title: EVALUAR LA CONCIENCIA PÚBLICA
   slug: evaluar-la-conciencia-publica
+  conference_slug: evaluar-la-conciencia-publica-conference
   id: 00
   is_active: true
   image: assessing-public-awareness.jpg
@@ -262,6 +263,7 @@
 
 - title: COMUNICACIÓN Y CAMBIO DE CONDUCTAS
   slug: comunicacion-y-cambio-de-conductas
+  conference_slug: comunicacion-y-cambio-de-conductas-conference
   id: 01
   is_active: true
   image: communication-and-behavior-change.jpg
@@ -501,6 +503,7 @@
 
 - title: APRENDIZAJE PERTINENTE
   slug: aprendizaje-pertinente
+  conference_slug: aprendizaje-pertinente-conference
   id: 02
   is_active: false
   image:
@@ -530,6 +533,7 @@
 
 - title: GOBERNANZA Y COORDINACIÓN
   slug: gobernanza-y-coordinacion
+  conference_slug: gobernanza-y-coordinacion-conference
   id: 03
   is_active: false
   image:
@@ -558,6 +562,7 @@
 
 - title: ANÁLISIS PREDICTIVO
   slug: analisis-predictivo
+  conference_slug: analisis-predictivo-conference
   id: 04
   is_active: true
   image: predictive-analytics.jpg
@@ -751,6 +756,7 @@
 
 - title: LA BASURA Y EL AGUA ESTANCADA
   slug: la-basura-y-el-agua-estancada
+  conference_slug: la-basura-y-el-agua-estancada-conference
   id: 05
   is_active: true
   image: trash-bw.jpg
@@ -967,6 +973,7 @@
 
 - title: ASPECTOS ECONÓMICOS DEL DIAGNÓSTICO Y LA VACUNACIÓN
   slug: aspectos-economicos-del-diagnostico-y-la-vacunacion
+  conference_slug: aspectos-economicos-del-diagnostico-y-la-vacunacion-conference
   id: 06
   is_active: false
   image:
@@ -995,6 +1002,7 @@
 
 - title: RECOLECCIÓN DE INFORMACIÓN / GOBERNANZA DE DATOS
   slug: recoleccion-de-informacion-/-gobernanza-de-datos
+  conference_slug: recoleccion-de-informacion-/-gobernanza-de-datos-conference
   id: 07
   is_active: true
   image: infocollection-bw.jpg
@@ -1217,6 +1225,7 @@
 
 - title: COLABORACIONES CON DATOS
   slug: colaboraciones-con-datos
+  conference_slug: colaboraciones-con-datos-conference
   id: 08
   is_active: false
   image:
@@ -1245,6 +1254,7 @@
 
 - title: VIGILANCIA
   slug: vigilancia
+  conference_slug: vigilancia-conference
   id: 09
   is_active: false
   image:
@@ -1272,6 +1282,7 @@
 
 - title: PREVENCIÓN DE PICADURAS
   slug: prevencion-de-picaduras
+  conference_slug: prevencion-de-picaduras-conference
   id: 10
   is_active: false
   image:
@@ -1301,6 +1312,7 @@
 
 - title: AMPLIAR EL ACCESO A LA ATENCIÓN DE SALUD
   slug: ampliar-el-acceso-a-la-atencion-de-salud
+  conference_slug: ampliar-el-acceso-a-la-atencion-de-salud-conference
   id: 11
   is_active: false
   image:
@@ -1329,6 +1341,7 @@
 
 - title: CUIDADOS DE LARGO PLAZO
   slug: cuidados-de-largo-plazo
+  conference_slug: cuidados-de-largo-plazo-conference
   id: 12
   is_active: true
   image: long-term-care.jpg
