@@ -41,7 +41,7 @@ page_gen:
     name: 'slug'
     dir: '/'
 
-  - data: 'conferences'
+  - data: 'topics'
     template: 'conferences-template'
-    name: 'slug'
+    name: 'conference_slug'
     dir: '/'
