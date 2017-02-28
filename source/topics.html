@@ -25,7 +25,7 @@ layout: default
         <h1>{{topic.title}}</h1>
         <p>{{topic.short_description}}</p>
         {% if topic.conference.is_active and topic.conference.is_active_info %}
-        <p><a href="{{topic.title | slugify }}.html" class="button button--theme-color">MÁS INFORMACIÓN</a></p> <!-- More Information -->
+        <p><a href="{{topic.slug }}.html" class="button button--theme-color">MÁS INFORMACIÓN</a></p> <!-- More Information -->
         {% elsif topic.conference.is_active and topic.conference.is_active_info %} <!-- not -->
         <p><a href="javascript: void(0)" class="button button--disabled">PRONTO MÁS INFORMACIÓN</a></p> <!-- More Information Coming Soon -->
         {% endif %}
@@ -44,7 +44,7 @@ layout: default
         <h1>{{topic.title}}</h1>
         <p>{{topic.short_description}}</p>
        <!--  <p><a href="{{topic.title | slug }}.html" class="button button--theme-color">More Information</a></p> -->
-        <p><a href="{{topic.title | slugify }}.html" class="button button--theme-color">MÁS INFORMACIÓN</a></p>
+        <p><a href="{{topic.slug }}.html" class="button button--theme-color">MÁS INFORMACIÓN</a></p>
         <div class="topic__date topic__date-past">
           <!-- <h6>This conference took place on</h6> -->
           <h6>ESTA CONFERENCIA SE REALIZÓ EL</h6>
