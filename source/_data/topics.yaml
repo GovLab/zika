@@ -1001,8 +1001,8 @@
     resources:
 
 - title: RECOLECCIÓN DE INFORMACIÓN / GOBERNANZA DE DATOS
-  slug: recoleccion-de-informacion-/-gobernanza-de-datos
-  conference_slug: recoleccion-de-informacion-/-gobernanza-de-datos-conference
+  slug: recoleccion-de-informacion--gobernanza-de-datos
+  conference_slug: recoleccion-de-informacion--gobernanza-de-datos-conference
   id: 07
   is_active: true
   image: infocollection-bw.jpg
