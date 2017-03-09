@@ -1,0 +1,33 @@
+---
+solution:
+- sys:
+    id: 5FVUJAOrfycaeEYWII4QSk
+  description: "(1.1) conduct a national assessment of social media related to MBDs"
+  relatedConference: Conference 1 - Digital Listening
+  dataComponent: Data Collection
+  levelOfIntervention: National
+  actionType: Research-related
+  resourcesRequired: Low investment ($10k or less)
+  timeRequiredAggressive: 1
+  timeRequiredConservative: 3
+- sys:
+    id: 20TWxzboPaSw6ESIUU8uak
+  description: "(1.2) establish a committee to advocate for digital listening across
+    government"
+  relatedConference: Conference 1 - Digital Listening
+  dataComponent: Data Literacy
+  levelOfIntervention: Multiple Levels
+  actionType: Governance
+  resourcesRequired: Low investment ($10k or less)
+  timeRequiredAggressive: 2
+  timeRequiredConservative: 4
+- sys:
+    id: 5Bg5q5UfuwyQ0Sg0kE2oCi
+  description: " (1.3) appoint a Chief Analytics Officer"
+  relatedConference: Conference 1 - Digital Listening
+  dataComponent: Data Analysis
+  levelOfIntervention: National
+  actionType: Human Capital
+  resourcesRequired: Moderate Investment ($100k-$500k)
+  timeRequiredAggressive: 2
+  timeRequiredConservative: 3

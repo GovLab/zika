@@ -14,13 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 'Crowdsourcing Inteligente | Zika'
-email: 
+email:
 description: > # this means to ignore newlines until "baseurl:"
-  
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
-github_username:  
+twitter_username:
+github_username:
 
 # Build settings
 markdown: kramdown
@@ -45,3 +45,12 @@ page_gen:
     template: 'conferences-template'
     name: 'conference_slug'
     dir: '/'
+
+contentful:
+  spaces:
+    - solutions: # Jekyll _data folder identifier - Required
+        space: u3mtdi0tc11a         # Required
+        access_token: 76454399de03fdb500f019ba45acb0f776c32313d15849122bc8d23c22ec5da1
+        base_path: ./source         # Optional - Defaults to Current directory
+        # destination: ./source/_data/contentful/spaces # Optional - Defaults to _data/contentful/spaces
+        all_entries: true
