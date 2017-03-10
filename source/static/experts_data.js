@@ -789,7 +789,7 @@ var expertsData = [
     "REGION": "Northern America",
     "AFFILIATION 1": "Academia",
     "AFFILIATION 2": "",
-    "ORGANIZATION": "The George Washington University",
+    "ORGANIZATION": "George Washington University",
     "POSITION": "Assistant Professor, School of Engineering and Applied Science",
     "CONTACT": "broniatowski@email.gwu.edu",
     "LINK/REFERENCE/WHY": "Co author of  Zika vaccine misconceptions: A social media analysis. https://www.seas.gwu.edu/david-broniatowski",
