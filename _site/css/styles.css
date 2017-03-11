@@ -572,6 +572,90 @@ li {
     .table-sortable__search button:hover {
       background-color: #1b2c36; }
 
+.recommendation-filters {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.recommendation-card {
+  width: calc(33.3% - 30px);
+  background-color: rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  margin: 0 12px 24px;
+  vertical-align: top; }
+  .recommendation-card header,
+  .recommendation-card section,
+  .recommendation-card footer {
+    padding: 10px 30px; }
+  .recommendation-card a {
+    text-decoration: none; }
+    .recommendation-card a:hover {
+      color: #04ccb7; }
+  .recommendation-card h1, .recommendation-card h2, .recommendation-card h3, .recommendation-card h4, .recommendation-card h5 {
+    font-size: 1.6rem;
+    margin: 0;
+    color: #2c4758; }
+  .recommendation-card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 10px; }
+  .recommendation-card p {
+    font-size: 1.2rem; }
+  .recommendation-card header {
+    background-color: #04ccb7; }
+    .recommendation-card header h1 {
+      color: white;
+      font-weight: 400;
+      line-height: 1;
+      margin: 5px; }
+  .recommendation-card footer {
+    background-color: rgba(0, 0, 0, 0.1); }
+  .recommendation-card__timeline {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px 30px;
+    display: flex;
+    align-items: center; }
+    .recommendation-card__timeline h5 {
+      margin: 0; }
+  .recommendation-card__contacts {
+    background-color: rgba(0, 0, 0, 0.05); }
+    .recommendation-card__contacts p {
+      line-height: 1.4;
+      margin: 0; }
+  .recommendation-card__tags {
+    display: flex; }
+    .recommendation-card__tags p {
+      margin: 0 10px 0 0; }
+  .recommendation-card__tag {
+    font-size: .9rem;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 3px 6px;
+    margin: 2px;
+    color: white;
+    background-color: #04ccb7; }
+  .recommendation-card__tag-focus {
+    background-color: #2c4758; }
+
+.resources {
+  display: inline-block;
+  color: #FFAA00;
+  float: right; }
+  .resources > i {
+    font-size: 1.2rem;
+    transform: scale(1.6);
+    margin: 0 5px; }
+
+.timeline {
+  margin-left: 20px; }
+  .timeline__item {
+    height: 16px;
+    width: 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 0 1px; }
+  .timeline--cons {
+    background-color: #04ccb7; }
+  .timeline--aggr {
+    background-color: #2c4758; }
+
 * {
   box-sizing: border-box; }
 
