@@ -4,7 +4,6 @@
 /.publish
 /node_modules
 /support
-source/
 .jekyll-metadata
 .sass-cache
 _site

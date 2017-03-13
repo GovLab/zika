@@ -1,0 +1,125 @@
+.recommendation-filters {
+  background-color: rgba(black, .8);
+}
+
+.recommendation-card {
+  width: calc(33.3% - 30px);
+  background-color: rgba(black, .05);
+  display: inline-block;
+  margin: 0 12px 24px;
+  vertical-align: top;
+
+  header,
+  section,
+  footer {
+    padding: 10px 30px;
+  }
+  
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $theme-color;
+    }
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-size: 1.6rem;
+    margin: 0;
+    color: $main-color;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  header {
+    background-color: $theme-color;
+    
+    h1 { 
+      color: white; 
+      font-weight: 400;
+      line-height: 1;
+      margin: 5px;
+    }
+  }
+
+  footer {
+    background-color: rgba(black, .1);
+  }
+
+
+
+  &__resources {
+    
+  }
+
+  &__timeline {
+    background-color: rgba(black, .05);
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    
+    h5 { margin: 0; }
+
+  }
+
+  &__contacts {
+    background-color: rgba(black, .05);
+
+    p {
+      line-height: 1.4;
+      margin: 0;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    p { margin: 0 10px 0 0;}
+  }
+
+  &__tag {
+    font-size: .9rem;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 3px 6px;
+    margin: 2px;
+    color: white;
+    background-color: $theme-color;
+  }
+
+  &__tag-focus {
+    background-color: $main-color; 
+  }
+}
+
+.resources {
+  display: inline-block;
+  color: $accent-color;
+  float: right;
+
+  > i { 
+    font-size: 1.2rem;
+    transform: scale(1.6);
+    margin: 0 5px;
+  }
+}
+
+.timeline {
+  margin-left: 20px;
+
+  &__item {
+    height: 16px;
+    width: 16px;
+    background-color: rgba(black, .1);
+    display: inline-block;
+    margin: 0 1px;
+  }
+
+  &--cons { background-color: $theme-color; }
+  &--aggr { background-color: $main-color; }
+}
