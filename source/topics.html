@@ -7,7 +7,7 @@ layout: default
   <div class="row expanded align-center">
     <div class="medium-10 large-8 column top-section__content">
       <!-- <h1>Topics</h1>
-      <h3>We have divided a major public health issue into several smaller problems that are the greatest priority of governments and are amenable to innovative and actionable solutions.</h3>  --> 
+      <h3>We have divided a major public health issue into several smaller problems that are the greatest priority of governments and are amenable to innovative and actionable solutions.</h3>  -->
       <h1>Temas</h1>
       <h3>HEMOS DIVIDIDO UN TEMA IMPORTANTE DE SALUD EN VARIOS PROBLEMAS MENORES QUE CONSTITUYEN LA MÁXIMA PRIORIDAD DE LOS GOBIERNOS Y SE PRESTAN A SOLUCIONES INNOVADORAS Y REALIZABLES.</h3>
       <div class="main-buttons">
@@ -25,30 +25,30 @@ layout: default
         <h1>{{topic.title}}</h1>
         <p>{{topic.short_description}}</p>
         {% if topic.conference.is_active and topic.conference.is_active_info %}
-        <p><a href="{{topic.slug }}.html" class="button button--theme-color">MÁS INFORMACIÓN</a></p> <!-- More Information -->
+        <p><a href="{{site.url}}{{site.baseurl}}/{{ topic.slug }}.html" class="button button--theme-color">MÁS INFORMACIÓN</a></p> <!-- More Information -->
         {% elsif topic.conference.is_active and topic.conference.is_active_info %} <!-- not -->
         <p><a href="javascript: void(0)" class="button button--disabled">PRONTO MÁS INFORMACIÓN</a></p> <!-- More Information Coming Soon -->
         {% endif %}
         <div class="topic__date">
           <!-- <h6>Conference on</h6> -->
           <h6>CONFERENCIA EL</h6>
-          <span class="topic__month">{{ topic.conference.date | date: "%b"}}</span> 
+          <span class="topic__month">{{ topic.conference.date | date: "%b"}}</span>
           <em class="topic__day">{{ topic.conference.date | date: "%d" }}</em>
         </div>
       </div>
       {% endif %}
     {% endfor %}
     {% for topic in site.data.topics %}
-    {% if topic.is_active and topic.conference.is_active == false %} 
-      <div class="large-6 small-12 column topic" style="background-image: url(./images/topics/resized/{{topic.image}})">
+    {% if topic.is_active and topic.conference.is_active == false %}
+      <div class="large-6 small-12 column topic" style="background-image: url({{site.url}}{{site.baseurl}}/images/topics/resized/{{topic.image}})">
         <h1>{{topic.title}}</h1>
         <p>{{topic.short_description}}</p>
        <!--  <p><a href="{{topic.title | slug }}.html" class="button button--theme-color">More Information</a></p> -->
-        <p><a href="{{topic.slug }}.html" class="button button--theme-color">MÁS INFORMACIÓN</a></p>
+        <p><a href="{{site.url}}{{site.baseurl}}/{{topic.slug }}.html" class="button button--theme-color">MÁS INFORMACIÓN</a></p>
         <div class="topic__date topic__date-past">
           <!-- <h6>This conference took place on</h6> -->
           <h6>ESTA CONFERENCIA SE REALIZÓ EL</h6>
-          <span class="topic__month">{{ topic.conference.date | date: "%b"}}</span> 
+          <span class="topic__month">{{ topic.conference.date | date: "%b"}}</span>
           <em class="topic__day">{{ topic.conference.date | date: "%d" }}</em>
         </div>
       </div>
@@ -68,7 +68,7 @@ layout: default
           <h1>{{topic.title}}</h1>
           <p>{{topic.short_description}}</p>
         </div>
-      </div>  
+      </div>
     {% endif %}
   {% endfor %}
 

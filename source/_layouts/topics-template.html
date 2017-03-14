@@ -3,17 +3,17 @@ layout: default
 
 ---
 
-<section class="top-section top-section--main-color top-section--background-panel" style="background-image: url(./images/topics/{{image}});">
+<section class="top-section top-section--main-color top-section--background-panel" style="background-image: url({{site.url}}{{site.baseurl}}/images/topics/{{page.image}})">
   <div class="row expanded align-center">
     <div class="medium-10 large-9 column top-section__content">
       <h1>{{page.title}}</h1>
-      <h3>{{page.short_description}}</h3>  
+      <h3>{{page.short_description}}</h3>
     </div>
   </div>
   <div class="main-buttons">
-    {% if page.is_active and page.conference %}<!-- <a href="{{title | slug}}-conference.html" class="button button--accent-color">Conference</a> --><a href="{{ page.slug }}-conference.html" class="button button--accent-color">CONFERENCIA</a>{% endif %}
-    <!-- <a href="./call-for-participants.html" class="button button--accent-color">Participate</a> -->
-    <a href="./call-for-participants.html" class="button button--accent-color">Participa</a>
+    {% if page.is_active and page.conference %}<!-- <a href="{{title | slug}}-conference.html" class="button button--accent-color">Conference</a> --><a href="{{site.url}}{{site.baseurl}}/{{ page.slug }}-conference.html" class="button button--accent-color">CONFERENCIA</a>{% endif %}
+    <!-- <a href="{{site.url}}{{site.baseurl}}/call-for-participants.html" class="button button--accent-color">Participate</a> -->
+    <a href="{{site.url}}{{site.baseurl}}/call-for-participants.html" class="button button--accent-color">Participa</a>
     {% if english_document_link %}
     <a href="{{page.english_document_link}}" class="button button--accent-color">Read this page in English</a>
     {% endif %}
@@ -40,7 +40,7 @@ layout: default
     </div>
   </div>
   {% endif %}
-  
+
   {% if page.resources %}
   <div class="row align-center">
     <div class="column large-9 medium-10">
@@ -52,5 +52,3 @@ layout: default
   </div>
   {% endif %}
 </section>
-
-
