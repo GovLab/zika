@@ -63,3 +63,9 @@
 .main-menu {
   overflow-y: auto;
 }
+
+.form--negative .select {
+  background-color: rgba(white, .1);
+  &::before { color: white; }
+  color: white;
+}
