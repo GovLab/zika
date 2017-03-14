@@ -67,6 +67,7 @@ $(document).ready(function () {
         $(window).unbind('scroll');
         $('.js-active-menu').removeClass('js-active-menu');
         $('body').removeClass('js-body-modal-active');
+
     });
 
 
@@ -97,7 +98,6 @@ $(document).ready(function () {
     // Slider
     $('.slider').slick({
         arrows: true,
-        adaptiveHeight: true,
         draggable: false,
         swipeToSlide: true,
         autoplay: true,
@@ -110,6 +110,108 @@ $(document).ready(function () {
                 }
             }
         ]
+    });
+
+    // TABLE SORTABLE
+    // Table Search with List.js Implementation
+    $('.js-open-table-search').click(function (e) {
+        e.preventDefault();
+        $(this).parent().siblings('.table-sortable__search').toggleClass('table-sortable__search--active');
+    });
+    // Table Search Controls: X out form
+    var searchButtons = $('.table-sortable__search').find("button[type='submit']");
+    searchButtons.on("click", function(e) {
+        e.preventDefault();
+        if ($(this).parent().hasClass("table-sortable__search--active")) {
+            $(this).parent().removeClass("table-sortable__search--active");
+        }
+        searchReset();
+    });
+
+    // Table Search Controls: Sort buttons
+    var sortClickButtons = $(".table-sortable__control > i:contains('keyboard_arrow_down')");
+    sortClickButtons.on("click", function() {
+        $(this).text() == "keyboard_arrow_down" ? $(this).text("keyboard_arrow_up") : $(this).text("keyboard_arrow_down");
+    });
+    // Table Search Controls: ESC to exit form and clear search
+    $("body").keyup(function(event) {
+        if ( event.keyCode == "27" ) {
+            $(this).parent().find('.table-sortable__search').removeClass("table-sortable__search--active");
+            searchReset();
+        }
+    });
+
+    // // List.js Implementation with Fuzzy Search
+    // var fuzzyOptions = {
+    //   searchClass: "fuzzy-search",
+    //   location: 0,
+    //   distance: 100,
+    //   threshold: 0.4,
+    //   multiSearch: true
+    // };
+    // var options = {
+    //     valueNames: [ {name:'item__name', attr:'data-target'}, 'item__category', 'item__date', 'item__location' ]
+    // };
+    // var itemList = new List('items', options);
+    //
+    // // Target input text field when search bar is active
+    // $(".js-open-table-search").on("click", function(e) {
+    //     $(this).addClass("table-sortable__search--active");
+    //    $($(this).attr('data-target')).focus();
+    //
+    // });
+    // // Fuzzy search by specific columns
+    // $(".fuzzy-search").keyup(function() {
+    //     var searchString = $(this).val();
+    //         itemList.fuzzySearch(searchString, ["item__name"]);
+    // });
+    // // List.js search reset functions
+    // function searchReset() {
+    //     $(".fuzzy-search").val("");
+    //     clearTextSearch();
+    //     itemList.search();
+    // }
+    // function clearTextSearch() {
+    //     $('.table-sortable__search--active').each(function(){
+    //         $(this).removeClass('table-sortable__search--active');
+    //     });
+    // }
+    // // END TABLE SORTABLE
+
+    // Logic for Accordion Component
+
+    var closed = true;
+
+    $('.js-open-accordion').click(function() {
+
+        if (closed) {
+            $(this).siblings().removeClass('js-active');
+            $(this).addClass('js-active');
+            closed = false;
+        }
+
+        else {
+            $(this).removeClass('js-active');
+            $(this).siblings().removeClass('js-active');
+            closed = true;
+        }
+
+        console.log(closed)
+
+    });
+
+    // Color Palette Logic
+
+    $(".palette__item h1").each(function() {
+      var color = $(this).text();
+      $(this).parent().css("background-color", color);
+      console.log(color);
+    });
+
+    $(".palette__item--rgb h3").each(function() {
+      var color = $(this).text();
+      $(this).parent().css("background-color", color);
+      console.log(color);
     });
 
 }); // doc.ready
