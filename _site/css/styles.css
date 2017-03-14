@@ -581,10 +581,24 @@ li {
   display: inline-block;
   margin: 0 12px 24px;
   vertical-align: top; }
+  @media (min-width: 64em) {
+    .recommendation-card {
+      max-width: 31.33333%;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+  @media (max-width: 39.9375em) {
+    .recommendation-card {
+      padding-left: 0;
+      padding-right: 0; } }
   .recommendation-card header,
   .recommendation-card section,
   .recommendation-card footer {
-    padding: 10px 30px; }
+    padding: 10px 30px;
+    width: 100%; }
   .recommendation-card a {
     text-decoration: none; }
     .recommendation-card a:hover {
