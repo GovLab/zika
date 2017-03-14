@@ -1,33 +1,387 @@
 ---
 solution:
 - sys:
-    id: 5FVUJAOrfycaeEYWII4QSk
-  description: "(1.1) conduct a national assessment of social media related to MBDs"
-  relatedConference: Conference 1 - Digital Listening
-  dataComponent: Data Collection
-  levelOfIntervention: National
-  actionType: Research-related
+    id: 5syWW75OHmsoyaUskOMqEG
+  title: Assess communications platform penetration
+  description: Conduct an assessment of social media penetration to understand who
+    can be reached by digital listening activities and how
+  focusArea: ASSESSING UNDERSTANDING
   resourcesRequired: Low investment ($10k or less)
   timeRequiredAggressive: 1
-  timeRequiredConservative: 3
+  timeRequiredConservative: 2
+  contacts: |-
+    __Josh Tucker,__ New York University, __Lee Rainie,__ Pew Research,
+    __We Are Social UK,__ We Are Social UK
+  resourceRequirements: Primarily informal consultations, may require commissioned
+    study if necessary information not readily available
+  resourceOffset: Already low to no cost. Can leverage existing research and expertise
+    at universities, UN, World Bank, IDB, and other institutions
+  impactedAreas:
+  - BEHAVIOR CHANGE
+  - SURVEILLANCE AND DATA SHARING
 - sys:
-    id: 20TWxzboPaSw6ESIUU8uak
-  description: "(1.2) establish a committee to advocate for digital listening across
-    government"
-  relatedConference: Conference 1 - Digital Listening
-  dataComponent: Data Literacy
-  levelOfIntervention: Multiple Levels
-  actionType: Governance
+    id: 1JKipM62bamemogCM4c8K2
+  title: Establish committee for digital listening prioritization
+  description: Convene an interagency committee to assess and prioritize demand for
+    digital listening insights across government
+  focusArea: ASSESSING UNDERSTANDING
   resourcesRequired: Low investment ($10k or less)
   timeRequiredAggressive: 2
   timeRequiredConservative: 4
+  contacts: __Beth Simone Noveck,__ GovLab
+  resourceRequirements: Minimal (aside from time of involved individuals, cost of
+    meeting space, and coordination of meetings)
+  resourceOffset: Already low to no cost. Reduce time investment by getting expert
+    advice ahead of time
+  impactedAreas:
+  - SURVEILLANCE AND DATA SHARING
 - sys:
-    id: 5Bg5q5UfuwyQ0Sg0kE2oCi
-  description: " (1.3) appoint a Chief Analytics Officer"
-  relatedConference: Conference 1 - Digital Listening
-  dataComponent: Data Analysis
-  levelOfIntervention: National
-  actionType: Human Capital
+    id: 4OeuLZeEPuM8IEIAUeoUKI
+  title: Hire chief analytics officer
+  description: Appoint a Chief Analytics Officer to drive implementation of data-driven
+    policies and projects such as digital listening and predictive analytics platforms
+  focusArea: ASSESSING UNDERSTANDING
   resourcesRequired: Moderate Investment ($100k-$500k)
   timeRequiredAggressive: 2
-  timeRequiredConservative: 3
+  timeRequiredConservative: 4
+  contacts: __Jeff Chen,__ *Chief Data Scientist,* Department of Commerce
+  resourceRequirements: "\\+ full time employee, with necessary institutional support
+    to develop and execute Ministry-wide analytic programs"
+  resourceOffset: The salary for this role could be offset by assigning her data-driven
+    efficiency projects that save money
+  impactedAreas:
+  - SURVEILLANCE AND DATA SHARING
+  - PREDICTIVE ANALYTICS
+- sys:
+    id: 3nCCYh0MicOEiwKA6u4YWg
+  title: Forge digital listening partnerships
+  description: Partner with research organizations, technology platform partners,
+    and commercial analytics providers to develop the supply of desired digital listening
+    insights
+  focusArea: ASSESSING UNDERSTANDING
+  resourcesRequired: Low investment ($10k or less)
+  timeRequiredAggressive: 2
+  timeRequiredConservative: 5
+  contacts: __Eugene Yi,__ MiT Media Lab, __Molly Jackman,__ *Public Policy Research
+    Manager,* Facebook, __David Broniatowski,__ *Assistant Professor,* George Washington
+    University
+  resourceRequirements: Resource requirements likely to vary depending on partnership
+    model; however this will ideally involve hiring small fulltime staff to manage
+    partnerships / data and curate insights
+  resourceOffset: This can be low to no cost. Can save money by using existing research
+    funds to support academics conducting digital listening
+  impactedAreas:
+  - BEHAVIOR CHANGE
+  - SURVEILLANCE AND DATA SHARING
+  - PREDICTIVE ANALYTICS
+- sys:
+    id: 1mZ9eKdj6owWKYue4SwqQu
+  title: Launch prize-backed challenges for community engagement
+  description: Create prize-backed challenges to promote engagement and innovation
+    in Zika control at both the community and individual levels
+  focusArea: BEHAVIOR CHANGE
+  resourcesRequired: Moderate Investment ($100k-$500k)
+  timeRequiredAggressive: 0
+  timeRequiredConservative: 10
+  contacts: __Jaykumar Menon,__ McGill University, __Patricio Fuentes__ and __Reko
+    Niimi,__ UNICEF Brazil Country Office
+  resourceRequirements: Funding the prize, publicizing the initiative, generating
+    relevant guidance materials for participants, and [potentially] compensating judges
+    and technical advisors (although ideally this will be done pro-bono)
+  resourceOffset: The cost of a prize varies. Save money by using micro-prizes such
+    as donated mobile phone minutes
+  impactedAreas:
+  - TRASH ACCUMULATION
+  - PREDICTIVE ANALYTICS
+- sys:
+    id: 5xdItZjs7mAyKACQQQimoU
+  title: Create research clearinghouse for behavior change
+  description: Compile peer-reviewed best practices in Zika / MBD public communications
+    and present them in a way that is accessible for policymakers seeking actionable
+    ideas
+  focusArea: BEHAVIOR CHANGE
+  resourcesRequired: Moderate Investment ($100k-$500k)
+  timeRequiredAggressive: 2
+  timeRequiredConservative: 4
+  contacts: __Karen Lyons,__ Pew Trusts
+  resourceRequirements: Initial up-front investment in developing a user-friendly
+    website; operation of the clearinghouse will require a small staff to identify,
+    review, and publicize relevant literature
+  resourceOffset: This can be low to not cost. Save money by convening a wide array
+    of stakeholders in universities and other institutions to crowdsource this project
+- sys:
+    id: 50vPx8s4XuO6yAK6gkssYI
+  title: Design Serious Games
+  description: Explore the use of “serious games” to raise awareness and change behavior
+    by organizing hackathons and/or partnering with game designers to deploy effective
+    platforms
+  focusArea: BEHAVIOR CHANGE
+  resourcesRequired: Low investment ($10k or less)
+  timeRequiredAggressive: 4
+  timeRequiredConservative: 13
+  contacts: __Jude Ower,__ *CEO,* Playmob, __Julián Ugarte, Luis E. Loria, Marina
+    Spindler,__ and __Matías Rojas,__ Socialab, __Sarah Cornish__ and __Emily Treat,__
+    Games for Change
+  resourceRequirements: |-
+    Resource requirements likely to vary depending on the ambition of the game. Simple features added to existing games can cost $20k to $60 (e.g., 30-second video), while more complex features may Games can be expensive to design and build. The memo
+    recommends strategies for adapting existing games and/or
+    seeking philanthropic support for productioncost $200-$300k. Completely new games can cost $500k to $ M
+  resourceOffset: Games can be expensive to design and build. The memo recommends
+    strategies for adapting existing games and/or seeking philanthropic support for
+    production
+  impactedAreas:
+  - ASSESSING UNDERSTANDING
+  - TRASH ACCUMULATION
+  - SURVEILLANCE AND DATA SHARING
+  - LONG-TERM CARE
+  - PREDICTIVE ANALYTICS
+- sys:
+    id: 7CGDxmEVa0gieWw6w8cyY2
+  title: Crowdsource waste removal
+  description: Involve communities in locating and removing litter
+  focusArea: TRASH ACCUMULATION
+  resourcesRequired: Some Investment ($10k-$100k)
+  timeRequiredAggressive: 4
+  timeRequiredConservative: 13
+  contacts: __Jeff Kirschner,__ Litterati, __Daniel Lombrana,__ Crowdcrafting
+  resourceRequirements: Crowdsourcing applications often free of charge; some funds
+    needed to publicize the initiative, engage with the public, and store the data
+  resourceOffset: This is low to no cost with only a small outlay for coordination
+    and significant potential for savings in sanitation costs
+  impactedAreas:
+  - BEHAVIOR CHANGE
+- sys:
+    id: 1CICLojHJmyYcGcYMMEAsm
+  title: Conduct drone-based garbage surveillance
+  description: Use drones to identify and map areas with accumulated trash
+  focusArea: TRASH ACCUMULATION
+  resourcesRequired: Some Investment ($10k-$100k)
+  timeRequiredAggressive: 4
+  timeRequiredConservative: 13
+  contacts: __Joe Eyerman,__ RTI international
+  resourceRequirements: Some expenditure needed to store and analyze the data; small
+    investments needed to pay for drones, training of operators, and overall project
+    management
+  resourceOffset: This requires an investment in hardware. But money can be saved
+    by sharing the use of surveillance drones designed for other purposes
+- sys:
+    id: 6bNnTYg9NuW0WImWQQmMCY
+  title: Establish public-private partnerships with manufacturers
+  description: Commit to private-public partnerships (PPP’s) with manufacturers to
+    reduce trash accumulation
+  focusArea: TRASH ACCUMULATION
+  resourcesRequired: Some Investment ($10k-$100k)
+  timeRequiredAggressive: 4
+  timeRequiredConservative: 13
+  contacts: __Dr. Graham Alabaster,__ World Health Organization
+  resourceRequirements: Minimal, other than time and expenses of health ministry staff
+    involved in partnership; may require some investment if tax break required
+  resourceOffset: The costs of container remediation are borne by the private sector
+  impactedAreas:
+  - BEHAVIOR CHANGE
+- sys:
+    id: 2HiMaDMF5CyOqMUW04qa4y
+  title: Adopt trash coll. adaptive vehicles
+  description: Collect trash in hard-to-reach areas using adaptive vehicles
+  focusArea: TRASH ACCUMULATION
+  resourcesRequired: Moderate Investment ($100k-$500k)
+  timeRequiredAggressive: 4
+  timeRequiredConservative: 13
+  contacts: __Dr. Graham Alabaster,__ World Health Organization
+  resourceRequirements: Assumes initiative is launched in pilot neighborhoods; primary
+    investments are in the vehicles (-2 per community) and their operators
+  resourceOffset: Cost of removing trash using alternative vehicles could be offset
+    through use of those tax revenues used to pay for trash collection; this collection
+    could also be done by the communities themselves, with communities earning revenues
+    by selling recyclables to recycling companies
+- sys:
+    id: 4Df5AIVUQMYQc2UQoI82k8
+  title: Mobile tech–assisted surveillance
+  description: Improve the speed and reliability of surveillance data by integrating
+    flexible mobile technologies like SMS and smartphone app reporting into surveillance
+    activities
+  focusArea: SURVEILLANCE AND DATA SHARING
+  resourcesRequired: Moderate Investment ($100k-$500k)
+  timeRequiredAggressive: 3
+  timeRequiredConservative: 18
+  contacts: __Gordon Cressman,__ RTI International, __John Brownstein,__ Healthmap,
+    Harvard Medical School, __Brian Lee,__ U.S. Centers for Disease Control Health
+    Information Innovation Consortium
+  resourceRequirements: Resource requirements will vary depending on the technology
+    platform(s) selected for development. Assuming software adaptation from open-source
+    projects, development staff can be seconded part-time from other software projects.
+    Main costs will likely be in workforce training and investment in mobile devices
+    such as smartphones
+  resourceOffset: mHealth technologies, including participatory digital surveillance
+    and mobile-assisted case reporting, have the potential to expand surveillance
+    at low cost compared to traditional methods. Investments in mobile devices and
+    human resources can be offset by broad integration with other government activities
+    like disaster response
+  impactedAreas:
+  - ASSESSING UNDERSTANDING
+  - LONG-TERM CARE
+- sys:
+    id: 3hdZjpG2766EuEkQ8OyuEQ
+  title: Form disease surveillance data collaborative
+  description: Collaborate with companies and universities to identify new sources
+    of disease surveillance data
+  focusArea: SURVEILLANCE AND DATA SHARING
+  resourcesRequired: Some Investment ($10k-$100k)
+  timeRequiredAggressive: 7
+  timeRequiredConservative: 18
+  contacts: '__Richard Benjamins,__ *Director of External Positioning & Big Data for
+    Social Good*, LUCA: Data-Driven Decisions (Telefonica), __Stefaan Verhulst,__
+    GovLab'
+  resourceRequirements: Main costs stem from the need to hire a chief data officer
+    to liaise with private partners. Actual data costs may be minimal if shared as
+    a form of corporate philanthropy
+  resourceOffset: Data collaboratives are, by definition, corporate data philanthropy
+  impactedAreas:
+  - ASSESSING UNDERSTANDING
+  - PREDICTIVE ANALYTICS
+- sys:
+    id: ta95uAAV20CaQ4Aa8sii4
+  title: Develop data-sharing playbook
+  description: Promote openness and participation in surveillance data collection,
+    storage, sharing, and use by developing a data governance playbook for epidemic
+    response and building broad commitment to use it
+  focusArea: SURVEILLANCE AND DATA SHARING
+  resourcesRequired: Moderate Investment ($100k-$500k)
+  timeRequiredAggressive: 3
+  timeRequiredConservative: 12
+  contacts: __Michael Johansson,__ U.S Centers for Disease Control
+  resourceRequirements: Initial playbook development costs are minimal and will only
+    require stakeholder meetings and expert consultation. Long-term playbook strategy
+    implementation costs will vary with the scope of commitments agreed upon in the
+    playbook. Costs can be shared with private sector partners depending on ownership
+    of individual action items
+  resourceOffset: More open and participatory surveillance data can generate cost
+    savings through faster and more accurate epidemic detection and modeling. In addition,
+    insights generated from data sharing can lead to more efficient use of public
+    health resources
+  impactedAreas:
+  - ASSESSING UNDERSTANDING
+  - PREDICTIVE ANALYTICS
+- sys:
+    id: 2WiPjLz02cWww2uk4cU20O
+  title: Establish online support communities
+  description: Use online support communities akin to Patients Like Me to provide
+    patient-to-patient support
+  focusArea: LONG-TERM CARE
+  resourcesRequired: Moderate Investment ($100k-$500k)
+  timeRequiredAggressive: 2
+  timeRequiredConservative: 6
+  contacts: __Anita McGahan,__ University of Toronto
+  resourceRequirements: Convening relevant experts and stakeholders to develop initial
+    content (and regularly update and refine content), testing and refinement of messaging
+    through focus groups or A/B testing
+  resourceOffset: Research suggests that peer to peer support reduces hospitalizations
+    and ER visits
+  impactedAreas:
+  - ASSESSING UNDERSTANDING
+  - SURVEILLANCE AND DATA SHARING
+  - PREDICTIVE ANALYTICS
+- sys:
+    id: 3cf18BflA4acmyasQWMQIE
+  title: Use SMS-based long-term care
+  description: Develop 2-way SMS-based support systems like Text4Baby to provide long-term
+    medical care and support cost-effectively
+  focusArea: LONG-TERM CARE
+  resourcesRequired: Moderate Investment ($100k-$500k)
+  timeRequiredAggressive: 6
+  timeRequiredConservative: 18
+  contacts: __Alejandra Ruiz del Rio Prieto__ and __Eduardo Clark,__ Prospera Digital
+    (Presidencia de Mexico)
+  resourceRequirements: Convening relevant experts and stakeholders to develop initial
+    content, purchase or adaptation of technological platform, bulk purchase (or donation)
+    of messages from telecommunications providers
+  resourceOffset: Text messages can be donated or purchased in bulk; open source platform
+    like RapidPro can safe software costs; long term savings derive from reduced hospitalizations
+  impactedAreas:
+  - ASSESSING UNDERSTANDING
+  - BEHAVIOR CHANGE
+  - SURVEILLANCE AND DATA SHARING
+  - PREDICTIVE ANALYTICS
+- sys:
+    id: 1xb6F4S90gayyuE2Emqw2Y
+  title: Build predictive analytics data platform
+  description: Improve Zika response by building a predictive analytics platform
+  focusArea: PREDICTIVE ANALYTICS
+  resourcesRequired: Moderate Investment ($100k-$500k)
+  timeRequiredAggressive: 6
+  timeRequiredConservative: 18
+  contacts: __Lakshminarayanan Subramanian,__ *Professor,* Courant Institute, NYU
+  resourceRequirements: Hiring or commissioning of experts to build the model, developing
+    of user interfaces, as required. To manage the platform, chief data officer to
+    partner with university or private organization and/or establish an in-house team
+  resourceOffset: Analytics platforms are designed to reduce medium to long term costs,
+    as the data they generate can help optimize resource deployment (e.g., preemptively
+    sending health workers to where an outbreak is likely to occur can avoid the costs
+    associated with an outbreak)
+  impactedAreas:
+  - ASSESSING UNDERSTANDING
+  - BEHAVIOR CHANGE
+  - SURVEILLANCE AND DATA SHARING
+- sys:
+    id: 3WYSP9cGAwsAm0ywW88s0A
+  title: Launch prized-backed data science challenges
+  description: Use prize-backed challenges to rapidly develop predictive models and
+    leverage outside expertise
+  focusArea: PREDICTIVE ANALYTICS
+  resourcesRequired: Some Investment ($10k-$100k)
+  timeRequiredAggressive: 6
+  timeRequiredConservative: 12
+  contacts: __Michael Johansson,__ *Biologist,* CDC
+  resourceRequirements: Funding the prize itself, publicizing the initiative, and
+    generating relevant guidance materials for participants. Coordination of the challenge
+    can be led by existing employees
+  resourceOffset: Prizes can be donated, and the challenge should be formulated to
+    produce results that decrease costs. Challenges can also work with small prizes
+    (or no prizes), provided the work is compelling enough and there is sufficient
+    non-financial recognition of participants’ contributions
+  impactedAreas:
+  - BEHAVIOR CHANGE
+- sys:
+    id: 11aOvo9rCQmWoUs6mGEC6s
+  title: Train public health officials in data science
+  description: Increase data analytics literacy among public health officials by training
+    them in data science (through partnerships with research institutions, universities,
+    and other training providers)
+  focusArea: PREDICTIVE ANALYTICS
+  resourcesRequired: Moderate Investment ($100k-$500k)
+  timeRequiredAggressive: 8
+  timeRequiredConservative: 18
+  contacts: __Jesse Bell,__ North Carolina Institute for Climate Studies, __Gianluca
+    Fontana,__ Centre for Health Policy, Institute of Global Health Innovation, Imperial
+    College, __Daniel Ray,__ *Chief Data Scientist,* UK National Health Service, __Michael
+    Johansson,__ *Biologist,* CDC
+  resourceRequirements: Costs will vary depending on model(s) used, but may include
+    funding travel and tuition for employees to attend training programs or the costs
+    of developing local programs in collaboration with universities
+  resourceOffset: More data science training can enable these officials to analyze
+    their own agencies’ work and identify cost savings
+  impactedAreas:
+  - ASSESSING UNDERSTANDING
+  - BEHAVIOR CHANGE
+  - SURVEILLANCE AND DATA SHARING
+  - LONG-TERM CARE
+- sys:
+    id: 26OOuZ9eWEG6imSSOCakGy
+  title: Launch regional open data portal
+  description: Collaborate on creation of a Zika-related data portal that compiles
+    national and other open datasets
+  focusArea: PREDICTIVE ANALYTICS
+  resourcesRequired: Some Investment ($10k-$100k)
+  timeRequiredAggressive: 6
+  timeRequiredConservative: 12
+  contacts: __Anita McGahan,__ University of Toronto
+  resourceRequirements: Costs to government will vary depending on ultimate institutional
+    owner. Primary investments would include front-end site development and back-end
+    integration of the data. Subsequent operational costs would largely center around
+    technical support to portal users and adaptations to incorporate new datasets
+    / queries
+  resourceOffset: Money can be saved by using existing open source platforms and prioritizing
+    datasets designed to generate insights that reduce costs
+  impactedAreas:
+  - ASSESSING UNDERSTANDING
+  - SURVEILLANCE AND DATA SHARING
