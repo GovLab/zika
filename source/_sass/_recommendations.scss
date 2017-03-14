@@ -2,15 +2,8 @@
   background-color: rgba(black, .8);
 }
 
-.recommendation-card {
-  width: calc(33.3% - 30px);
-  background-color: rgba(black, .05);
-  display: inline-block;
-  margin: 0 12px 24px;
-  vertical-align: top;
-
+#card-container {
   @include breakpoint($large) {
-    max-width: 31.33333%;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -18,10 +11,26 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-
   @include breakpoint($small-only) {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+.recommendation-card {
+  // width: calc(33.3% - 30px);
+  background-color: rgba(black, .05);
+  display: inline-block;
+  margin: 0 12px 24px;
+  vertical-align: top;
+
+  @include breakpoint($large) {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   header,
