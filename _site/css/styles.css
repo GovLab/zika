@@ -89,6 +89,10 @@
       .top-section--background-panel-theme-color .top-section__content h3 {
         font-size: 1.3rem; } }
 
+@media (max-width: 39.9375em) {
+  .top-section #recommendations-title {
+    font-size: 2.8rem; } }
+
 .top-section--background-panel {
   background-color: #2c4758; }
 
