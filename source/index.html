@@ -9,7 +9,7 @@ custom_body: homepage
     <section class="top-section top-section--white">
       <div class="row expanded">
         <div class="column large-12 site-logo__wrapper">
-          <a href="./"><img class="site-logo" src="./images/zika-logo-pos.png" alt=""></a>
+          <a href="{{site.url}}{{site.baseurl}}/index.html"><img class="site-logo" src="{{site.url}}{{site.baseurl}}/images/zika-logo-pos.png" alt=""></a>
         </div>
       </div>
       <div class="row expanded align-center">
@@ -28,7 +28,7 @@ custom_body: homepage
         <!-- <a href="./call-for-participants.html" class="button button--accent-color">Participate</a> -->
         <!-- <a href="./call-for-participants.html" class="button nodisplay button--accent-color">Participa</a> -->
 <!--             <a href="./topics.html" class="button button--accent-color">Topics</a>
--->            
+-->
         <!-- <a href="./topics.html" class="button nodisplay button--accent-color">Temas</a> -->
         <a href="https://drive.google.com/open?id=1X62chK6dRH_je5X-UjpEu8wlS2b76ghbMOvQbFzeWKY" class="button yesdisplay button--accent-color">READ THIS PAGE IN ENGLISH</a>
       </div>
@@ -57,12 +57,12 @@ custom_body: homepage
 
     <section>
 
-    <a href="/map.html" class="divider explore-map"><h5>Explora el mapa de expertos y expertas</h5></a>
+    <a href="{{site.url}}{{site.baseurl}}/map.html" class="divider explore-map"><h5>Explora el mapa de expertos y expertas</h5></a>
     <div class="main-buttons main-buttons__map">
         <!-- <a href="./call-for-participants.html" class="button button--accent-color">Participate</a> -->
-        <a href="./call-for-participants.html" class="button button--map button--accent-color">Participa</a>
-        <!-- <a href="./topics.html" class="button button--accent-color">Topics</a> -->            
-        <a href="./topics.html" class="button button--map button--accent-color">Temas</a>
+        <a href="{{site.url}}{{site.baseurl}}/call-for-participants.html" class="button button--map button--accent-color">Participa</a>
+        <!-- <a href="./topics.html" class="button button--accent-color">Topics</a> -->
+        <a href="{{site.url}}{{site.baseurl}}/topics.html" class="button button--map button--accent-color">Temas</a>
     </div>
     </section>
 
@@ -70,32 +70,32 @@ custom_body: homepage
       <div class="row expanded">
         {% for topic in site.data.topics %}
           {% if topic.is_active and topic.conference.is_active %}
-            <div class="large-6 small-12 column topic" style="background-image: url(./images/topics/resized/{{topic.image}})">
+            <div class="large-6 small-12 column topic" style="background-image: url({{site.url}}{{site.baseurl}}/images/topics/resized/{{topic.image}})">
               <h1>{{topic.title}}</h1>
               <p>{{topic.short_description}}</p>
-              
+
               {% if topic.conference.is_active and topic.conference.is_active_info %}
-                <p><a href="{{topic.slug }}.html" class="button button--theme-color">
+                <p><a href="{{ topic.slug }}.html" class="button button--theme-color">
                 MÁS INFORMACIÓN</a></p> <!-- More Information -->
-      
-              {% elsif topic.conference.is_active and topic.conference.is_active_info == false %} 
-      
+
+              {% elsif topic.conference.is_active and topic.conference.is_active_info == false %}
+
                 <p><a href="javascript: void(0)" class="button button--disabled">PRONTO MÁS INFORMACIÓN</a></p> <!-- More Information Coming Soon -->
               {% endif %}
-              
+
               <div class="topic__date">
                 <!-- <h6>Conference on</h6> -->
                 <h6>CONFERENCIA EL</h6>
-                <span class="topic__month">{{ topic.conference.date | date: "%b"}}</span> 
-                <em class="topic__day">{{ topic.conference.date | date: "%d" }}</em> 
+                <span class="topic__month">{{ topic.conference.date | date: "%b"}}</span>
+                <em class="topic__day">{{ topic.conference.date | date: "%d" }}</em>
               </div>
             </div>
           {% endif %}
         {% endfor %}
-        
+
         {% for topic in site.data.topics %}
           {% if topic.is_active and topic.conference.is_active == false %} <!-- NEED TO ADD A "NOT" -->
-            <div class="large-6 small-12 column topic" style="background-image: url(./images/topics/resized/{{topic.image}})">
+            <div class="large-6 small-12 column topic" style="background-image: url({{site.url}}{{site.baseurl}}/images/topics/resized/{{topic.image}})">
               <h1>{{topic.title}}</h1>
               <p>{{topic.short_description}}</p>
               <p><a href="{{topic.slug }}.html" class="button button--theme-color">MÁS INFORMACIÓN</a></p>
@@ -133,7 +133,7 @@ custom_body: homepage
           <!-- <p><strong>Would you like to lend your skills to tackle a public health emergency?</strong> Deliberate with diverse innovators and professionals to refine good ideas into actionable projects? Join a conversation with government partners interested in implementing new approaches to combatting Zika and other mosquito-borne diseases.</p>
           <div class="text-centered"><a href='./call-for-participants.html' class='button button--accent-color'>Request an Invitation</a></div> -->
           <p><strong>¿Te gustaría compartir tus habilidades para afrontar emergencias de salud pública?</strong> ¿Tratar temas con distintos innovadores y profesionales para perfeccionar ideas buenas y convertirlas en proyectos aplicables? Participa en una conversación con gobiernos interesados en poner en práctica nuevos enfoques para combatir el zika y otras enfermedades trasmitidas por mosquitos.</p>
-          <div class="text-centered"><a href='./call-for-participants.html' class='button button--accent-color'>SOLICITA UNA INVITACIÓN</a></div>
+          <div class="text-centered"><a href='{{site.url}}{{site.baseurl}}/call-for-participants.html' class='button button--accent-color'>SOLICITA UNA INVITACIÓN</a></div>
         </div>
       </div>
     </section>
