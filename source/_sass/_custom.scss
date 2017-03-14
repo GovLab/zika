@@ -30,8 +30,8 @@
 }
 
 .top-section--main-color { background-color: $main-color; }
-.top-section--theme-color { 
-  background-color: $theme-color; 
+.top-section--theme-color {
+  background-color: $theme-color;
   color: $main-color;
 
 }
@@ -43,8 +43,8 @@
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center top;
-  .top-section__content { 
-    margin: 80px 0; 
+  .top-section__content {
+    margin: 80px 0;
     @media (max-width: 440px) {
       h1{ font-size: 2.5rem;}
       h3 {font-size: 1.3rem;}
@@ -52,10 +52,18 @@
   }
 }
 
+.top-section {
+  #recommendations-title {
+    @include breakpoint($small-only) {
+      font-size: 2.8rem;
+    }
+  }
+}
+
 .top-section--background-panel { background-color: $main-color; }
 
-.top-section--background-panel-theme-color { 
-  background-color: $theme-color; 
+.top-section--background-panel-theme-color {
+  background-color: $theme-color;
   h3 {
     color: white;
     opacity: 1;
@@ -65,7 +73,7 @@
   &--main-color { background-color: $main-color; }
   &--theme-color { background-color: $theme-color; }
 
-  &__highlight { 
+  &__highlight {
     font-size: 1.4rem;
   }
   &--zebra-dark { background-color: rgba(black, .03); }
@@ -100,7 +108,7 @@
     cursor: default;
 
     &:hover {
-      background-color: rgba(black, .1); 
+      background-color: rgba(black, .1);
     }
 }
 
@@ -123,13 +131,13 @@
         @media only screen  {
           font-size: 1rem;
         }
-        
+
       }
         @media (min-width: 740px) {
           height: 18vh;
         }
       @include breakpoint($medium) {
-        padding: 30px; 
+        padding: 30px;
         font-size: 1.2rem;
       }
       &:after {
@@ -166,7 +174,7 @@
 }
 
 .main-buttons {
-  @media only screen 
+  @media only screen
     and (max-device-width: 400px)
     and (-webkit-min-device-pixel-ratio: 2) {
       .button {
@@ -178,7 +186,7 @@
   position: relative;
   z-index: 1;
   &__index {
-    // @media only screen 
+    // @media only screen
     // and (max-device-width: 1200px)
     // and (-webkit-min-device-pixel-ratio: 2) {
     //     display: none;
@@ -190,16 +198,16 @@
     &:hover { background-color: $theme-color;}
   }
   }
-  .nodisplay { 
-    @media only screen 
+  .nodisplay {
+    @media only screen
     and (max-device-width: 1200px)
     and (-webkit-min-device-pixel-ratio: 2) {
         display: none;
     }
   }
 
-  .yesdisplay { 
-    @media only screen 
+  .yesdisplay {
+    @media only screen
     and (max-device-width: 1200px)
     and (-webkit-min-device-pixel-ratio: 2) {
         width: 75%;
@@ -216,7 +224,7 @@
   }
 }
 
-.conference-date, 
+.conference-date,
 .conference-time  {
   margin: 0;
   padding: 0;
@@ -227,7 +235,7 @@
 }
 
 .participants {
-  ul { 
+  ul {
     padding: 0;
    }
   li {
@@ -266,17 +274,17 @@
   text-align:center;
 }
 
-.side-buttons { 
-  height: 240px; 
-  padding-top: 23px; 
+.side-buttons {
+  height: 240px;
+  padding-top: 23px;
   padding-bottom: 23px;
 
   .button { width: 290px; }
 }
 
-.button--map { 
-  width: 130px; 
-  margin-left: 20px; 
+.button--map {
+  width: 130px;
+  margin-left: 20px;
   margin-right: 20px;
 }
 
