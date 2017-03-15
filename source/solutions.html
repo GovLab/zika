@@ -2,6 +2,24 @@
 layout: default
 title: Recommendations
 custom_js: recommendations.js
+focus-area:
+- "Accessing Understanding"
+- "Behavior Change"
+- "Trash Accumulation"
+- "Surveillance and Data Sharing"
+- "Long-term Care"
+- "Predictive Analytics"
+impacted-area:
+- "Accessing Understanding"
+- "Behavior Change"
+- "Trash Accumulation"
+- "Surveillance and Data Sharing"
+- "Long-term Care"
+- "Predictive Analytics"
+resources-required:
+- "Low investment ($10k or less)"
+- "Some Investment ($10k-$100k)"
+- "Moderate Investment ($100k-$500k)"
 ---
 
 {% assign solutions = site.data.contentful.spaces.solutions.solution %}
@@ -13,26 +31,54 @@ custom_js: recommendations.js
   <!-- </div> -->
 </section>
 <section class="page-section recommendation-filters">
-<div class="row align-center">
-  <!-- I thought we had a .form--negative for the .select -->
-  {% for i in (1..6) %}
-  <div class="large-2 columns small-10">
-    <form class="form--negative">
-      <div class="select">
-        <select name="" id="">
-          <option value="">Filter</option>
-        </select>
-      </div>
-    </form>
+  <div class="filter-ui-container">
+    <div class="row align-center expanded">
+        <div class="large-2 columns small-10">
+          <form class="form--negative" action="#">
+            <div class="select">
+              <select id="filter-category" class="filter js-change">
+                <option data-filter="*">Focus Area</option>
+                {% for item in page.focus-area %}
+                  <option data-filter="{{item | slugify}}">{{item}}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="large-2 columns small-10">
+          <form class="form--negative" action="#">
+            <div class="select">
+              <select id="filter-category" class="filter js-change">
+                <option data-filter="*">Impacted Area</option>
+                {% for item in page.impacted-area %}
+                  <option data-filter="{{item | slugify}}">{{item}}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="large-2 columns small-10">
+          <form class="form--negative" action="#">
+            <div class="select">
+              <select id="filter-category" class="filter js-change">
+                <option data-filter="*">Resources Required</option>
+                {% for item in page.resources-required %}
+                  <option data-filter="{{item | slugify}}">{{item}}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </form>
+        </div>
+    </div>
   </div>
-  {% endfor %}
-</div>
 </section>
 <section class="page-section">
+  <div class="isotope">
   <div class="row expanded medium-collapse">
+
     {% for i in solutions %}
       <div id="card-container" class="columns large-4 small-12 medium-8">
-        <div class="recommendation-card">
+        <div class="recommendation-card result-item">
           <header>
             <h1>{{i.title}}</h1>
           </header>
@@ -110,4 +156,16 @@ custom_js: recommendations.js
       </div>
     {% endfor %}
   </div>
+  </div>
 </section>
+
+<style media="screen">
+  .result-item {
+    /*display: -webkit-flex!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-flex-wrap: wrap!important;
+    -ms-flex-wrap: wrap!important;
+    flex-wrap: wrap!important;*/
+  }
+</style>
