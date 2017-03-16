@@ -31,53 +31,54 @@ resources-required:
   <!-- </div> -->
 </section>
 <section class="page-section recommendation-filters">
-  <div class="filter-ui-container js-multi">
+  <div class="js-multi">
     <div class="row align-center expanded">
         <div class="large-2 columns small-10">
-          <form class="form--negative">
-            <div class="select">
-              <select id="filter-focus-area" class="filter js-change">
-                <option data-filter="*">Focus Area</option>
-                {% for item in page.focus-area %}
-                  <option data-filter="{{item | slugify}}">{{item}}</option>
-                {% endfor %}
-              </select>
-            </div>
-          </form>
+          <div class="filter-ui-container">
+            <form class="form--negative">
+              <div class="select">
+                <select id="filter-focus-area" class="filter js-change">
+                  <option data-filter="*">Focus Area</option>
+                  {% for item in page.focus-area %}
+                    <option data-filter="{{item | slugify}}">{{item}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="large-2 columns small-10">
-          <form class="form--negative" action="#">
-            <div class="select">
-              <select id="filter-impacted-area" class="filter js-change">
-                <option data-filter="**">Impacted Area</option>
-                {% for item in page.impacted-area %}
-                  <option data-filter="impact-{{item | slugify}}">{{item}}</option>
-                {% endfor %}
-              </select>
-            </div>
-          </form>
+          <div class="filter-ui-container">
+            <form class="form--negative" action="#">
+              <div class="select">
+                <select id="filter-impacted-area" class="filter js-change">
+                  <option data-filter="**">Impacted Area</option>
+                  {% for item in page.impacted-area %}
+                    <option data-filter="impact-{{item | slugify}}">{{item}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="large-2 columns small-10">
-          <form class="form--negative" action="#">
-            <div class="select">
-              <select id="filter-resources" class="filter js-change">
-                <option data-filter="***">Resources Required</option>
-                {% for item in page.resources-required %}
-                  <option data-filter="{{item | slugify}}">{{item}}</option>
-                {% endfor %}
-              </select>
-            </div>
-          </form>
+          <div class="filter-ui-container">
+            <form class="form--negative" action="#">
+              <div class="select">
+                <select id="filter-resources" class="filter js-change">
+                  <option data-filter="***">Resources Required</option>
+                  {% for item in page.resources-required %}
+                    <option data-filter="{{item | slugify}}">{{item}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="large-2 column">
+        <div class="large-1 column">
           <a class="button button--icon-only" id="clear-filter-btn"><i class="material-icons">close</i></a>
         </div>
     </div>
-    <!-- <div class="row align-center">
-      <div class="large-3 column">
-        <a class="button" id="clear-filter-btn">Clear Filters</a>
-      </div>
-    </div> -->
   </div>
 </section>
 <section class="page-section">

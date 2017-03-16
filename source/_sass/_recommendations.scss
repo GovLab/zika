@@ -2,6 +2,8 @@
   background-color: rgba(black, .8);
 }
 
+.isotope {}
+
 #card-container {
   @include breakpoint($large) {
     // display: -webkit-flex;
@@ -10,8 +12,8 @@
     // -webkit-flex-wrap: wrap;
     // -ms-flex-wrap: wrap;
     // flex-wrap: wrap;
-
   }
+
   @include breakpoint($small-only) {
     padding-left: 0;
     padding-right: 0;
@@ -25,14 +27,16 @@
   margin: 0 12px 24px;
   vertical-align: top;
 
+
   @include breakpoint($large) {
+    // position: relative;
     // display: -webkit-flex;
     // display: -ms-flexbox;
     // display: flex;
     // -webkit-flex-wrap: wrap;
     // -ms-flex-wrap: wrap;
     // flex-wrap: wrap;
-
+    // flex-direction: row!important;
   }
 
   header,
@@ -149,4 +153,14 @@
 
   &--cons { background-color: $theme-color; }
   &--aggr { background-color: $main-color; }
+}
+
+#clear-filter-btn {
+  color: white;
+  background-color: rgba(255,255,255,0.1);
+  margin-top: 10px;
+  padding: 9px 10px;
+  &:hover {
+    background-color: rgba(0,0,0,0.2);
+  }
 }

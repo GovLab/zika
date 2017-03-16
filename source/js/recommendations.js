@@ -376,11 +376,12 @@ $(function() {
 
     $('#clear-filter-btn').click(function() {
       $( document ).trigger( 'filter:clearRebind' );
+      // $( document ).trigger( 'filter:remove' );
+      console.log()
 
-      $("#filter-focus-area option[data-filter='*']").prop('selected', true).addClass('m-active');
-      $("#filter-impacted-area option[data-filter='**']").prop('selected', true).addClass('m-active');
-      $("#filter-resources option[data-filter='***']").prop('selected', true).addClass('m-active');
-
+      $("#filter-focus-area option[data-filter='*']").prop('selected', true);
+      $("#filter-impacted-area option[data-filter='**']").prop('selected', true);
+      $("#filter-resources option[data-filter='***']").prop('selected', true);
     });
 
 });
