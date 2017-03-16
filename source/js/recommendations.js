@@ -374,4 +374,13 @@ $(function() {
     urlFilter();
     preFilter();
 
+    $('#clear-filter-btn').click(function() {
+      $( document ).trigger( 'filter:clearRebind' );
+
+      $("#filter-focus-area option[data-filter='*']").prop('selected', true).addClass('m-active');
+      $("#filter-impacted-area option[data-filter='**']").prop('selected', true).addClass('m-active');
+      $("#filter-resources option[data-filter='***']").prop('selected', true).addClass('m-active');
+
+    });
+
 });
