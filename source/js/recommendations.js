@@ -38,6 +38,7 @@ $(function() {
         itemSelector    : '.result-item',
         layoutMode      : 'fitRows',
         sortBy          : 'category'
+
     },
 
         searchKey   = 'filter',             // location.search key name to be used for url-based filtering
