@@ -125,6 +125,11 @@ $(function() {
         grid.isotope({
             filter: f
         });
+
+        // $('.card-container').masonry({
+        //   itemSelector: '.recommendation-card',
+        //   columnWidth: '.recommendation-card'
+        // });
     };
 
     // update filter from UI state
@@ -375,15 +380,65 @@ $(function() {
     urlFilter();
     preFilter();
 
-    $('#clear-filter-btn').click(function() {
-      $( document ).trigger( 'filter:clearRebind' );
-
-      $(".filter option").isotope({
-        filter: '*'
-      });
-
-      $("#filter-focus-area option[data-filter='*']").prop('selected', true);
-      $("#filter-impacted-area option[data-filter='*']").prop('selected', true);
-      $("#filter-resources option[data-filter='*']").prop('selected', true);
+    $('.card-container').masonry({
+      itemSelector: '.recommendation-card',
+      columnWidth: '.recommendation-card',
+      // gutter: 20
     });
+
+    // var masonry = function() {
+    //   $('.card-container').isotope({
+    //     itemSelector: '.recommendation-card',
+    //     percentPosition: true,
+    //     masonry: {
+    //       // use outer width of grid-sizer for columnWidth
+    //       columnWidth: '.recommendation-card'
+    //       // gutter:
+    //     }
+    //   })
+    // }
+    //
+    // masonry();
+
 });
+
+
+$('#clear-filter-btn').click(function() {
+  $( document ).trigger( 'filter:clearRebind' );
+
+  $(".filter option").isotope({
+    filter: '*'
+  });
+
+  $("#filter-focus-area option[data-filter='*']").prop('selected', true);
+  $("#filter-impacted-area option[data-filter='*']").prop('selected', true);
+  $("#filter-resources option[data-filter='*']").prop('selected', true);
+
+  // $('.card-container').isotope({
+  //   itemSelector: '.card-container',
+  //   percentPosition: true,
+  //   masonry: {
+  //     // use outer width of grid-sizer for columnWidth
+  //     columnWidth: '.recommendation-card'
+  //     // gutter:
+  //   }
+  // })
+
+  // $('.card-container').masonry({
+  //   itemSelector: '.recommendation-card',
+  //   columnWidth: '.recommendation-card'
+  // });
+});
+
+
+$(window).resize(function() {
+  $('.isotope').isotope({
+    itemSelector: '.recommendation-card',
+    percentPosition: true,
+    masonry: {
+      // use outer width of grid-sizer for columnWidth
+      columnWidth: '.recommendation-card'
+      // gutter:
+    }
+  })
+})
