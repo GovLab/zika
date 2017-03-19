@@ -1,0 +1,27 @@
+global:
+  home: Home 
+  about: About
+  team: Team 
+  topics: Topics 
+  map: Explore the Map
+  blog: Blog
+  more_information: More Information
+index:
+  imagine:
+    imagine1: Imagine if those creative individuals could speak directly to the institutions with the power and responsibility for delivering new policies and services.
+    imagine2: Imagine if the smartest and most innovative people could come together to fight Zika quickly and easily.
+    imagine3: Imagine if the epidemiologist, the computer scientist, the urban planner and those with diverse know how could talk to one another to design actionable solutions to the root causes of mosquito borne illness.
+  view_the_playbook: View the Playbook 
+  request_an_invitation: Request an Invitation
+  view_the_schedule: View the Schedule
+  methodology: Methodology
+  participate: Participate
+  explore_the_expert_map: Explore the Expert Map
+  project_description: Project Description
+  view_the_schedule_text: >
+    In a series of weekly, 2-hour web-based conferences, experts from around the world will discuss innovative and practical ways to tackle the root causes of Zika and mosquito-borne diseases. These small-group discussions are intended to foster brainstorming of actionable new strategies in conversation with those government officials responsible for managing the outbreaks.
+  request_an_invitation_text: >
+    <strong>Would you like to lend your skills to tackle a public health emergency?</strong> Deliberate with diverse innovators and professionals to refine good ideas into actionable projects? Join a conversation with government partners interested in implementing new approaches to combatting Zika and other mosquito-borne diseases.
+  view_the_playbook_text: >
+    For more background about <strong>Smarter Crowdsourcing: Zika</strong>, read our Playbook, a step-by-step guide for the development of the project. It provides answers to frequently asked questions about participation in this initiative.
+  video_caption: Presentation of the project at CityLab Conference, October 2016

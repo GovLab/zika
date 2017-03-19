@@ -1,0 +1,27 @@
+global:
+  home: 
+  about: 
+  team: 
+  topics: 
+  map: 
+  blog: 
+  more_information: 
+index:
+  imagine:
+    imagine1:
+    imagine2:
+    imagine3:
+  view_the_playbook: 
+  request_an_invitation: 
+  request_an_invitation: 
+  view_the_schedule: 
+  methodology: 
+  participate: 
+  explore_the_expert_map: 
+  project_description: 
+  view_the_schedule_text:
+  request_an_invitation_text: 
+  view_the_playbook_text: 
+  video_caption:
+
+
