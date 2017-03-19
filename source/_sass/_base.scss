@@ -1,2 +1,11 @@
-
+.lang-select {
+  padding: 0 10px;
+  color: white;
+  line-height: 50px;
+  vertical-align: middle;
+  .lang_select-active {
+    color: $accent-color;
+    font-weight: 700;
+  }
+}
 
