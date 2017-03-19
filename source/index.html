@@ -66,24 +66,35 @@ custom_body: homepage
 
     <section style="margin-top: -25px; ">
       <div class="row expanded">
+      
         {% for topic in site.data.topics %}
           {% if topic.is_active and topic.conference.is_active %}
             <div class="large-6 small-12 column topic" style="background-image: url({{site.url}}{{site.baseurl}}/images/topics/resized/{{topic.image}})">
-              <h1>{{topic.title}}</h1>
-              <p>{{topic.short_description}}</p>
+
+              {%case site.lang %}
+                {% when "es" %}
+                  <h1>{{topic.title}}</h1>
+                  <p>{{topic.short_description}}</p>
+                {% when "pt" %}
+                  <h1>{{topic.pt.title}}</h1>
+                  <p>{{topic.pt.short_description}}</p>
+                {% when "en" %}
+                  <h1>{{topic.en.title}}</h1>
+                  <p>{{topic.en.short_description}}</p>
+              {% endcase %}
 
               {% if topic.conference.is_active and topic.conference.is_active_info %}
                 <p><a href="{{ topic.slug }}.html" class="button button--theme-color">
-                MÁS INFORMACIÓN</a></p> <!-- More Information -->
+                {% t global.more_information %}</a></p> <!-- More Information -->
 
               {% elsif topic.conference.is_active and topic.conference.is_active_info == false %}
 
-                <p><a href="javascript: void(0)" class="button button--disabled">PRONTO MÁS INFORMACIÓN</a></p> <!-- More Information Coming Soon -->
+                <p><a href="javascript: void(0)" class="button button--disabled">{% t global.more_information_soon %}</a></p> <!-- More Information Coming Soon -->
               {% endif %}
 
               <div class="topic__date">
                 <!-- <h6>Conference on</h6> -->
-                <h6>CONFERENCIA EL</h6>
+                <h6>{% t global.conference_on %}</h6>
                 <span class="topic__month">{{ topic.conference.date | date: "%b"}}</span>
                 <em class="topic__day">{{ topic.conference.date | date: "%d" }}</em>
               </div>
@@ -94,12 +105,23 @@ custom_body: homepage
         {% for topic in site.data.topics %}
           {% if topic.is_active and topic.conference.is_active == false %} <!-- NEED TO ADD A "NOT" -->
             <div class="large-6 small-12 column topic" style="background-image: url({{site.url}}{{site.baseurl}}/images/topics/resized/{{topic.image}})">
-              <h1>{{topic.title}}</h1>
-              <p>{{topic.short_description}}</p>
-              <p><a href="{{topic.slug }}.html" class="button button--theme-color">MÁS INFORMACIÓN</a></p>
+
+              {%case site.lang %}
+                {% when "es" %}
+                  <h1>{{topic.title}}</h1>
+                  <p>{{topic.short_description}}</p>
+                {% when "pt" %}
+                  <h1>{{topic.pt.title}}</h1>
+                  <p>{{topic.pt.short_description}}</p>
+                {% when "en" %}
+                  <h1>{{topic.en.title}}</h1>
+                  <p>{{topic.en.short_description}}</p>
+              {% endcase %}
+
+              <p><a href="{{topic.slug }}.html" class="button button--theme-color">{% t global.more_information %}</a></p>
               <div class="topic__date topic__date-past">
                 <!-- <h6>Conference took place on</h6> -->
-                <h6>ESTA CONFERENCIA SE REALIZÓ EL</h6>
+                <h6>{% t global.conference_took_place_on %}</h6>
                 <span class="topic__month">{{ topic.conference.date | date: "%b" }}</span> <!-- topic.conference.date | dateFilter("month") | truncate(3, true, "")}} -->
                 <em class="topic__day">{{ topic.conference.date | date: "%d" }}</em> <!-- topic.conference.date | dateFilter("day")}} -->
               </div>

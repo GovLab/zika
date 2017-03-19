@@ -6,6 +6,11 @@ global:
   map: Explore the Map
   blog: Blog
   more_information: More Information
+  more_information_soon: More Information Coming Soon
+  conference_took_place_on: Conference took place on
+  conference: Conference
+  participate: Participate
+  conference_on: Conference on
 index:
   imagine:
     imagine1: Imagine if those creative individuals could speak directly to the institutions with the power and responsibility for delivering new policies and services.

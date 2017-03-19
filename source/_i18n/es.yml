@@ -6,6 +6,11 @@ global:
   map: Explora el Mapa
   blog: Blog
   more_information: Mas Información
+  more_information_soon: Pronto Mas Información
+  conference_took_place_on: Esta Conferencia se Realizó el 
+  conference: Conferencia
+  participate: Participa
+  conference_on: Conferencia el
 index:
   imagine:
     imagine1: Imagina si esos individuos creativos pudieran hablar directamente con las instituciones que tienen el poder y la responsabilidad de implementar nuevas políticas y servicios.

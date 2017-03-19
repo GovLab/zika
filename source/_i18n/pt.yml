@@ -6,6 +6,11 @@ global:
   map: 
   blog: 
   more_information: 
+  more_information_soon:
+  conference_took_place_on: 
+  conference: 
+  participate:
+  conference_on: 
 index:
   imagine:
     imagine1:
