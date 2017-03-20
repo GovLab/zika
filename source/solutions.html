@@ -112,7 +112,7 @@ resources-required:
                 {% endfor %}
 
                 {% for i in (1..conservative_time) %}
-                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: {{conservative_time}} months"></span>
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: {{conservative_time | plus: aggressive_time }} months"></span>
                 {% endfor %}
 
                 {% assign timeline_boxes = 18 | minus: aggressive_time | minus: conservative_time %}
