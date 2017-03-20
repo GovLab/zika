@@ -1,0 +1,2303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Recommendations</title>
+
+<link href="http://zika.smartercrowdsourcing.org/images/favicon.ico" rel="shortcut icon">
+
+<link rel="stylesheet" href="http://zika.smartercrowdsourcing.org/vendor/foundation.min.css">
+<link rel="stylesheet" href="http://zika.smartercrowdsourcing.org/vendor/styleguide-v2.1.css">
+<link rel="stylesheet" href="http://zika.smartercrowdsourcing.org/vendor/slick.css"/>
+<link rel="stylesheet" href="http://zika.smartercrowdsourcing.org/css/styles.css">
+<script src="https://use.typekit.net/mvc3cdb.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="http://zika.smartercrowdsourcing.org/vendor/modernizr.js"></script>
+<script src="http://zika.smartercrowdsourcing.org/vendor/jquery-2.1.4.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body class="">
+      <header class="top-bar top-bar--main-color">
+  <span class="top-bar__button js-trigger-menu">menu<!-- menú --></span>
+  <nav class="main-menu js-target-menu main-menu--left">
+    <!-- <a href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./people.html">People</a>
+    <a href="./topics.html">Topics</a>
+    <a href="./call-for-participants.html">Call for Participants</a> -->
+    <a href="http://zika.smartercrowdsourcing.org/index.html">Inicio</a>
+    <a href="http://zika.smartercrowdsourcing.org/about.html">Acerca de</a>
+    <a href="http://zika.smartercrowdsourcing.org/people.html">Equipo</a>
+    <a href="http://zika.smartercrowdsourcing.org/topics.html">Temas</a>
+    <a href="http://zika.smartercrowdsourcing.org/recommendations.html">Recomendaciones</a>
+    <a href="http://zika.smartercrowdsourcing.org/map.html">Explora el mapa</a>
+    <!--<a href="http://zika.smartercrowdsourcing.org/call-for-participants.html">Participa</a>-->
+    <a href="https://medium.com/smarter-crowdsourcing">Blog</a>
+  </nav>
+  <a class="top-bar__logo" href="http://zika.smartercrowdsourcing.org/"><img src="http://zika.smartercrowdsourcing.org/images/zika-logo-h-white.png" alt="Smarter Crowdsourcing | Zika"></a>
+
+  
+</header>
+
+
+      
+
+<section class="top-section top-section--main-color">
+  <!-- <div class="row expanded"> -->
+    <h1 id="recommendations-title">Recommendations Summary</h1>
+    <h3>Smarter Crowdsourcing for Zika</h3>
+  <!-- </div> -->
+</section>
+<section class="page-section recommendation-filters">
+  <div class="js-multi">
+    <div class="row align-center expanded">
+        <div class="large-2 columns small-10">
+          <div class="filter-ui-container">
+            <form class="form--negative">
+              <div class="select">
+                <select id="filter-focus-area" class="filter js-change">
+                  <option data-filter="*">Focus Area</option>
+                  
+                    <option data-filter="accessing-understanding">Accessing Understanding</option>
+                  
+                    <option data-filter="behavior-change">Behavior Change</option>
+                  
+                    <option data-filter="trash-accumulation">Trash Accumulation</option>
+                  
+                    <option data-filter="surveillance-and-data-sharing">Surveillance and Data Sharing</option>
+                  
+                    <option data-filter="long-term-care">Long-term Care</option>
+                  
+                    <option data-filter="predictive-analytics">Predictive Analytics</option>
+                  
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="large-2 columns small-10">
+          <div class="filter-ui-container">
+            <form class="form--negative" action="#">
+              <div class="select">
+                <select id="filter-impacted-area" class="filter js-change">
+                  <option data-filter="*">Impacted Area</option>
+                  
+                    <option data-filter="impact-accessing-understanding">Accessing Understanding</option>
+                  
+                    <option data-filter="impact-behavior-change">Behavior Change</option>
+                  
+                    <option data-filter="impact-trash-accumulation">Trash Accumulation</option>
+                  
+                    <option data-filter="impact-surveillance-and-data-sharing">Surveillance and Data Sharing</option>
+                  
+                    <option data-filter="impact-long-term-care">Long-term Care</option>
+                  
+                    <option data-filter="impact-predictive-analytics">Predictive Analytics</option>
+                  
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="large-2 columns small-10">
+          <div class="filter-ui-container">
+            <form class="form--negative" action="#">
+              <div class="select">
+                <select id="filter-resources" class="filter js-change">
+                  <option data-filter="*">Resources Required</option>
+                  
+                    <option data-filter="low-investment-10k-or-less">Low investment ($10k or less)</option>
+                  
+                    <option data-filter="some-investment-10k-100k">Some Investment ($10k-$100k)</option>
+                  
+                    <option data-filter="moderate-investment-100k-500k">Moderate Investment ($100k-$500k)</option>
+                  
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="large-1 column filter-ui-container clear-btn-lg">
+          <a class="button button--icon-only filter" data-filter="*" id="clear-filter-btn"><i class="material-icons">close</i></a>
+        </div>
+        <div class="small-12 column filter-ui-container clear-btn-sm">
+          <a class="button button--icon-only filter" data-filter="*" id="clear-filter-btn">Clear all</a>
+        </div>
+    </div>
+  </div>
+</section>
+<section class="page-section">
+  <div class="isotope">
+    <div class="card-container">
+      <div class="row expanded medium-collapse">
+
+        
+          <div class="recommendation-card result-item low-investment-10k-or-less assessing-understanding
+
+          
+            impact-behavior-change
+          
+            impact-surveillance-and-data-sharing
+          
+          ">
+            <header>
+              <h1>Assess communications platform penetration</h1>
+            </header>
+            <section>
+              <p>Conduct an assessment of social media penetration to understand who can be reached by digital listening activities and how</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="1" data-cons="2">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 1 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 2 months"></span>
+                
+
+                
+
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Low investment ($10k or less)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Low investment ($10k or less)</div> -->
+              <p><strong>Resource Offset: </strong>Already low to no cost. Can leverage existing research and expertise at universities, UN, World Bank, IDB, and other institutions</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Josh Tucker,</strong> New York University, <strong>Lee Rainie,</strong> Pew Research,
+<strong>We Are Social UK,</strong> We Are Social UK</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">ASSESSING UNDERSTANDING</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">BEHAVIOR CHANGE</span><br>
+                  
+                    <span class="recommendation-card__tag">SURVEILLANCE AND DATA SHARING</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item low-investment-10k-or-less assessing-understanding
+
+          
+            impact-surveillance-and-data-sharing
+          
+          ">
+            <header>
+              <h1>Establish committee for digital listening prioritization</h1>
+            </header>
+            <section>
+              <p>Convene an interagency committee to assess and prioritize demand for digital listening insights across government</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="2" data-cons="4">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 2 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 2 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 4 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 4 months"></span>
+                
+
+                
+
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Low investment ($10k or less)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Low investment ($10k or less)</div> -->
+              <p><strong>Resource Offset: </strong>Already low to no cost. Reduce time investment by getting expert advice ahead of time</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Beth Simone Noveck,</strong> GovLab</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">ASSESSING UNDERSTANDING</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">SURVEILLANCE AND DATA SHARING</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item moderate-investment-100k-500k assessing-understanding
+
+          
+            impact-surveillance-and-data-sharing
+          
+            impact-predictive-analytics
+          
+          ">
+            <header>
+              <h1>Hire chief analytics officer</h1>
+            </header>
+            <section>
+              <p>Appoint a Chief Analytics Officer to drive implementation of data-driven policies and projects such as digital listening and predictive analytics platforms</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="2" data-cons="4">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 2 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 2 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 4 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 4 months"></span>
+                
+
+                
+
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Moderate Investment ($100k-$500k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Moderate Investment ($100k-$500k)</div> -->
+              <p><strong>Resource Offset: </strong>The salary for this role could be offset by assigning her data-driven efficiency projects that save money</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Jeff Chen,</strong> <em>Chief Data Scientist,</em> Department of Commerce</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">ASSESSING UNDERSTANDING</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">SURVEILLANCE AND DATA SHARING</span><br>
+                  
+                    <span class="recommendation-card__tag">PREDICTIVE ANALYTICS</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item low-investment-10k-or-less assessing-understanding
+
+          
+            impact-behavior-change
+          
+            impact-surveillance-and-data-sharing
+          
+            impact-predictive-analytics
+          
+          ">
+            <header>
+              <h1>Forge digital listening partnerships</h1>
+            </header>
+            <section>
+              <p>Partner with research organizations, technology platform partners, and commercial analytics providers to develop the supply of desired digital listening insights</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="2" data-cons="5">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 2 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 2 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 5 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 5 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 5 months"></span>
+                
+
+                
+
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Low investment ($10k or less)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Low investment ($10k or less)</div> -->
+              <p><strong>Resource Offset: </strong>This can be low to no cost. Can save money by using existing research funds to support academics conducting digital listening</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Eugene Yi,</strong> MiT Media Lab, <strong>Molly Jackman,</strong> <em>Public Policy Research Manager,</em> Facebook, <strong>David Broniatowski,</strong> <em>Assistant Professor,</em> George Washington University</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">ASSESSING UNDERSTANDING</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">BEHAVIOR CHANGE</span><br>
+                  
+                    <span class="recommendation-card__tag">SURVEILLANCE AND DATA SHARING</span><br>
+                  
+                    <span class="recommendation-card__tag">PREDICTIVE ANALYTICS</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item moderate-investment-100k-500k behavior-change
+
+          
+            impact-trash-accumulation
+          
+            impact-predictive-analytics
+          
+          ">
+            <header>
+              <h1>Launch prize-backed challenges for community engagement</h1>
+            </header>
+            <section>
+              <p>Create prize-backed challenges to promote engagement and innovation in Zika control at both the community and individual levels</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="0" data-cons="10">
+
+                
+                
+
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 10 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 10 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 10 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 10 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 10 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 10 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 10 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 10 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 10 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 10 months"></span>
+                
+
+                
+
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Moderate Investment ($100k-$500k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Moderate Investment ($100k-$500k)</div> -->
+              <p><strong>Resource Offset: </strong>The cost of a prize varies. Save money by using micro-prizes such as donated mobile phone minutes</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Jaykumar Menon,</strong> McGill University, <strong>Patricio Fuentes</strong> and <strong>Reko Niimi,</strong> UNICEF Brazil Country Office</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">BEHAVIOR CHANGE</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">TRASH ACCUMULATION</span><br>
+                  
+                    <span class="recommendation-card__tag">PREDICTIVE ANALYTICS</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item moderate-investment-100k-500k behavior-change
+
+          
+          ">
+            <header>
+              <h1>Create research clearinghouse for behavior change</h1>
+            </header>
+            <section>
+              <p>Compile peer-reviewed best practices in Zika / MBD public communications and present them in a way that is accessible for policymakers seeking actionable ideas</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="2" data-cons="4">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 2 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 2 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 4 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 4 months"></span>
+                
+
+                
+
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Moderate Investment ($100k-$500k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Moderate Investment ($100k-$500k)</div> -->
+              <p><strong>Resource Offset: </strong>This can be low to not cost. Save money by convening a wide array of stakeholders in universities and other institutions to crowdsource this project</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Karen Lyons,</strong> Pew Trusts</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">BEHAVIOR CHANGE</span></p>
+              
+                <div class="" style="width: 100%;"></div>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item low-investment-10k-or-less behavior-change
+
+          
+            impact-assessing-understanding
+          
+            impact-trash-accumulation
+          
+            impact-surveillance-and-data-sharing
+          
+            impact-long-term-care
+          
+            impact-predictive-analytics
+          
+          ">
+            <header>
+              <h1>Design Serious Games</h1>
+            </header>
+            <section>
+              <p>Explore the use of “serious games” to raise awareness and change behavior by organizing hackathons and/or partnering with game designers to deploy effective platforms</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="4" data-cons="13">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+
+                
+
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Low investment ($10k or less)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Low investment ($10k or less)</div> -->
+              <p><strong>Resource Offset: </strong>Games can be expensive to design and build. The memo recommends strategies for adapting existing games and/or seeking philanthropic support for production</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Jude Ower,</strong> <em>CEO,</em> Playmob, <strong>Julián Ugarte, Luis E. Loria, Marina Spindler,</strong> and <strong>Matías Rojas,</strong> Socialab, <strong>Sarah Cornish</strong> and <strong>Emily Treat,</strong> Games for Change</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">BEHAVIOR CHANGE</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">ASSESSING UNDERSTANDING</span><br>
+                  
+                    <span class="recommendation-card__tag">TRASH ACCUMULATION</span><br>
+                  
+                    <span class="recommendation-card__tag">SURVEILLANCE AND DATA SHARING</span><br>
+                  
+                    <span class="recommendation-card__tag">LONG-TERM CARE</span><br>
+                  
+                    <span class="recommendation-card__tag">PREDICTIVE ANALYTICS</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item some-investment-10k-100k trash-accumulation
+
+          
+            impact-behavior-change
+          
+          ">
+            <header>
+              <h1>Crowdsource waste removal</h1>
+            </header>
+            <section>
+              <p>Involve communities in locating and removing litter</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="4" data-cons="13">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+
+                
+
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Some Investment ($10k-$100k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Some Investment ($10k-$100k)</div> -->
+              <p><strong>Resource Offset: </strong>This is low to no cost with only a small outlay for coordination and significant potential for savings in sanitation costs</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Jeff Kirschner,</strong> Litterati, <strong>Daniel Lombrana,</strong> Crowdcrafting</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">TRASH ACCUMULATION</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">BEHAVIOR CHANGE</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item some-investment-10k-100k trash-accumulation
+
+          
+          ">
+            <header>
+              <h1>Conduct drone-based garbage surveillance</h1>
+            </header>
+            <section>
+              <p>Use drones to identify and map areas with accumulated trash</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="4" data-cons="13">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+
+                
+
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Some Investment ($10k-$100k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Some Investment ($10k-$100k)</div> -->
+              <p><strong>Resource Offset: </strong>This requires an investment in hardware. But money can be saved by sharing the use of surveillance drones designed for other purposes</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Joe Eyerman,</strong> RTI international</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">TRASH ACCUMULATION</span></p>
+              
+                <div class="" style="width: 100%;"></div>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item some-investment-10k-100k trash-accumulation
+
+          
+            impact-behavior-change
+          
+          ">
+            <header>
+              <h1>Establish public-private partnerships with manufacturers</h1>
+            </header>
+            <section>
+              <p>Commit to private-public partnerships (PPP’s) with manufacturers to reduce trash accumulation</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="4" data-cons="13">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+
+                
+
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Some Investment ($10k-$100k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Some Investment ($10k-$100k)</div> -->
+              <p><strong>Resource Offset: </strong>The costs of container remediation are borne by the private sector</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Dr. Graham Alabaster,</strong> World Health Organization</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">TRASH ACCUMULATION</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">BEHAVIOR CHANGE</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item moderate-investment-100k-500k trash-accumulation
+
+          
+          ">
+            <header>
+              <h1>Adopt trash coll. adaptive vehicles</h1>
+            </header>
+            <section>
+              <p>Collect trash in hard-to-reach areas using adaptive vehicles</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="4" data-cons="13">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 4 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 13 months"></span>
+                
+
+                
+
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Moderate Investment ($100k-$500k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Moderate Investment ($100k-$500k)</div> -->
+              <p><strong>Resource Offset: </strong>Cost of removing trash using alternative vehicles could be offset through use of those tax revenues used to pay for trash collection; this collection could also be done by the communities themselves, with communities earning revenues by selling recyclables to recycling companies</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Dr. Graham Alabaster,</strong> World Health Organization</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">TRASH ACCUMULATION</span></p>
+              
+                <div class="" style="width: 100%;"></div>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item moderate-investment-100k-500k surveillance-and-data-sharing
+
+          
+            impact-assessing-understanding
+          
+            impact-long-term-care
+          
+          ">
+            <header>
+              <h1>Mobile tech–assisted surveillance</h1>
+            </header>
+            <section>
+              <p>Improve the speed and reliability of surveillance data by integrating flexible mobile technologies like SMS and smartphone app reporting into surveillance activities</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="3" data-cons="18">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 3 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 3 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 3 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+
+                
+
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Moderate Investment ($100k-$500k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Moderate Investment ($100k-$500k)</div> -->
+              <p><strong>Resource Offset: </strong>mHealth technologies, including participatory digital surveillance and mobile-assisted case reporting, have the potential to expand surveillance at low cost compared to traditional methods. Investments in mobile devices and human resources can be offset by broad integration with other government activities like disaster response</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Gordon Cressman,</strong> RTI International, <strong>John Brownstein,</strong> Healthmap, Harvard Medical School, <strong>Brian Lee,</strong> U.S. Centers for Disease Control Health Information Innovation Consortium</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">SURVEILLANCE AND DATA SHARING</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">ASSESSING UNDERSTANDING</span><br>
+                  
+                    <span class="recommendation-card__tag">LONG-TERM CARE</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item some-investment-10k-100k surveillance-and-data-sharing
+
+          
+            impact-assessing-understanding
+          
+            impact-predictive-analytics
+          
+          ">
+            <header>
+              <h1>Form disease surveillance data collaborative</h1>
+            </header>
+            <section>
+              <p>Collaborate with companies and universities to identify new sources of disease surveillance data</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="7" data-cons="18">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 7 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 7 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 7 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 7 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 7 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 7 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 7 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+
+                
+
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Some Investment ($10k-$100k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Some Investment ($10k-$100k)</div> -->
+              <p><strong>Resource Offset: </strong>Data collaboratives are, by definition, corporate data philanthropy</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Richard Benjamins,</strong> <em>Director of External Positioning &amp; Big Data for Social Good</em>, LUCA: Data-Driven Decisions (Telefonica), <strong>Stefaan Verhulst,</strong> GovLab</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">SURVEILLANCE AND DATA SHARING</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">ASSESSING UNDERSTANDING</span><br>
+                  
+                    <span class="recommendation-card__tag">PREDICTIVE ANALYTICS</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item moderate-investment-100k-500k surveillance-and-data-sharing
+
+          
+            impact-assessing-understanding
+          
+            impact-predictive-analytics
+          
+          ">
+            <header>
+              <h1>Develop data-sharing playbook</h1>
+            </header>
+            <section>
+              <p>Promote openness and participation in surveillance data collection, storage, sharing, and use by developing a data governance playbook for epidemic response and building broad commitment to use it</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="3" data-cons="12">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 3 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 3 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 3 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+
+                
+
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Moderate Investment ($100k-$500k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Moderate Investment ($100k-$500k)</div> -->
+              <p><strong>Resource Offset: </strong>More open and participatory surveillance data can generate cost savings through faster and more accurate epidemic detection and modeling. In addition, insights generated from data sharing can lead to more efficient use of public health resources</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Michael Johansson,</strong> U.S Centers for Disease Control</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">SURVEILLANCE AND DATA SHARING</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">ASSESSING UNDERSTANDING</span><br>
+                  
+                    <span class="recommendation-card__tag">PREDICTIVE ANALYTICS</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item moderate-investment-100k-500k long-term-care
+
+          
+            impact-assessing-understanding
+          
+            impact-surveillance-and-data-sharing
+          
+            impact-predictive-analytics
+          
+          ">
+            <header>
+              <h1>Establish online support communities</h1>
+            </header>
+            <section>
+              <p>Use online support communities akin to Patients Like Me to provide patient-to-patient support</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="2" data-cons="6">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 2 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 2 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 6 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 6 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 6 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 6 months"></span>
+                
+
+                
+
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Moderate Investment ($100k-$500k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Moderate Investment ($100k-$500k)</div> -->
+              <p><strong>Resource Offset: </strong>Research suggests that peer to peer support reduces hospitalizations and ER visits</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Anita McGahan,</strong> University of Toronto</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">LONG-TERM CARE</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">ASSESSING UNDERSTANDING</span><br>
+                  
+                    <span class="recommendation-card__tag">SURVEILLANCE AND DATA SHARING</span><br>
+                  
+                    <span class="recommendation-card__tag">PREDICTIVE ANALYTICS</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item moderate-investment-100k-500k long-term-care
+
+          
+            impact-assessing-understanding
+          
+            impact-behavior-change
+          
+            impact-surveillance-and-data-sharing
+          
+            impact-predictive-analytics
+          
+          ">
+            <header>
+              <h1>Use SMS-based long-term care</h1>
+            </header>
+            <section>
+              <p>Develop 2-way SMS-based support systems like Text4Baby to provide long-term medical care and support cost-effectively</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="6" data-cons="18">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+
+                
+
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Moderate Investment ($100k-$500k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Moderate Investment ($100k-$500k)</div> -->
+              <p><strong>Resource Offset: </strong>Text messages can be donated or purchased in bulk; open source platform like RapidPro can safe software costs; long term savings derive from reduced hospitalizations</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Alejandra Ruiz del Rio Prieto</strong> and <strong>Eduardo Clark,</strong> Prospera Digital (Presidencia de Mexico)</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">LONG-TERM CARE</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">ASSESSING UNDERSTANDING</span><br>
+                  
+                    <span class="recommendation-card__tag">BEHAVIOR CHANGE</span><br>
+                  
+                    <span class="recommendation-card__tag">SURVEILLANCE AND DATA SHARING</span><br>
+                  
+                    <span class="recommendation-card__tag">PREDICTIVE ANALYTICS</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item moderate-investment-100k-500k predictive-analytics
+
+          
+            impact-assessing-understanding
+          
+            impact-behavior-change
+          
+            impact-surveillance-and-data-sharing
+          
+          ">
+            <header>
+              <h1>Build predictive analytics data platform</h1>
+            </header>
+            <section>
+              <p>Improve Zika response by building a predictive analytics platform</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="6" data-cons="18">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+
+                
+
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Moderate Investment ($100k-$500k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Moderate Investment ($100k-$500k)</div> -->
+              <p><strong>Resource Offset: </strong>Analytics platforms are designed to reduce medium to long term costs, as the data they generate can help optimize resource deployment (e.g., preemptively sending health workers to where an outbreak is likely to occur can avoid the costs associated with an outbreak)</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Lakshminarayanan Subramanian,</strong> <em>Professor,</em> Courant Institute, NYU</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">PREDICTIVE ANALYTICS</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">ASSESSING UNDERSTANDING</span><br>
+                  
+                    <span class="recommendation-card__tag">BEHAVIOR CHANGE</span><br>
+                  
+                    <span class="recommendation-card__tag">SURVEILLANCE AND DATA SHARING</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item some-investment-10k-100k predictive-analytics
+
+          
+            impact-behavior-change
+          
+          ">
+            <header>
+              <h1>Launch prized-backed data science challenges</h1>
+            </header>
+            <section>
+              <p>Use prize-backed challenges to rapidly develop predictive models and leverage outside expertise</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="6" data-cons="12">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+
+                
+
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Some Investment ($10k-$100k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Some Investment ($10k-$100k)</div> -->
+              <p><strong>Resource Offset: </strong>Prizes can be donated, and the challenge should be formulated to produce results that decrease costs. Challenges can also work with small prizes (or no prizes), provided the work is compelling enough and there is sufficient non-financial recognition of participants’ contributions</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Michael Johansson,</strong> <em>Biologist,</em> CDC</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">PREDICTIVE ANALYTICS</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">BEHAVIOR CHANGE</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item moderate-investment-100k-500k predictive-analytics
+
+          
+            impact-assessing-understanding
+          
+            impact-behavior-change
+          
+            impact-surveillance-and-data-sharing
+          
+            impact-long-term-care
+          
+          ">
+            <header>
+              <h1>Train public health officials in data science</h1>
+            </header>
+            <section>
+              <p>Increase data analytics literacy among public health officials by training them in data science (through partnerships with research institutions, universities, and other training providers)</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="8" data-cons="18">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 8 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 8 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 8 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 8 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 8 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 8 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 8 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 8 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 18 months"></span>
+                
+
+                
+
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Moderate Investment ($100k-$500k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Moderate Investment ($100k-$500k)</div> -->
+              <p><strong>Resource Offset: </strong>More data science training can enable these officials to analyze their own agencies’ work and identify cost savings</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Jesse Bell,</strong> North Carolina Institute for Climate Studies, <strong>Gianluca Fontana,</strong> Centre for Health Policy, Institute of Global Health Innovation, Imperial College, <strong>Daniel Ray,</strong> <em>Chief Data Scientist,</em> UK National Health Service, <strong>Michael Johansson,</strong> <em>Biologist,</em> CDC</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">PREDICTIVE ANALYTICS</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">ASSESSING UNDERSTANDING</span><br>
+                  
+                    <span class="recommendation-card__tag">BEHAVIOR CHANGE</span><br>
+                  
+                    <span class="recommendation-card__tag">SURVEILLANCE AND DATA SHARING</span><br>
+                  
+                    <span class="recommendation-card__tag">LONG-TERM CARE</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+          <div class="recommendation-card result-item some-investment-10k-100k predictive-analytics
+
+          
+            impact-assessing-understanding
+          
+            impact-surveillance-and-data-sharing
+          
+          ">
+            <header>
+              <h1>Launch regional open data portal</h1>
+            </header>
+            <section>
+              <p>Collaborate on creation of a Zika-related data portal that compiles national and other open datasets</p>
+            </section>
+            <section class="recommendation-card__timeline">
+              <h5>Timeframe</h5>
+              <div class="timeline" data-aggr="6" data-cons="12">
+
+                
+                
+
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+                  <span class="timeline__item timeline--aggr timeline--cons" title="Aggressive Timeframe: 6 month"></span>
+                
+
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+                  <span class="timeline__item timeline--cons" title="Conservative Timeframe: 12 months"></span>
+                
+
+                
+
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+                  <span class="timeline__item"></span>
+                
+              </div>
+            </section>
+            <section class="recommendation-card__resources">
+              
+              <h5>Resources: <span>Some Investment ($10k-$100k)</span>
+
+              
+                <div class="resources" title="Low Investment (e.g., $10k or less, uses existing employees)">
+                  <i class="material-icons">monetization_on</i>
+                  <i class="material-icons">monetization_on</i>
+                </div>
+              
+              </h5>
+
+              <!-- <p><strong>Resource Requirements:</strong></p>
+              <div>Some Investment ($10k-$100k)</div> -->
+              <p><strong>Resource Offset: </strong>Money can be saved by using existing open source platforms and prioritizing datasets designed to generate insights that reduce costs</p>
+            </section>
+
+            <section class="recommendation-card__contacts">
+              <h5>Contacts</h5>
+              <!-- Ideally we would have a <BR> after each name. -->
+              <p><p><strong>Anita McGahan,</strong> University of Toronto</p>
+</p>
+              <!-- It would be awesome to have a dedicated page for each of these contacts, so we could have links here. -->
+            </section>
+            <footer class="recommendation-card__tags">
+              <p><strong>Focus Area</strong>
+              <span class="recommendation-card__tag recommendation-card__tag-focus">PREDICTIVE ANALYTICS</span></p>
+              
+                <p><strong>Impacted Areas</strong>
+                  
+                    <span class="recommendation-card__tag">ASSESSING UNDERSTANDING</span><br>
+                  
+                    <span class="recommendation-card__tag">SURVEILLANCE AND DATA SHARING</span><br>
+                  
+                  </p>
+              
+            </footer>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+      <div id="overlay" class="js-overlay"></div>
+      <footer class='footer-alt'>
+            <div class="row align-center">
+                <div class="medium-6 medium-centered columns">
+                    <!-- <h4>In collaboration with</h4> -->
+                    <h4>EN COLABORACIÓN CON</h4>
+                </div>
+
+            </div>
+            <div class="row align-center">
+                <div class="medium-6 column">
+                    <div class="footer-partner">
+                        <a class="footer__partner-logo" href="http://www.iadb.org/" target="_blank"><img src="http://zika.smartercrowdsourcing.org/images/partners/idb-white.gif" alt="Inter-American Development Bank"></a>
+                    </div>
+                </div>
+                <div class="medium-6 column ">
+                    <div class="footer-partner">
+                        <a class="footer__partner-logo" href="http://www.thegovlab.org" target="_blank"><img src="http://zika.smartercrowdsourcing.org/images/govlab-logo-white.png" alt="The GovLab"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <div class="row">
+                <div class="large-10 large-centered columns">
+                    <!-- <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="copyright__cc-badge" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+                    This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. -->
+                    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="copyright__cc-badge" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+                    Este trabajo está autorizado por la <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Internacional Creative Commons Attribution-ShareAlike 4.0</a>.
+                </div>
+            </div>
+        </div>
+        <div id="overlay" class="js-overlay"></div>
+
+      <script src="http://zika.smartercrowdsourcing.org/vendor/slick.min.js"></script>
+<script src="http://zika.smartercrowdsourcing.org/js/scripts.js"></script>
+<script src="http://zika.smartercrowdsourcing.org/js/form-validation.js"></script>
+<script src="http://zika.smartercrowdsourcing.org/js/fadein.js"></script>
+
+  <script src="/js/recommendations.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40012093-9', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    </body>
+</html>
