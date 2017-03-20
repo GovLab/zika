@@ -109,6 +109,7 @@ $(function() {
 
     // filter on value f, or on * if no arguments are provided
     var filter = function(f = '*', grid = $grid) {
+
         // everything is nothing
         if (f === '') {
             f = '*';
@@ -123,13 +124,13 @@ $(function() {
         }
 
         grid.isotope({
-            filter: f
+            filter: f,
+            layoutMode: 'masonry',
+            itemSelector : '.recommendation-card',
+            masonry: {
+                columnWidth: '.recommendation-card',
+            }
         });
-
-        // $('.card-container').masonry({
-        //   itemSelector: '.recommendation-card',
-        //   columnWidth: '.recommendation-card'
-        // });
     };
 
     // update filter from UI state
@@ -380,25 +381,10 @@ $(function() {
     urlFilter();
     preFilter();
 
-    $('.card-container').masonry({
+    $('.isotope').masonry({
       itemSelector: '.recommendation-card',
       columnWidth: '.recommendation-card',
-      // gutter: 20
     });
-
-    // var masonry = function() {
-    //   $('.card-container').isotope({
-    //     itemSelector: '.recommendation-card',
-    //     percentPosition: true,
-    //     masonry: {
-    //       // use outer width of grid-sizer for columnWidth
-    //       columnWidth: '.recommendation-card'
-    //       // gutter:
-    //     }
-    //   })
-    // }
-    //
-    // masonry();
 
 });
 
@@ -414,17 +400,7 @@ $('#clear-filter-btn').click(function() {
   $("#filter-impacted-area option[data-filter='*']").prop('selected', true);
   $("#filter-resources option[data-filter='*']").prop('selected', true);
 
-  // $('.card-container').isotope({
-  //   itemSelector: '.card-container',
-  //   percentPosition: true,
-  //   masonry: {
-  //     // use outer width of grid-sizer for columnWidth
-  //     columnWidth: '.recommendation-card'
-  //     // gutter:
-  //   }
-  // })
-
-  // $('.card-container').masonry({
+  // $('.isotope').masonry({
   //   itemSelector: '.recommendation-card',
   //   columnWidth: '.recommendation-card'
   // });
@@ -434,11 +410,9 @@ $('#clear-filter-btn').click(function() {
 $(window).resize(function() {
   $('.isotope').isotope({
     itemSelector: '.recommendation-card',
-    percentPosition: true,
+    // percentPosition: true,
     masonry: {
-      // use outer width of grid-sizer for columnWidth
       columnWidth: '.recommendation-card'
-      // gutter:
     }
   })
 })
