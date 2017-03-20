@@ -1,8 +1,10 @@
 global:
+  title: "Smarter Crowdsourcing: Zika"
   home: Home 
   about: About
   team: Team 
   topics: Topics 
+  recommendations: Recommendations
   map: Explore the Map
   blog: Blog
   more_information: More Information

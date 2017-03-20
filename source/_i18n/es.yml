@@ -1,8 +1,10 @@
 global:
+  title: "Crowdsourcing Inteligente: zika"
   home: Inicio
   about: Acerca de
   team: Equipo 
-  topics: Temas 
+  topics: Temas
+  recommendations: Recomendaciones 
   map: Explora el Mapa
   blog: Blog
   more_information: Mas Información

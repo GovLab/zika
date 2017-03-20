@@ -1,8 +1,10 @@
 global:
+  title:
   home: 
   about: 
   team: 
-  topics: 
+  topics:
+  recommendations: 
   map: 
   blog: 
   more_information: 
