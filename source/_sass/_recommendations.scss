@@ -1,0 +1,152 @@
+.recommendation-filters {
+  background-color: rgba(black, .8);
+}
+
+.isotope {}
+
+.recommendation-card {
+  width: calc(33.3% - 30px);
+  // min-height: 920px;
+  background-color: rgba(black, .05);
+  display: inline-block;
+  margin: 0 12px 24px;
+  vertical-align: top;
+  
+  @include breakpoint($medium-only) {
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
+
+  @include breakpoint($small-only) {
+    width: calc(100% - 20px);
+    margin: 10px;
+    height: auto;
+  }
+
+  header,
+  section,
+  footer {
+    padding: 15px 30px;
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $theme-color;
+    }
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-size: 1.4rem;
+    margin: 0;
+    color: $main-color;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  header {
+    background-color: $theme-color;
+
+    h1 {
+      color: white;
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 5px;
+    }
+  }
+
+  footer {
+    background-color: rgba(black, .1);
+  }
+
+  &__resources {
+    h5 > span { 
+      font-weight: 400;
+      text-transform: none;
+      opacity: .5;
+    }
+  }
+
+  &__timeline {
+    background-color: rgba(black, .05);
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+
+    h5 { margin: 0; }
+
+  }
+
+  &__contacts {
+    background-color: rgba(black, .05);
+
+    p {
+      line-height: 1.4;
+      margin: 0;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    p { margin: 0 10px 0 0;}
+  }
+
+  &__tag {
+    font-size: .8rem;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 3px 6px;
+    margin: 1px;
+    color: white;
+    background-color: $theme-color;
+  }
+
+  &__tag-focus {
+    background-color: $main-color;
+  }
+}
+
+.resources {
+  display: inline-block;
+  color: $accent-color;
+  float: right;
+
+  > i {
+    font-size: 1.2rem;
+    transform: scale(1.6);
+    margin: 0 2px;
+  }
+}
+
+.timeline {
+  margin-left: 20px;
+
+  &__item {
+    height: 16px;
+    width: 16px;
+    background-color: rgba(black, .1);
+    display: inline-block;
+    margin: 0 1px;
+  }
+
+  &--cons { background-color: $theme-color; }
+  &--aggr { background-color: $main-color; }
+}
+
+#clear-filter-btn {
+  color: white;
+  background-color: rgba(255,255,255,0.1);
+  margin-top: 10px;
+  padding: 9px 10px;
+  &:hover {
+    background-color: rgba(0,0,0,0.2);
+  }
+}

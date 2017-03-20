@@ -1,0 +1,63 @@
+.u-disabled {
+  opacity: .3;
+  pointer-events: none;   
+}
+
+.disabled { @extend .u-disabled; }
+
+.u-material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.u-button {
+    padding: 15px 20px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    color: rgba(white, .8);
+    transition: all 0.3s ease;
+
+    &:hover { 
+        color: white;
+        transition: all 0.3s ease;
+    }
+}
+
+.u-circle {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.u-transition {
+  transition: all .4s ease;
+}
+
+@mixin transition {
+  transition: all .4s ease;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-moz-placeholder { @content }
+  &:-ms-input-placeholder { @content }
+}
