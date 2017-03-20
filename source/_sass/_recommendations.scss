@@ -11,7 +11,7 @@
   display: inline-block;
   margin: 0 12px 24px;
   vertical-align: top;
-  
+
   @include breakpoint($medium-only) {
     width: calc(50% - 20px);
     margin: 10px;
@@ -68,7 +68,7 @@
   }
 
   &__resources {
-    h5 > span { 
+    h5 > span {
       font-weight: 400;
       text-transform: none;
       opacity: .5;
@@ -148,5 +148,21 @@
   padding: 9px 10px;
   &:hover {
     background-color: rgba(0,0,0,0.2);
+  }
+}
+
+.clear-btn-lg {
+  @include breakpoint($small-only) {
+    display: none;
+  }
+  @include breakpoint($medium-only) {
+    display: none;
+  }
+}
+
+.clear-btn-sm {
+  text-align: center;
+  @include breakpoint($large) {
+    display: none;
   }
 }
