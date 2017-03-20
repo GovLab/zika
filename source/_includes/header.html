@@ -26,15 +26,12 @@
 
 
   <div class='lang-select'>
-      {% capture en_link %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
-      {% capture es_link %}{{ site.baseurl_root }}/es{{ page.url }}{% endcapture %}
-      {% capture pt_link %}{{ site.baseurl_root }}/pt{{ page.url }}{% endcapture %}
-      {% if site.lang == "en" %}
-          <a class="lang_select-active"  href="{{ en_link }}" >EN</a> | <a href="{{ es_link }}">ES</a> | <a href="{{ pt_link }}" >PT</a>
-      {% elsif site.lang == "es"%}
-          <a href="{{ en_link }}" >EN</a> | <a class="lang_select-active" href="{{ es_link }}">ES</a> | <a href="{{ pt_link }}" >PT</a>
-      {% elsif site.lang == "pt"%}
-          <a href="{{ en_link }}" >EN</a> | <a href="{{ es_link }}">ES</a> | <a class="lang_select-active"  href="{{ pt_link }}" >PT</a>
+      {% capture es_link %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
+      {% capture en_link %}{{ site.baseurl_root }}/en{{ page.url }}{% endcapture %}
+      {% if site.lang == "es" %}
+          <a class="lang_select-active" href="{{ es_link }}">ES</a>  | <a href="{{ en_link }}" >EN</a> 
+      {% elsif site.lang == "en"%}
+          <a href="{{ es_link }}">ES</a>  | <a class="lang_select-active" href="{{ en_link }}" >EN</a> 
       {% endif %}
   </div>
 

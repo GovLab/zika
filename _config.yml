@@ -28,7 +28,7 @@ gems:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
 
-languages: ["en", "es", "pt"]
+languages: ["es", "en"]
 
 exclude:
   - Gemfile
