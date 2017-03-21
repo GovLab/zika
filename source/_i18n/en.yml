@@ -41,6 +41,19 @@ about:
     <p>The goal? Bring the best thinking to bear and translate good ideas into actionable proposals backed by evidence.</p>
   contact: If you have any questions, please email
   button: Download a brief description of the project
+map:
+  regions:
+    africa: Africa
+    na: North America
+    sa: Latin America and the Caribbean
+    europe: Europe
+    oceania: Oceania
+    asia: Asia
+  columns:
+    name: Name
+    sector: Sector
+    topic: Topic
+    organization: Organization
 footer:
   text: In collaboration with
   copyright: 

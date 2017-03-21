@@ -41,6 +41,19 @@ about:
     <p>¿El objetivo? aportar las mejores ideas y convertir ideas buenas en propuestas aplicables, respaldadas por pruebas.</p>
   contact: Si tiene alguna pregunta, sírvase enviar un correo electrónico a
   button: Descarga una descripción breve del proyecto
+map:
+  regions:
+    africa: Africa
+    na: North America
+    sa: Latin America and the Caribbean
+    europe: Europe
+    oceania: Oceania
+    asia: Asia
+  columns:
+    name: Name
+    affiliation: Affiliation
+    topic: Topic
+    organization: Organization
 footer:
   text: EN COLABORACIÓN CON
   copyright: 
