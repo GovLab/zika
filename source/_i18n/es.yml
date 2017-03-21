@@ -32,6 +32,17 @@ index:
   view_the_playbook_text: >
     Para obtener más información de fondo sobre el <strong>Crowdsourcing Inteligente: zika<strong>, lea nuestro manual, una guía detallada para el desarrollo del proyecto. Aporta respuestas a las preguntas formuladas con frecuencia sobre la participación en esta iniciativa.
   video_caption: Presentación del proyecto en Conferencia CityLab, Octubre 2016
-
-
-
+about:
+  h1: Acerca de
+  content: >
+    <p>Las emergencias complejas y mundiales de salud pública, tales como el zika, el dengue y el chikungunya, presentan una amenaza a la salud y bienestar públicos, pueden desestabilizar el comercio regional y la economía mundial y causar incertidumbre y preocupación general.</p>
+    <p>En respuesta, el Governance Lab y el Banco Interamericano de Desarrollo, en colaboración con los gobiernos de la <strong>Ciudad de Río de Janeiro</strong>, <strong>Argentina</strong>, <strong>Colombia</strong> y <strong>Panamá</strong>, están patrocinando una serie de conferencias en línea que se celebran de agosto a octubre de 2016.</p>
+    <p>En lugar de que un grupo de personas se reúnan una vez, a un elevado costo, en un salón de conferencias, usaremos el Internet para movilizar y depurar conocimientos especializados diversos y distribuidos – tanto competencia técnica acreditada como sabiduría experiencial – para identificar, diseñar y repetir ideas aplicables que los gobiernos puedan usar.<p>
+    <p>¿El objetivo? aportar las mejores ideas y convertir ideas buenas en propuestas aplicables, respaldadas por pruebas.</p>
+  contact: Si tiene alguna pregunta, sírvase enviar un correo electrónico a
+  button: Descarga una descripción breve del proyecto
+footer:
+  text: EN COLABORACIÓN CON
+  copyright: 
+    pre-link: Este trabajo está autorizado por la
+    post-link: Licencia Internacional Creative Commons Attribution-ShareAlike 4.0
