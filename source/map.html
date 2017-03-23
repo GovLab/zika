@@ -1,20 +1,19 @@
 ---
 layout: default
-
 ---
   <section class="top-section top-section--main-color">
     <div class="row">
       <div class="large-12 column">
         <div id="map-wrapper">
           <div class="dashboard dashboard--left">
-            <div class="dashboard__item northern-america"><span></span>Norteamérica</div>
-            <div class="dashboard__item latin-america-and-the-caribbean"><span></span>Latinoamérica y el Caribe</div>
-            <div class="dashboard__item africa"><span></span>Africa</div>
+            <div class="dashboard__item northern-america"><span></span>{% t map.regions.na %}</div>
+            <div class="dashboard__item latin-america-and-the-caribbean"><span></span>{% t map.regions.sa %}</div>
+            <div class="dashboard__item africa"><span></span>{% t map.regions.africa %}</div>
           </div>
           <div class="dashboard dashboard--right">
-            <div class="dashboard__item europe"><span></span>Europa</div>
-            <div class="dashboard__item asia"><span></span>Asia</div>
-            <div class="dashboard__item oceania"><span></span>Oceanía</div>
+            <div class="dashboard__item europe"><span></span>{% t map.regions.europe %}</div>
+            <div class="dashboard__item asia"><span></span>{% t map.regions.asia %}</div>
+            <div class="dashboard__item oceania"><span></span>{% t map.regions.oceania %}</div>
           </div>
           <div id="map"></div>
         </div>
@@ -22,6 +21,8 @@ layout: default
     </div>
     <div class="row form filters-wrapper">
       <div class="large-6 column">
+        {% case site.lang %}
+        {% when "es" %}
         <h5>Expertos por Sector <span class="reset-filters1">Restablecer filtros</span></h5>
         <div class="filters1">
           <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Academia">Academia</label>
@@ -30,8 +31,20 @@ layout: default
           <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Business">Sector Privado</label>
           <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="International Organization">Organización Internacional</label>
         </div>
+        {% when "en" %}
+        <h5>Experts by Affiliation <span class="reset-filters1">Clear filters</span></h5>
+        <div class="filters1">
+          <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Academia">Academia</label>
+          <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Nonprofit">Nonprofit</label>
+          <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Government">Government</label>
+          <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="Business">Business</label>
+          <label class="button button--small button--active"><input class="checkbox" type="checkbox" checked value="International Organization">International Organization</label>
+        </div>
+        {% endcase %}
       </div>
       <div class="large-6 column">
+        {% case site.lang %}
+        {% when "es" %}
         <h5>Expertos por Tema <span class="reset-filters2">Restablecer filtros</span></h5>
         <div class="filters2">
           <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Trash and Standing Water"> La Basura y el Agua Estancada</label>
@@ -42,6 +55,18 @@ layout: default
           <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Communication and Behavior Change"> Comunicación y Cambio de Conductas</label>
           <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Digital Listening"> Escucha digital</label>
         </div>
+        {% when "en" %}
+        <h5>Experts by Topic <span class="reset-filters2">Clear filters</span></h5>
+        <div class="filters2">
+          <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Trash and Standing Water"> Trash and Standing Water</label>
+          <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Assesing Public Awareness"> Assesing Public Awareness</label>
+          <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Information Collection/Data Governance"> Information Collection/Data Governance</label>
+          <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Long Term Care"> Long Term Care</label>
+          <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Predictive Analytics"> Predictive Analytics</label>
+          <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Communication and Behavior Change"> Communication and Behavior Change</label>
+          <label class="button button--small button--active"><input type="checkbox" class="checkbox" checked value="Digital Listening"> Digital Listening</label>
+        </div>
+        {% endcase %}
       </div>
     </div>
   </section>
@@ -51,7 +76,7 @@ layout: default
       <thead>
         <th width="50px" class="table-sortable__head-cell">&nbsp;</th>
         <th class="table-sortable__head-cell name-column">
-          <span>Nombre</span>
+          <span>{% t map.columns.name %}</span>
           <div class="table-sortable__control-group">
             <span class="table-sortable__control table-sortable__control--simple js-open-table-search"><i class="material-icons">search</i></span>
             <span class="table-sortable__control table-sortable__control--simple sort"><i class="material-icons">keyboard_arrow_down</i></span>
@@ -62,19 +87,19 @@ layout: default
           </form>
         </th>
         <th class="table-sortable__head-cell sector sector-column">
-          <span>Sector</span>
+          <span>{% t map.columns.affiliation %}</span>
           <div class="table-sortable__control-group">
             <span class="table-sortable__control table-sortable__control--simple sort"><i class="material-icons">keyboard_arrow_down</i></span>
           </div>
         </th>
         <th class="table-sortable__head-cell sector topic-column">
-          <span>Tema</span>
+          <span>{% t map.columns.topic %}</span>
           <div class="table-sortable__control-group">
             <span class="table-sortable__control table-sortable__control--simple sort"><i class="material-icons">keyboard_arrow_down</i></span>
           </div>
         </th>
         <th class="table-sortable__head-cell sector organization-column">
-          <span>Organización</span>
+          <span>{% t map.columns.organization %}</span>
           <div class="table-sortable__control-group">
             <span class="table-sortable__control table-sortable__control--simple sort"><i class="material-icons">keyboard_arrow_down</i></span>
           </div>

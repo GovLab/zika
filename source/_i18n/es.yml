@@ -44,16 +44,16 @@ about:
 map:
   regions:
     africa: Africa
-    na: North America
-    sa: Latin America and the Caribbean
-    europe: Europe
-    oceania: Oceania
+    na: Norteamérica
+    sa: Latinoamérica y el Caribe
+    europe: Europa
+    oceania: Oceanía
     asia: Asia
   columns:
-    name: Name
-    affiliation: Affiliation
-    topic: Topic
-    organization: Organization
+    name: NOMBRE
+    affiliation: SECTOR
+    topic: TEMA
+    organization: ORGANIZACIÓN
 footer:
   text: EN COLABORACIÓN CON
   copyright: 
