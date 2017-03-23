@@ -2,7 +2,11 @@
   background-color: rgba(black, .8);
 }
 
-.isotope {}
+.isotope {
+  @include breakpoint($large) {
+    margin-left: 15px;
+  }
+}
 
 .recommendation-card {
   width: calc(33.3% - 30px);
@@ -26,7 +30,7 @@
   header,
   section,
   footer {
-    padding: 15px 30px;
+    padding: 10px 25px;
     width: 100%;
   }
 
@@ -44,12 +48,13 @@
   }
 
   h5 {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    // margin-bottom: 10px;
   }
 
   p {
-    font-size: 1.2rem;
+    // font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   header {
