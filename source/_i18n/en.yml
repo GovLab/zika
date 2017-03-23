@@ -51,7 +51,7 @@ map:
     asia: Asia
   columns:
     name: Name
-    sector: Sector
+    affiliation: Affiliation
     topic: Topic
     organization: Organization
 footer:
