@@ -84,8 +84,14 @@ layout: default
     {% if topic.is_active == false %} <!-- not -->
         <div class="row expanded align-center topic topic--inactive">
           <div class="large-9 medium-10 column">
+          {% case site.lang %}
+          {% when "es" %}
           <h1>{{topic.title}}</h1>
           <p>{{topic.short_description}}</p>
+          {% when "en" %}
+          <h1>{{topic.en.title}}</h1>
+          <p>{{topic.en.short_description}}</p>
+          {% endcase %}
         </div>
       </div>
     {% endif %}
