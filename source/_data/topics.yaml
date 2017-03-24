@@ -615,9 +615,9 @@
   en:
     title: Predictive Analytics
     short_description: What innovative approaches are available for using data to predict factors influencing outbreaks, such as mosquito infestations, patterns of human habitation and movement, climate & environmental factors, and rates and other forms of transmission?
-    focus: 
-    topic_description_summary: 
-    problem_description_summary: 
+    focus: Outbreaks are mostly unpredictable and therefore harder to prevent.
+    topic_description_summary: The problems have been fleshed out into a briefing designed to describe the root causes of the problem, current approaches in different countries, and lessons learned from other domains.
+    problem_description_summary: Each online session is focused on a specific problem, that has been fleshed out into a briefing to describe the root causes of the problem, current approaches in different countries, and lessons learned from other domains.
   conference:
     is_active: false
     is_active_info: true
