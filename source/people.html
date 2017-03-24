@@ -34,7 +34,11 @@ layout: default
       </ul>
       {% when "en" %}
       <ul class="partner">
+        {% if person.en.name %}
+        <li class="partner-name">{{ person.en.name }}</li>
+        {% else %}
         <li class="partner-name">{{ person.name }}</li>
+        {% endif %}
         <li class="partner-title">{{ person.en.title }}</li>
         <li class="partner-affiliation">{{ person.en.affiliation }}</li>
       </ul>
