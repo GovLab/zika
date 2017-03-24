@@ -11,12 +11,11 @@ layout: default
 </section>
 
 <div class="page-section">
-{% for language in site.data.partners %}
+{% for partners in site.data.partners %}
   {%case site.lang %}
   {% when "es" %}
-  {% if language == 'Spanish' %}
   <div class="row partner-container">
-    {% for partner in language.partners %}
+    {% for partner in en.partners %}
     <div class="columns large-3 small-12 partner-country">
       <h3>{{ partner.partner_name }}</h3>
     </div>
@@ -31,27 +30,7 @@ layout: default
     </div>
     {% endfor %}
   </div>
-  {% endif %}
-  {% when "en" %}
-  {% if language == 'English' %}
-  <div class="row partner-container">
-    {% for partner in language.partners %}
-    <div class="columns large-3 small-12 partner-country">
-      <h3>{{ partner.partner_name }}</h3>
-    </div>
-    <div class="columns large-9 small-12">
-      {% for person in partner.people %}
-      <ul class="partner">
-        <li class="partner-name">{{ person.name }}</li>
-        <li class="partner-title">{{ person.title }}</li>
-        <li class="partner-affiliation">{{ person.affiliation }}</li>
-      </ul>
-      {% endfor %}
-    </div>
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endcase %}
+  {% endcase %}
 {% endfor %}
 </div>
 
