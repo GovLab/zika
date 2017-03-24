@@ -6,14 +6,17 @@ layout: default
 <section class="top-section top-section--main-color">
   <div class="row expanded align-center">
     <div class="medium-10 large-8 column top-section__content">
-      <!-- <h1>Topics</h1>
-      <h3>We have divided a major public health issue into several smaller problems that are the greatest priority of governments and are amenable to innovative and actionable solutions.</h3>  -->
+      {% case site.lang %}
+      {% when "en" %}
+      <h1>Topics</h1>
+      <h3>We have divided a major public health issue into several smaller problems that are the greatest priority of governments and are amenable to innovative and actionable solutions.</h3> 
+      {% when "es" %}
       <h1>Temas</h1>
       <h3>HEMOS DIVIDIDO UN TEMA IMPORTANTE DE SALUD EN VARIOS PROBLEMAS MENORES QUE CONSTITUYEN LA MÁXIMA PRIORIDAD DE LOS GOBIERNOS Y SE PRESTAN A SOLUCIONES INNOVADORAS Y REALIZABLES.</h3>
-      <div class="main-buttons">
+      {% endcase %}
+      <!-- <div class="main-buttons">
         <a href="https://docs.google.com/document/d/1NGAW0dL8EGO0iTyyKwyOEt2HzOVk-FrAQYHT8d0kjQ0/edit" class="button button--accent-color">Read this page IN ENGLISH</a>
-      </div>
-  </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -41,6 +44,8 @@ layout: default
     {% for topic in site.data.topics %}
     {% if topic.is_active and topic.conference.is_active == false %}
       <div class="large-6 small-12 column topic" style="background-image: url({{site.url}}{{site.baseurl}}/images/topics/resized/{{topic.image}})">
+        {% case site.lang %}
+        {% when "es" %}
         <h1>{{topic.title}}</h1>
         <p>{{topic.short_description}}</p>
        <!--  <p><a href="{{topic.title | slug }}.html" class="button button--theme-color">More Information</a></p> -->
@@ -51,18 +56,32 @@ layout: default
           <span class="topic__month">{{ topic.conference.date | date: "%b"}}</span>
           <em class="topic__day">{{ topic.conference.date | date: "%d" }}</em>
         </div>
+        {% when "en" %}
+        <h1>{{topic.en.title}}</h1>
+        <p>{{topic.en.short_description}}</p>
+        <p><a href="{{topic.title | slug }}.html" class="button button--theme-color">More Information</a></p>
+        <div class="topic__date topic__date-past">
+          <h6>This conference took place on</h6>
+          <span class="topic__month">{{ topic.conference.date | date: "%b"}}</span>
+          <em class="topic__day">{{ topic.conference.date | date: "%d" }}</em>
+        </div>
+        {% endcase %}
       </div>
     {% endif %}
     {% endfor %}
   </div>
 </section>
 <div class="divider divider--main-color">
-    <!-- <h1>Topics under Consideration</h1> -->
-    <h1>TEMAS BAJO CONSIDERACIÓN</h1>
+  {% case site.lang %}
+  {% when "es" %}
+  <h1>TEMAS BAJO CONSIDERACIÓN</h1>
+  {% when "en" %}
+  <h1>Topics under Consideration</h1>
+  {% endcase %}
 </div>
 <section>
   {% for topic in site.data.topics %}
-    {% if topic.is_active %} <!-- not -->
+    {% if topic.is_active == false %} <!-- not -->
         <div class="row expanded align-center topic topic--inactive">
           <div class="large-9 medium-10 column">
           <h1>{{topic.title}}</h1>
