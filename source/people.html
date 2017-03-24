@@ -11,9 +11,9 @@ layout: default
 </section>
 
 <div class="page-section">
+{%case site.lang %}
 {% for language in site.data.partners %}
   <div class="row partner-container">
-    {%case site.lang %}
     {% when "es" %}
     {% for partner in language.partners %}
     <div class="columns large-3 small-12 partner-country">
@@ -44,9 +44,9 @@ layout: default
       {% endfor %}
     </div>
     {% endfor %}
-    {% endcase %}
   </div>
 {% endfor %}
+{% endcase %}
 </div>
 
 
