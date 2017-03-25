@@ -51,46 +51,68 @@ layout: default
 {% if page.problem_description_summary %}
   <div class="row align-center">
     <div class="column large-9 medium-10">
-      <!-- <h5>Problem Description</h5> -->
+      {% case site.lang %}
+      {% when "es" %}
       <h5>DESCRIPCIÓN DEL PROBLEMA</h5>
       <p>{{page.problem_description_summary}}</p>
-      <!-- <a href="{{ page.problem_description_link }}" target="_blank" class="button button--accent-color">Read the Problem Description</a> -->
       <a href="{{ page.problem_description_link_spanish }}" target="_blank" class="button button--accent-color">LEER LA DESCRIPCIÓN DEL PROBLEMA</a>
-      <a href="{{ page.problem_description_link }}" target="_blank" class="button button--accent-color">IN ENGLISH</a>
+      {% when "en" %}
+      <h5>Problem Description</h5>
+      <p>{{page.en.problem_description_summary}}</p>
+      <a href="{{ page.problem_description_link }}" target="_blank" class="button button--accent-color">Read the Problem Description</a>
+      {% endcase %}
     </div>
   </div>
 {% endif %}
   <div class="row align-center">
     <div class="column large-9 medium-10">
-      <!-- <h5>Request an Invitation</h5> -->
+      {% case site.lang %}
+      {% when "es" %}
       <h5>SOLICITA UNA INVITACIÓN</h5>
-        <!-- <p>Would you like to lend your skills to tackle a public health emergency? Deliberate with diverse innovators and professionals to refine good ideas into actionable projects? Join a conversation with government partners interested in implementing new approaches to combatting Zika and other mosquito-borne diseases.</p> -->
-        <p>¿Te gustaría compartir tus habilidades para afrontar emergencias de salud pública? ¿Tratar temas con distintos innovadores y profesionales para perfeccionar ideas buenas y convertirlas en proyectos aplicables? Participa en una conversación con socios gubernamentales interesados en poner en práctica nuevos enfoques para combatir el zika y otras enfermedades trasmitidas por mosquitos.</p>
-        <!-- <a href="./call-for-participants.html" class="button button--accent-color">Request an Invitation</a> -->
-        <a href="{{site.url}}{{site.baseurl}}/call-for-participants.html" target="_blank" class="button button--accent-color">SOLICITA UNA INVITACIÓN</a>
+      <p>¿Te gustaría compartir tus habilidades para afrontar emergencias de salud pública? ¿Tratar temas con distintos innovadores y profesionales para perfeccionar ideas buenas y convertirlas en proyectos aplicables? Participa en una conversación con socios gubernamentales interesados en poner en práctica nuevos enfoques para combatir el zika y otras enfermedades trasmitidas por mosquitos.</p>
+      <a href="{{site.url}}{{site.baseurl}}/call-for-participants.html" target="_blank" class="button button--accent-color">SOLICITA UNA INVITACIÓN</a>
+      {% when "en" %}
+      <h5>Request an Invitation</h5>
+      <p>Would you like to lend your skills to tackle a public health emergency? Deliberate with diverse innovators and professionals to refine good ideas into actionable projects? Join a conversation with government partners interested in implementing new approaches to combatting Zika and other mosquito-borne diseases.</p>
+      <a href="{{site.url}}{{site.baseurl}}/call-for-participants.html" target="_blank" class="button button--accent-color">Request an Invitation</a>
+      {% endcase %}
     </div>
   </div>
   {% if page.post_conference.takeaways_link %}
     <div class="row align-center">
       <div class="column large-9 medium-10">
+        {% case site.lang %}
+        {% when "es" %}
         <h5>CONCLUSIONES DE LA CONFERENCIA</h5>
-          <p>En cada sesión en línea, los participantes compartieron con los gobiernos ideas innovadoras para enfrentar el problema específico de la conferencia. Conoce las propuestas planteadas por los participantes en el siguiente documento.</p>
-          <a href="{{page.post_conference.takeaways_link}}" class="button button--accent-color">LEER CONCLUSIONES</a>
+        <p>En cada sesión en línea, los participantes compartieron con los gobiernos ideas innovadoras para enfrentar el problema específico de la conferencia. Conoce las propuestas planteadas por los participantes en el siguiente documento.</p>
+        <a href="{{page.post_conference.takeaways_link}}" class="button button--accent-color">LEER CONCLUSIONES</a>
+        {% when "en" %}
+        <h5>Conference Takeaways</h5>
+        <a href="{{page.post_conference.takeaways_link}}" class="button button--accent-color">Read the takeaways</a>
+        {% endcase %}
       </div>
     </div>
   {% endif %}
 </section>
 
 <section class="divider divider--theme-color">
-  <!-- <h1>Participants</h1> -->
+  {% case site.lang %}
+  {% when "es" %}
   <h1>PARTICIPANTES</h1>
+  {% when "en" %}
+  <h1>Participants</h1>
+  {% endcase %}
 </section>
 <section class="page-section">
   {% if page.conference.supporting_participants %}
   <div class="row align-center">
     <div class="column large-9 medium-10 participants">
-    <!-- <h4>Supporters</h4> -->
+    {% case site.lang %}
+    {% when "es" %}
     <h4>COLABORADORES</h4>
+    {% when "en" %}
+    <h4>Supporters</h4>
+    {% endcase %}
         <ul id="participants_list">
         {% for person in page.conference.supporting_participants %}
           <li><strong>{{person.name}} {% if person.twitter_url%}<a href="{{person.twitter_url}}" target='_blank'><span class='fa fa-twitter' aria-hidden='true'></span></a> {% endif %}</strong>{{person.title}} <br>{{person.affiliation}}</li>
@@ -102,8 +124,12 @@ layout: default
   {% if page.conference.partner_participants %}
   <div class="row align-center">
     <div class="column large-9 medium-10 participants">
-  <!--   <h4>Government Partners</h4> -->
+    {% case site.lang %}
+    {% when "es" %}
     <h4>SOCIOS GUBERNAMENTALES</h4>
+    {% when "en" %}
+    <h4>Government Partners</h4>
+    {% endcase %}
       {% for p in page.conference.partner_participants %}
       <h5>{{p.name}}</h5>
         <ul id="participants_list">
