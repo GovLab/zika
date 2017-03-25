@@ -6,30 +6,45 @@ layout: default
 <section class="top-section top-section--theme-color top-section--background-panel-theme-color" style="background-image: url({{site.url}}{{site.baseurl}}/images/topics/{{page.image}})">
     <div class="row expanded align-center">
       <div class="medium-10 large-6 column top-section__content">
-        <!-- <h3>Conference Information</h3>     -->
+        {% case site.lang %}
+        {% when "es" %}
         <h3>INFORMACIÓN DE LA CONFERENCIA</h3>
         <h1>{{page.title}}</h1>
         <h3>{{page.short_description}}</h3>
+        {% when "en" %}
+        <h3>Conference Information</h3>    
+        <h1>{{page.en.title}}</h1>
+        <h3>{{page.en.short_description}}</h3>
+        {% endcase %}
       </div>
     </div>
   <div class="row expanded align-center">
     <div class="large-4 column medium-5">
-      <!-- <span class="conference-date__label">Date</span> -->
+      {% case site.lang %}
+      {% when "es" %}
       <span class="conference-date__label">FECHA</span>
+      {% when "en" %}
+      <span class="conference-date__label">Date</span>
+      {% endcase %}
       <h4 class="conference-date">{{page.conference.date}}</h4>
     </div>
     <div class="large-4 column medium-5">
-      <!-- <span class="conference-time__label">Time</span> -->
-      <span class="conference-time__label">HORA</span>
+      {% case site.lang %}
+      {% when "es" %}
+      <span class="conference-date__label">Hora</span>
+      {% when "en" %}
+      <span class="conference-date__label">Time</span>
+      {% endcase %}
       <h4 class="conference-time">{{page.conference.time}}</h4>
     </div>
   </div>
   <div class="main-buttons">
-    <!-- <a href="./call-for-participants.html" class="button button--accent-color">Participate</a> -->
+    {% case site.lang %}
+    {% when "es" %}
     <a href="{{site.url}}{{site.baseurl}}/call-for-participants.html" class="button button--accent-color">PARTICIPA</a>
-    {% if page.conference.english_document_link %}
-    <a href="{{page.conference.english_document_link}}" class="button button--accent-color">Read this page IN ENGLISH</a>
-    {% endif %}
+    {% when 'en' %}
+    <a href="{{site.url}}{{site.baseurl}}/call-for-participants.html" class="button button--accent-color">Participate</a>
+    {% endcase %}
   </div>
 </section>
 <section class="page-section">
