@@ -145,14 +145,14 @@ left: -60px;
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center;
-  background-color: $main-color;
+  background-color: darken($main-color, 3);
 
   h5 {
     font-size: 1.7rem;
   }
 
   &:hover {
-    background-color: $main-color;
+    background-color: ($main-color, 3);
     text-decoration: none;    
     h5 {color: $theme-color;}
 
