@@ -480,11 +480,11 @@ li {
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center;
-  background-color: #2c4758; }
+  background-color: #273f4e; }
   .explore-map h5 {
     font-size: 1.7rem; }
   .explore-map:hover {
-    background-color: #2c4758;
+    background-color: #273f4e;
     text-decoration: none; }
     .explore-map:hover h5 {
       color: #04ccb7; }
