@@ -141,18 +141,18 @@ left: -60px;
   text-align: center;
   background-image: url('/images/map-banner.png');
   display: block;
-  padding: 115px 0 40px;
+  padding: 100px 0 40px;
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center;
-  background-color: darken($main-color, 3);
+  background-color: $main-color;
 
   h5 {
     font-size: 1.7rem;
   }
 
   &:hover {
-    background-color: darken($main-color, 3);
+    background-color: $main-color;
     text-decoration: none;    
     h5 {color: $theme-color;}
 
