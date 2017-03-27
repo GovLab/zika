@@ -152,7 +152,7 @@ left: -60px;
   }
 
   &:hover {
-    background-color: ($main-color, 3);
+    background-color: darken($main-color, 3);
     text-decoration: none;    
     h5 {color: $theme-color;}
 
