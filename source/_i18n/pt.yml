@@ -1,0 +1,34 @@
+global:
+  title:
+  home: 
+  about: 
+  team: 
+  topics:
+  recommendations: 
+  map: 
+  blog: 
+  more_information: 
+  more_information_soon:
+  conference_took_place_on: 
+  conference: 
+  participate:
+  conference_on: 
+index:
+  imagine:
+    imagine1:
+    imagine2:
+    imagine3:
+  view_the_playbook: 
+  request_an_invitation: 
+  request_an_invitation: 
+  view_the_schedule: 
+  methodology: 
+  participate: 
+  explore_the_expert_map: 
+  project_description: 
+  view_the_schedule_text:
+  request_an_invitation_text: 
+  view_the_playbook_text: 
+  video_caption:
+
+

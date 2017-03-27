@@ -1,0 +1,61 @@
+global:
+  title: "Crowdsourcing Inteligente: zika"
+  home: Inicio
+  about: Acerca de
+  team: Equipo 
+  topics: Temas
+  recommendations: Recomendaciones 
+  map: Explora el Mapa
+  blog: Blog
+  more_information: Mas Información
+  more_information_soon: Pronto Mas Información
+  conference_took_place_on: Esta Conferencia se Realizó el 
+  conference: Conferencia
+  participate: Participa
+  conference_on: Conferencia el
+index:
+  imagine:
+    imagine1: Imagina si esos individuos creativos pudieran hablar directamente con las instituciones que tienen el poder y la responsabilidad de implementar nuevas políticas y servicios.
+    imagine2: Imagina si las personas más inteligentes e innovadoras pudieran reunirse para combatir el zika de manera rápida y fácil.
+    imagine3: Imagina si el epidemiólogo, el especialista en computación, el planificador urbano y aquellas personas con diversidad de conocimientos pudieran hablar entre sí para idear soluciones aplicables a las causas que originan las enfermedades trasmitidas por mosquitos.
+  view_the_playbook: Ver el Manual
+  request_an_invitation: Solicita una Invitación
+  view_the_schedule: Ver el Calendario
+  methodology: Metodología
+  participate: Participa
+  explore_the_expert_map: Explora el mapa de expertos y expertas
+  project_description: Descripción del proyecto
+  view_the_schedule_text: >
+    En una serie de conferencias semanales, de dos horas de duración, realizadas a través de la red, expertos de todo el mundo analizarán formas innovadoras y prácticas de abordar las causas del zika y de las enfermedades trasmitidas por mosquitos. Esos coloquios de pequeños grupos de personas están destinados a promover la aportación de ideas sobre nuevas estrategias aplicables, en conversación con los funcionarios gubernamentales encargados de hacer frente a las epidemias.
+  request_an_invitation_text: >
+    <strong>¿Te gustaría compartir tus habilidades para afrontar emergencias de salud pública?</strong> ¿Tratar temas con distintos innovadores y profesionales para perfeccionar ideas buenas y convertirlas en proyectos aplicables? Participa en una conversación con gobiernos interesados en poner en práctica nuevos enfoques para combatir el zika y otras enfermedades trasmitidas por mosquitos.
+  view_the_playbook_text: >
+    Para obtener más información de fondo sobre el <strong>Crowdsourcing Inteligente: zika<strong>, lea nuestro manual, una guía detallada para el desarrollo del proyecto. Aporta respuestas a las preguntas formuladas con frecuencia sobre la participación en esta iniciativa.
+  video_caption: Presentación del proyecto en Conferencia CityLab, Octubre 2016
+about:
+  h1: Acerca de
+  content: >
+    <p>Las emergencias complejas y mundiales de salud pública, tales como el zika, el dengue y el chikungunya, presentan una amenaza a la salud y bienestar públicos, pueden desestabilizar el comercio regional y la economía mundial y causar incertidumbre y preocupación general.</p>
+    <p>En respuesta, el Governance Lab y el Banco Interamericano de Desarrollo, en colaboración con los gobiernos de la <strong>Ciudad de Río de Janeiro</strong>, <strong>Argentina</strong>, <strong>Colombia</strong> y <strong>Panamá</strong>, están patrocinando una serie de conferencias en línea que se celebran de agosto a octubre de 2016.</p>
+    <p>En lugar de que un grupo de personas se reúnan una vez, a un elevado costo, en un salón de conferencias, usaremos el Internet para movilizar y depurar conocimientos especializados diversos y distribuidos – tanto competencia técnica acreditada como sabiduría experiencial – para identificar, diseñar y repetir ideas aplicables que los gobiernos puedan usar.<p>
+    <p>¿El objetivo? aportar las mejores ideas y convertir ideas buenas en propuestas aplicables, respaldadas por pruebas.</p>
+  contact: Si tiene alguna pregunta, sírvase enviar un correo electrónico a
+  button: Descarga una descripción breve del proyecto
+map:
+  regions:
+    africa: Africa
+    na: Norteamérica
+    sa: Latinoamérica y el Caribe
+    europe: Europa
+    oceania: Oceanía
+    asia: Asia
+  columns:
+    name: NOMBRE
+    affiliation: SECTOR
+    topic: TEMA
+    organization: ORGANIZACIÓN
+footer:
+  text: EN COLABORACIÓN CON
+  copyright: 
+    pre-link: Este trabajo está autorizado por la
+    post-link: Licencia Internacional Creative Commons Attribution-ShareAlike 4.0

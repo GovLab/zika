@@ -6,37 +6,56 @@ layout: default
 <section class="top-section top-section--main-color top-section--background-panel" style="background-image: url({{site.url}}{{site.baseurl}}/images/topics/{{page.image}})">
   <div class="row expanded align-center">
     <div class="medium-10 large-9 column top-section__content">
+      {% case site.lang %}
+      {% when "es" %}
       <h1>{{page.title}}</h1>
       <h3>{{page.short_description}}</h3>
+      {% when "en" %}
+      <h1>{{page.en.title}}</h1>
+      <h3>{{page.en.short_description}}</h3>
+      {% endcase %}
     </div>
   </div>
   <div class="main-buttons">
-    {% if page.is_active and page.conference %}<!-- <a href="{{title | slug}}-conference.html" class="button button--accent-color">Conference</a> --><a href="{{site.url}}{{site.baseurl}}/{{ page.slug }}-conference.html" class="button button--accent-color">CONFERENCIA</a>{% endif %}
-    <!-- <a href="{{site.url}}{{site.baseurl}}/call-for-participants.html" class="button button--accent-color">Participate</a> -->
-    <a href="{{site.url}}{{site.baseurl}}/call-for-participants.html" class="button button--accent-color">Participa</a>
-    {% if english_document_link %}
-    <a href="{{page.english_document_link}}" class="button button--accent-color">Read this page in English</a>
-    {% endif %}
+    {% case site.lang %}
+    {% when "es" %}
+      {% if page.is_active and page.conference %}
+      <a href="{{site.url}}{{site.baseurl}}/{{ page.slug }}-conference.html" class="button button--accent-color">CONFERENCIA</a>
+      <a href="{{site.url}}{{site.baseurl}}/call-for-participants.html" class="button button--accent-color">Participa</a>
+      {% endif %}
+    {% when "en" %}
+    <a href="{{site.url}}{{site.baseurl}}/{{ page.slug }}-conference.html" class="button button--accent-color">Conference</a>
+    <a href="{{site.url}}{{site.baseurl}}/call-for-participants.html" class="button button--accent-color">Participate</a>
+    {% endcase %}
   </div>
 </section>
 
 <section class="page-section">
   <div class="row align-center">
     <div class="column large-9 medium-10">
-      <!-- <h5>Focus</h5> -->
+      {% case site.lang %}
+      {% when "es" %}
       <h5>FOCO</h5>
       <p class="page-section__highlight">{{page.focus}}</p>
+      {% when "en" %}
+      <h5>FOCUS</h5>
+      <p class="page-section__highlight">{{page.en.focus}}</p>
+      {% endcase %}
     </div>
   </div>
   {% if page.problem_description_link %}
   <div class="row align-center">
     <div class="column large-9 medium-10">
-      <!-- <h5>Problem Description</h5> -->
+      {% case site.lang %}
+      {% when "es" %}
       <h5>DESCRIPCIÓN DEL PROBLEMA</h5>
       <p class="page-section__highlight">{{page.topic_description_summary}}</p>
-      <!-- <a href="{{ problem_description_link }}" target="_blank" class="button button--accent-color">Read the Problem Description</a> -->
       <p><a href="{{ page.problem_description_link_spanish }}" target="_blank" class="button button--accent-color">LEER LA DESCRIPCIÓN DEL PROBLEMA</a>
-      <a href="{{ page.problem_description_link }}" target="_blank" class="button button--accent-color">Read the problem description in English</a></p>
+      {% when "en" %}
+      <h5>PROBLEM DESCRIPTION</h5>
+      <p class="page-section__highlight">{{page.en.topic_description_summary}}</p>
+      <a href="{{ page.problem_description_link }}" target="_blank" class="button button--accent-color">Read the Problem Description</a></p>
+      {% endcase %}
     </div>
   </div>
   {% endif %}
@@ -44,7 +63,12 @@ layout: default
   {% if page.resources %}
   <div class="row align-center">
     <div class="column large-9 medium-10">
+      {% case site.lang %}
+      {% when "es" %}
       <h5>RECURSOS</h5>
+      {% when "en" %}
+      <h5>RESOURCES</h5>
+      {% endcase %}
       {% for resource in page.resources %}
       <a class="resource-link" href="{{resource.url}}" target="_blank">{{resource.name}}</a>
       {% endfor %}

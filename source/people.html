@@ -3,26 +3,50 @@ layout: default
 
 ---
 <section class="top-section top-section--main-color">
-    <!-- <h1>People</h1> -->
-    <h1></h1>
-    <div class="main-buttons">
+    {% case site.lang %}
+    {% when "es" %}
+    <h1>Equipo</h1>
+    {% when "en" %}
+    <h1>People</h1>
+    {% endcase %}
+<!--     <div class="main-buttons">
       <a href="https://docs.google.com/document/d/10QaG4S_gKRUi4hy0ENnVs6Ky-ZmPPl_ndZvIy93R4N0/edit" class="button button--accent-color">READ THIS PAGE IN ENGLISH</a>
-    </div>
+    </div> -->
 </section>
 
 <div class="page-section">
-{% for partner in  site.data.partners %}
+{% for partner in site.data.partners %}
   <div class="row partner-container">
+    {% case site.lang %}
+    {% when "es" %}
     <div class="columns large-3 small-12 partner-country">
       <h3>{{ partner.partner_name }}</h3>
     </div>
+    {% when "en" %}
+    <div class="columns large-3 small-12 partner-country">
+      <h3>{{ partner.en.partner_name }}</h3>
+    </div>
+    {% endcase %}
     <div class="columns large-9 small-12">
       {% for person in partner.people %}
+      {% case site.lang %}
+      {% when "es" %}
       <ul class="partner">
         <li class="partner-name">{{ person.name }}</li>
         <li class="partner-title">{{ person.title }}</li>
         <li class="partner-affiliation">{{ person.affiliation }}</li>
       </ul>
+      {% when "en" %}
+      <ul class="partner">
+        {% if person.en.name %}
+        <li class="partner-name">{{ person.en.name }}</li>
+        {% else %}
+        <li class="partner-name">{{ person.name }}</li>
+        {% endif %}
+        <li class="partner-title">{{ person.en.title }}</li>
+        <li class="partner-affiliation">{{ person.en.affiliation }}</li>
+      </ul>
+      {% endcase %}
       {% endfor %}
     </div>
   </div>

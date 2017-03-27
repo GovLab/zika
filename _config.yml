@@ -26,6 +26,9 @@ github_username:
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-multiple-languages-plugin
+
+languages: ["es", "en"]
 
 exclude:
   - Gemfile

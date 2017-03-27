@@ -6,14 +6,14 @@
     <a href="./people.html">People</a>
     <a href="./topics.html">Topics</a>
     <a href="./call-for-participants.html">Call for Participants</a> -->
-    <a href="{{site.url}}{{site.baseurl}}/index.html">Inicio</a>
-    <a href="{{site.url}}{{site.baseurl}}/about.html">Acerca de</a>
-    <a href="{{site.url}}{{site.baseurl}}/people.html">Equipo</a>
-    <a href="{{site.url}}{{site.baseurl}}/topics.html">Temas</a>
-    <a href="{{site.url}}{{site.baseurl}}/recommendations.html">Recomendaciones</a>
-    <a href="{{site.url}}{{site.baseurl}}/map.html">Explora el mapa</a>
+    <a href="{{site.url}}{{site.baseurl}}/index.html">{% t global.home %}</a>
+    <a href="{{site.url}}{{site.baseurl}}/about.html">{% t global.about %}</a>
+    <a href="{{site.url}}{{site.baseurl}}/people.html">{% t global.team %}</a>
+    <a href="{{site.url}}{{site.baseurl}}/topics.html">{% t global.topics %}</a>
+    <a href="{{site.url}}{{site.baseurl}}/recommendations.html">{% t global.recommendations %}</a>
+    <a href="{{site.url}}{{site.baseurl}}/map.html">{% t global.map %}</a>
     <!--<a href="{{site.url}}{{site.baseurl}}/call-for-participants.html">Participa</a>-->
-    <a href="https://medium.com/smarter-crowdsourcing">Blog</a>
+    <a href="https://medium.com/smarter-crowdsourcing">{% t global.blog %}</a>
   </nav>
   <a class="top-bar__logo" href="{{site.url}}{{site.baseurl}}/"><img src="{{site.url}}{{site.baseurl}}/images/zika-logo-h-white.png" alt="Smarter Crowdsourcing | Zika"></a>
 
@@ -24,4 +24,18 @@
     <a href="{{site.url}}{{site.baseurl}}/sandbox.html">Sandbox</a>
   </nav>
   {% endcomment %}
+
+
+  <div class='lang-select'>
+      {% capture es_link %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
+      {% capture en_link %}{{ site.baseurl_root }}/en{{ page.url }}{% endcapture %}
+      {% if site.lang == "es" %}
+          <a class="lang_select-active" href="{{ es_link }}">ES</a>  | <a href="{{ en_link }}" >EN</a> 
+      {% elsif site.lang == "en"%}
+          <a href="{{ es_link }}">ES</a>  | <a class="lang_select-active" href="{{ en_link }}" >EN</a> 
+      {% endif %}
+  </div>
+
+
+
 </header>
