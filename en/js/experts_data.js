@@ -20,7 +20,7 @@ var expertsData = [
   },
   {
     "ID": 2,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Dr. Lynn Weekes",
@@ -39,7 +39,7 @@ var expertsData = [
   },
   {
     "ID": 3,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Fabro Steibel",
@@ -248,7 +248,7 @@ var expertsData = [
   },
   {
     "ID": 14,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Esmily Yusmary Ruiz Varón",
@@ -381,7 +381,7 @@ var expertsData = [
   },
   {
     "ID": 22,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "Communication and Behavior Change",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Dr. Adriana Naim",
@@ -400,7 +400,7 @@ var expertsData = [
   },
   {
     "ID": 23,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Jose Ignacio Mata",
@@ -438,7 +438,7 @@ var expertsData = [
   },
   {
     "ID": 25,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Mario Mosquera",
@@ -495,7 +495,7 @@ var expertsData = [
   },
   {
     "ID": 28,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "Communication and Behavior Change",
     "CONFERENCE 3 ATTENDED": "Information Collection/Data Governance",
     "NAME": "Monserrat Narváez",
@@ -571,7 +571,7 @@ var expertsData = [
   },
   {
     "ID": 32,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Esteban Moro",
@@ -666,7 +666,7 @@ var expertsData = [
   },
   {
     "ID": 37,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Dr. Gaya Gamhewage",
@@ -780,7 +780,7 @@ var expertsData = [
   },
   {
     "ID": 43,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "Communication and Behavior Change",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "David Broniatowski",
@@ -799,7 +799,7 @@ var expertsData = [
   },
   {
     "ID": 44,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Huiling Ding",
@@ -818,7 +818,7 @@ var expertsData = [
   },
   {
     "ID": 45,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "Communication and Behavior Change",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "John P. Elder",
@@ -837,7 +837,7 @@ var expertsData = [
   },
   {
     "ID": 46,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Manuel García Herranz",
@@ -856,7 +856,7 @@ var expertsData = [
   },
   {
     "ID": 47,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Molly Jackman",
@@ -875,7 +875,7 @@ var expertsData = [
   },
   {
     "ID": 48,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Wendy Nilsen",
@@ -894,7 +894,7 @@ var expertsData = [
   },
   {
     "ID": 49,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Brendan Nyhan",
@@ -913,7 +913,7 @@ var expertsData = [
   },
   {
     "ID": 50,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "Communication and Behavior Change",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Dr. Rafael Obregon",
@@ -932,7 +932,7 @@ var expertsData = [
   },
   {
     "ID": 51,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Nancy Pendarvis Harris",
@@ -951,7 +951,7 @@ var expertsData = [
   },
   {
     "ID": 52,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Mathias Pollock",
@@ -970,7 +970,7 @@ var expertsData = [
   },
   {
     "ID": 53,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Lee Rainie",
@@ -989,7 +989,7 @@ var expertsData = [
   },
   {
     "ID": 54,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Alex Rutherford",
@@ -1008,7 +1008,7 @@ var expertsData = [
   },
   {
     "ID": 55,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "Communication and Behavior Change",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Dr. Magdalena Serpa",
@@ -1027,7 +1027,7 @@ var expertsData = [
   },
   {
     "ID": 56,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Joshua Tucker",
@@ -1046,7 +1046,7 @@ var expertsData = [
   },
   {
     "ID": 57,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "",
     "CONFERENCE 3 ATTENDED": "",
     "NAME": "Allison Wolff",
@@ -1616,7 +1616,7 @@ var expertsData = [
   },
   {
     "ID": 87,
-    "CONFERENCE 1 ATTENDED": "Assesing Public Awareness",
+    "CONFERENCE 1 ATTENDED": "Assessing Public Awareness",
     "CONFERENCE 2 ATTENDED": "Communication and Behavior Change",
     "CONFERENCE 3 ATTENDED": "Long Term Care",
     "NAME": "Albert Ko",
