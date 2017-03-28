@@ -112,34 +112,34 @@ $(document).ready(function () {
         ]
     });
 
-    // TABLE SORTABLE
-    // Table Search with List.js Implementation
-    $('.js-open-table-search').click(function (e) {
-        e.preventDefault();
-        $(this).parent().siblings('.table-sortable__search').toggleClass('table-sortable__search--active');
-    });
-    // Table Search Controls: X out form
-    var searchButtons = $('.table-sortable__search').find("button[type='submit']");
-    searchButtons.on("click", function(e) {
-        e.preventDefault();
-        if ($(this).parent().hasClass("table-sortable__search--active")) {
-            $(this).parent().removeClass("table-sortable__search--active");
-        }
-        searchReset();
-    });
+    // // TABLE SORTABLE
+    // // Table Search with List.js Implementation
+    // $('.js-open-table-search').click(function (e) {
+    //     e.preventDefault();
+    //     $(this).parent().siblings('.table-sortable__search').toggleClass('table-sortable__search--active');
+    // });
+    // // Table Search Controls: X out form
+    // var searchButtons = $('.table-sortable__search').find("button[type='submit']");
+    // searchButtons.on("click", function(e) {
+    //     e.preventDefault();
+    //     if ($(this).parent().hasClass("table-sortable__search--active")) {
+    //         $(this).parent().removeClass("table-sortable__search--active");
+    //     }
+    //     searchReset();
+    // });
 
-    // Table Search Controls: Sort buttons
-    var sortClickButtons = $(".table-sortable__control > i:contains('keyboard_arrow_down')");
-    sortClickButtons.on("click", function() {
-        $(this).text() == "keyboard_arrow_down" ? $(this).text("keyboard_arrow_up") : $(this).text("keyboard_arrow_down");
-    });
-    // Table Search Controls: ESC to exit form and clear search
-    $("body").keyup(function(event) {
-        if ( event.keyCode == "27" ) {
-            $(this).parent().find('.table-sortable__search').removeClass("table-sortable__search--active");
-            searchReset();
-        }
-    });
+    // // Table Search Controls: Sort buttons
+    // var sortClickButtons = $(".table-sortable__control > i:contains('keyboard_arrow_down')");
+    // sortClickButtons.on("click", function() {
+    //     $(this).text() == "keyboard_arrow_down" ? $(this).text("keyboard_arrow_up") : $(this).text("keyboard_arrow_down");
+    // });
+    // // Table Search Controls: ESC to exit form and clear search
+    // $("body").keyup(function(event) {
+    //     if ( event.keyCode == "27" ) {
+    //         $(this).parent().find('.table-sortable__search').removeClass("table-sortable__search--active");
+    //         searchReset();
+    //     }
+    // });
 
     // // List.js Implementation with Fuzzy Search
     // var fuzzyOptions = {
