@@ -16,9 +16,19 @@
     }
   }
 }
-.top-bar__logo img {
+.top-bar__logo {
   @media (max-width: 500px) {
-    height:80%;
+    padding: 0;
+    padding-left: 7px;
+  }
+  img {
+    @media (max-width: 500px) {
+      height: 73%;
+      width: 100%;
+      padding-top: 13px;
+      //
+      padding-right: 0;
+    }
   }
 }
 
