@@ -45,7 +45,12 @@
   color: $main-color;
 
 }
-.top-section--white { background-color: white; }
+.top-section--white {
+  background-color: white;
+  @media (max-width: 500px) {
+    padding-bottom: 0;
+  }
+}
 
 .top-section--background-panel,
 .top-section--background-panel-theme-color {
@@ -86,8 +91,21 @@
   &__highlight {
     font-size: 1.4rem;
   }
-  &--zebra-dark { background-color: rgba(black, .03); }
-
+  &--zebra-dark {
+    background-color: rgba(black, .03);
+    padding-top: 0;
+    .video-caption {
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 0;
+      @media (max-width: 500px) {
+        // padding-bottom: 20px;
+      }
+    }
+    @media (max-width: 500px) {
+      padding-top: 0;
+    }
+  }
 }
 
 .divider--theme-color {
@@ -159,14 +177,19 @@
 
 ///////////////////////////////////////////////////////
 
-.more-info p {
-  font-size: 1.3rem;
+.more-info {
+  @media (max-width: 500px) {
+    padding-right: 0;
+  }
+  p {
+    font-size: 1.3rem;
+    // padding: 50px;
+  }
 }
 
-
-
-
-
+// .btm-vid {
+//   width: 400px;
+// }
 
 
 .site-logo {
@@ -176,6 +199,9 @@
     @media (max-width: 565px) {
       max-width: 19rem;
     }
+  }
+  @media (max-width: 500px) {
+    max-width: 22rem;
   }
 
   &__wrapper {
@@ -282,12 +308,23 @@
 
 .main-video {
   text-align:center;
+  &--bottom {
+    @media (max-width: 500px) {
+      // width:426;
+      // height: 240;
+    }
+  }
 }
 
 .side-buttons {
   height: 240px;
   padding-top: 23px;
   padding-bottom: 23px;
+  @media (max-width: 500px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 210px;
+  }
 
   .button { width: 290px; }
 }
