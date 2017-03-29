@@ -10,12 +10,12 @@
     }
   }
 
-  @include breakpoint(max-width 1100px) { 
-    transform: scale(.7); 
+  @include breakpoint(max-width 1100px) {
+    transform: scale(.7);
     height: 380px;
     margin-top: -100px;
   }
-  
+
 }
 
 #map-wrapper,
@@ -37,6 +37,14 @@ left: -60px;
   h5 {
     text-align: left;
     margin: 0;
+  }
+}
+
+.map-title {
+  display: none;
+  @media (max-width: 500px) {
+    display: block;
+    padding-bottom: 20px;
   }
 }
 
@@ -90,6 +98,7 @@ left: -60px;
 
 .expert-list-section {
   padding-top: 0;
+  padding-bottom: 0;
 
   .table-sortable__head-cell {
     background-color: darken($main-color, 3);
@@ -153,7 +162,7 @@ left: -60px;
 
   &:hover {
     background-color: darken($main-color, 3);
-    text-decoration: none;    
+    text-decoration: none;
     h5 {color: $theme-color;}
 
 
@@ -207,4 +216,20 @@ left: -60px;
     opacity: 1;
   }
 
+}
+
+.table-sortable th:first-child, .table-sortable td:first-child {
+  @media (max-width: 500px) {
+    width: 20px;
+  }
+}
+.table-sortable__head-cell .name-column {
+  @media (max-width: 500px) {
+    width: 20px;
+  }
+}
+.table-sortable .topic-column {
+  @media (max-width: 500px) {
+    width: 45%;
+  }
 }
