@@ -3,7 +3,7 @@ layout: default
 
 ---
 
-<section class="top-section top-section--main-color top-section--background-panel" style="background-image: url({{site.url}}{{site.baseurl}}/images/topics/{{page.image}})">
+<section class="top-section top-section--main-color top-section--background-panel" style="background-image: url({{'/images/topics/' | append: page.image | relative_url}})">
   <div class="row expanded align-center">
     <div class="medium-10 large-9 column top-section__content">
       {% case site.lang %}
@@ -20,12 +20,12 @@ layout: default
     {% case site.lang %}
     {% when "es" %}
       {% if page.is_active and page.conference %}
-      <a href="{{site.url}}{{site.baseurl}}/{{ page.slug }}-conference.html" class="button button--accent-color">CONFERENCIA</a>
-      <a href="{{site.url}}{{site.baseurl}}/call-for-participants.html" class="button button--accent-color">Participa</a>
+      <a href="{{'/' | append: page.slug | append: '-conference.html' | relative_url}}" class="button button--accent-color">CONFERENCIA</a>
+      <a href="{{'/call-for-participants.html' | relative_url}}" class="button button--accent-color">Participa</a>
       {% endif %}
     {% when "en" %}
-    <a href="{{site.url}}{{site.baseurl}}/{{ page.slug }}-conference.html" class="button button--accent-color">Conference</a>
-    <a href="{{site.url}}{{site.baseurl}}/call-for-participants.html" class="button button--accent-color">Participate</a>
+    <a href="{{'/' | append: page.slug | append: '-conference.html' | relative_url}}" class="button button--accent-color">Conference</a>
+    <a href="{{'/call-for-participants.html' | relative_url}}" class="button button--accent-color">Participate</a>
     {% endcase %}
   </div>
 </section>
