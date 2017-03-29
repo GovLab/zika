@@ -28,7 +28,7 @@ layout: default
   <div class="row align-center">
     <div class="medium-10 large-8 column">
       <span class="error-messages"></span>
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='{{site.url}}{{site.baseurl}}/confirmation.html';}"></iframe>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location="{{'/confirmation.html' | relative_url }}";}"></iframe>
         <form class="form" action="https://docs.google.com/a/thegovlab.org/forms/d/e/1FAIpQLSc1KlsdEiAEzSPrHmxB36DZIjvAYFAC74ne4GL7PmtM-94j9w/formResponse" method="POST" onsubmit="submitted=true;" target="hidden_iframe">
         <!-- FIRST NAME -->
         <label class="form-field-label" for="entry_1253314825"><div class="form-field-title field-required">First Name</div></label>

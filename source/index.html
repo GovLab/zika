@@ -9,7 +9,7 @@ custom_body: homepage
     <section class="top-section top-section--white">
       <div class="row expanded">
         <div class="column large-12 site-logo__wrapper">
-          <a href="{{site.url}}{{site.baseurl}}/index.html"><img class="site-logo" src="{{site.url}}{{site.baseurl}}/images/zika-logo-pos.png" alt="Smarter Crowdsourcing | Zika Logo"></a>
+          <a href="{{'/index.html' | relative_url}}"><img class="site-logo" src="{{'/images/zika-logo-pos.png' | relative_url}}" alt="Smarter Crowdsourcing | Zika Logo"></a>
         </div>
       </div>
       <div class="row expanded align-center">
@@ -45,8 +45,8 @@ custom_body: homepage
         <br>
           <div class="side-buttons">
             <div class="text-centered"><a href='https://docs.google.com/document/d/1AZNHKnjVlXpqRU5vkvz3PTKz0bS5oII8i_hu04QmoEw/edit#heading=h.qgmunizwlw4' class='button button--accent-color'>{% t index.view_the_playbook %}</a></div>
-            <div class="text-centered"><a href='{{site.url}}{{site.baseurl}}/files/zika-one-pager-oct2016.pdf' class='button button--accent-color' download>{% t index.project_description %}</a></div>
-            <div class="text-centered"><a href='{{site.url}}{{site.baseurl}}/files/metodologia.pdf' class='button button--accent-color' download>{% t index.methodology %}</a></div>
+            <div class="text-centered"><a href="{{'/files/zika-one-pager-oct2016.pdf' | relative_url}}" class='button button--accent-color' download>{% t index.project_description %}</a></div>
+            <div class="text-centered"><a href="{{'/files/metodologia.pdf' | relative_url}}" class='button button--accent-color' download>{% t index.methodology %}</a></div>
           </div>
         </div>
       </div>
@@ -54,13 +54,13 @@ custom_body: homepage
     </section>
 
     <section>
-      <a href="{{site.url}}{{site.baseurl}}/map.html" class="divider explore-map"><h5>{% t index.explore_the_expert_map %}</h5></a>
-      <div class="main-buttons main-buttons__map">
-          <!-- <a href="./call-for-participants.html" class="button button--accent-color">Participate</a> -->
-          <a href="{{site.url}}{{site.baseurl}}/call-for-participants.html" class="button button--map button--accent-color">{% t index.participate %}</a>
-          <!-- <a href="./topics.html" class="button button--accent-color">Topics</a> -->
-          <a href="{{site.url}}{{site.baseurl}}/topics.html" class="button button--map button--accent-color">{% t global.topics %}</a>
-      </div>
+    <a href="{{'/map.html' | relative_url}}" class="divider explore-map"><h5>{% t index.explore_the_expert_map %}</h5></a>
+    <div class="main-buttons main-buttons__map">
+        <!-- <a href="./call-for-participants.html" class="button button--accent-color">Participate</a> -->
+        <a href="{{'/call-for-participants.html' | relative_url}}" class="button button--map button--accent-color">{% t index.participate %}</a>
+        <!-- <a href="./topics.html" class="button button--accent-color">Topics</a> -->
+        <a href="{{'/topics.html' | relative_url}}" class="button button--map button--accent-color">{% t global.topics %}</a>
+    </div>
     </section>
 
     <section style="margin-top: -25px; ">
@@ -68,7 +68,7 @@ custom_body: homepage
 
         {% for topic in site.data.topics %}
           {% if topic.is_active and topic.conference.is_active %}
-            <div class="large-6 small-12 column topic" style="background-image: url({{site.url}}{{site.baseurl}}/images/topics/resized/{{topic.image}})">
+            <div class="large-6 small-12 column topic" style="background-image: url({{'/images/topics/resized/' | append: topic.image}})">
 
               {%case site.lang %}
                 {% when "es" %}
@@ -103,7 +103,7 @@ custom_body: homepage
 
         {% for topic in site.data.topics %}
           {% if topic.is_active and topic.conference.is_active == false %} <!-- NEED TO ADD A "NOT" -->
-            <div class="large-6 small-12 column topic" style="background-image: url({{site.url}}{{site.baseurl}}/images/topics/resized/{{topic.image}})">
+            <div class="large-6 small-12 column topic" style="background-image: url({{'/images/topics/resized/' | append: topic.image}})">
 
               {%case site.lang %}
                 {% when "es" %}
@@ -139,7 +139,7 @@ custom_body: homepage
       <div class="row align-center">
         <div class="medium-10 large-9 column more-info">
           <p>{% t index.view_the_schedule_text %}</p>
-          <div class="text-centered"><a href='./topics.html' class='button button--accent-color'>{% t index.view_the_schedule %}</a></div>
+          <div class="text-centered"><a href="{{'/topics.html' | relative_url}}" class='button button--accent-color'>{% t index.view_the_schedule %}</a></div>
         </div>
       </div>
     </div>
@@ -148,7 +148,7 @@ custom_body: homepage
       <div class="row align-center">
         <div class="medium-10 large-9 column more-info">
           <p>{% t index.request_an_invitation_text %}</p>
-          <div class="text-centered"><a href='{{site.url}}{{site.baseurl}}/call-for-participants.html' class='button button--accent-color'>{% t index.request_an_invitation %}</a></div>
+          <div class="text-centered"><a href="{{'/call-for-participants.html' | relative_url}}" class='button button--accent-color'>{% t index.request_an_invitation %}</a></div>
         </div>
       </div>
     </section>
