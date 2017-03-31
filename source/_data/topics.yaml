@@ -18,6 +18,7 @@
   en:
     title: Assessing Public Awareness
     rec_name: ASSESSING UNDERSTANDING
+    rec_slug: assessing-understanding
     short_description: >
       What are the most effective ways to capture the public's understanding of mosquito born diseases? How to use these findings to inform the design of campaigns to improve public awareness?
     focus: > 
@@ -288,6 +289,7 @@
   en:
     title: Communication and Behavior Change
     rec_name: BEHAVIOR CHANGE
+    rec_slug: behavior-change
     short_description: What are the most effective ways for getting the public to change behavior to prevent mosquito breeding and mosquito bites and get proper access to healthcare?
     focus: There are new opportunities, including innovative approaches and new communications media, to improve how governments communicate with the public so as to create greater incentives for that behavior change needed to mitigate the risk of Zika and mosquito borne illnesses. The goal of this session is to identify innovative approaches to communication that overcomes built-in inertia, preconceived beliefs and misinformation and induces sustained behavior change.
     topic_description_summary: The problems have been fleshed out into a briefing designed to describe the root causes of the problem, current approaches in different countries, and lessons learned from other domains.
@@ -605,6 +607,7 @@
   en:
     title: PREDICTIVE ANALYTICS
     rec_name: PREDICTIVE ANALYTICS
+    rec_slug: predictive-analytics
     short_description: What innovative approaches are available for using data to predict factors influencing outbreaks, such as mosquito infestations, patterns of human habitation and movement, climate & environmental factors, and rates and other forms of transmission?
     focus: Outbreaks are mostly unpredictable and therefore harder to prevent.
     topic_description_summary: The problems have been fleshed out into a briefing designed to describe the root causes of the problem, current approaches in different countries, and lessons learned from other domains.
@@ -806,6 +809,7 @@
   en:
     title: Trash and Standing Water
     rec_name: TRASH ACCUMULATION
+    rec_slug: trash-accumulation
     short_description: What can be done to eliminate uncollected waste andstanding water where Aedes Aegypti mosquitoes breed?
     focus: Trash and containers fill with standing water where mosquitoes breed. The goal of this session is to identify innovative and effective methods to prevent waste accumulation and water deposits from becoming more sources of breeding sites
     topic_description_summary: The problems have been fleshed out into a briefing designed to describe the root causes of the problem, current approaches in different countries, and lessons learned from other domains.
@@ -1062,6 +1066,7 @@
   en:
     title: Information Collection/Data Governance
     rec_name: SURVEILLANCE AND DATA SHARING
+    rec_slug: surveillance-and-data-sharing
     short_description: How do we develop policies and practices for better epidemiological data collection and for sharing data with the appropriate authorities?
     focus: Slow and inaccurate collection and dissemination of epidemiological data reduces efficiency in the prevention and control of outbreaks. The goal of this session is to identify innovative and effective methods to collect reliable epidemiological data from institutions and individuals and make it available. We are looking for concrete and specific examples of responsible and effective public health data sharing practices.
     topic_description_summary: The problems have been fleshed out into a briefing designed to describe the root causes of the problem, current approaches in different countries, and lessons learned from other domains.
@@ -1426,6 +1431,7 @@
   en:
     title: Long Term Care
     rec_name: LONG-TERM CARE
+    rec_slug: long-term-care
     short_description: How do we provide support for families with members at risk or already suffering with chronic effects of Zika, like Microcephaly?
     focus: The Zika outbreak has created a surge of chronic conditions that calls for new investments in monitoring, diagnosis, and treatment.
     topic_description_summary: The problems have been fleshed out into a briefing designed to describe the root causes of the problem, current approaches in different countries, and lessons learned from other domains.

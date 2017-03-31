@@ -155,7 +155,7 @@ layout: default
                 </section>
                 <footer class="recommendation-card__tags">
                   <p><strong>Focus Area</strong>
-                  <span class="recommendation-card__tag recommendation-card__tag-focus">{{i.focusArea}}</span></p>
+                  <span class="recommendation-card__tag recommendation-card__tag-focus"><a href="{{ '/recommendations.html?filter=.' | append: page.en.rec_slug | relative_url }}">{{i.focusArea}}</a></span></p>
                   {% if i.impactedAreas.size == nill %}
                     <div class="" style="width: 100%;"></div>
                   {% else %}
