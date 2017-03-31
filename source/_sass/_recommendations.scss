@@ -112,10 +112,12 @@
     margin: 1px;
     color: white;
     background-color: $theme-color;
+    a:hover { color: $main-color; }
   }
 
   &__tag-focus {
     background-color: $main-color;
+    a:hover { color: $theme-color; }
   }
 
   &--topic {

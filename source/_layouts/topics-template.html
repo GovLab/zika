@@ -161,7 +161,7 @@ layout: default
                   {% else %}
                     <p><strong>Impacted Areas</strong>
                       {% for j in i.impactedAreas %}
-                        <span class="recommendation-card__tag">{{j}}</span><br>
+                        <span class="recommendation-card__tag"><a href="/recommendations.html?filter=.{{ j | slugify }}">{{j}}</a></span><br>
                       {% endfor%}
                       </p>
                   {% endif %}
