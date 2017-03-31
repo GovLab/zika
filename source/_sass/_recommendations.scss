@@ -9,7 +9,7 @@
 }
 
 .recommendation-card {
-  width: calc(33.3% - 30px);
+  width: calc(33% - 30px);
   // min-height: 920px;
   background-color: rgba(black, .05);
   display: inline-block;
@@ -117,6 +117,19 @@
   &__tag-focus {
     background-color: $main-color;
   }
+
+  &--topic {
+    width: calc(50% - 20px);
+    margin: 10px;
+
+    @include breakpoint($small-only) {
+      width: calc(100% - 20px);
+      margin: 10px;
+      height: auto;
+    }
+
+  }
+
 }
 
 .resources {
@@ -170,4 +183,15 @@
   @include breakpoint($large) {
     display: none;
   }
+}
+
+///////
+
+.flex { 
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
