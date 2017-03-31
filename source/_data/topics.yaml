@@ -17,6 +17,7 @@
   english_document_link: https://docs.google.com/document/d/1_2EiE67ml3oxrFGJOIir1SCHXRtKnS7pdBEgBDsXNos/edit
   en:
     title: Assessing Public Awareness
+    rec_name: ASSESSING UNDERSTANDING
     short_description: >
       What are the most effective ways to capture the public's understanding of mosquito born diseases? How to use these findings to inform the design of campaigns to improve public awareness?
     focus: > 
@@ -286,6 +287,7 @@
   english_document_link: https://docs.google.com/document/d/1b5FNWLKYhL4-5HURZGydXHSPi7dRj9lxh-1xV9mblxM/edit
   en:
     title: Communication and Behavior Change
+    rec_name: BEHAVIOR CHANGE
     short_description: What are the most effective ways for getting the public to change behavior to prevent mosquito breeding and mosquito bites and get proper access to healthcare?
     focus: There are new opportunities, including innovative approaches and new communications media, to improve how governments communicate with the public so as to create greater incentives for that behavior change needed to mitigate the risk of Zika and mosquito borne illnesses. The goal of this session is to identify innovative approaches to communication that overcomes built-in inertia, preconceived beliefs and misinformation and induces sustained behavior change.
     topic_description_summary: The problems have been fleshed out into a briefing designed to describe the root causes of the problem, current approaches in different countries, and lessons learned from other domains.
@@ -601,7 +603,8 @@
   problem_description_link_spanish: https://docs.google.com/document/d/1luZZwwAm6V4LX_eOLxImfy0Dn1BY_eJScP2lvlwcqwM/edit?usp=sharing
   english_document_link: https://docs.google.com/document/d/1ADXgKjGbXmkqdceO_89O6EhaIMw78oUYpKwy6dPKEyA/edit
   en:
-    title: Predictive Analytics
+    title: PREDICTIVE ANALYTICS
+    rec_name: PREDICTIVE ANALYTICS
     short_description: What innovative approaches are available for using data to predict factors influencing outbreaks, such as mosquito infestations, patterns of human habitation and movement, climate & environmental factors, and rates and other forms of transmission?
     focus: Outbreaks are mostly unpredictable and therefore harder to prevent.
     topic_description_summary: The problems have been fleshed out into a briefing designed to describe the root causes of the problem, current approaches in different countries, and lessons learned from other domains.
@@ -802,6 +805,7 @@
   english_document_link: https://drive.google.com/open?id=13p5uQpyVMp-FWDjHaT8Yay_T3U5ORCWpuEQVGXgopGo
   en:
     title: Trash and Standing Water
+    rec_name: TRASH ACCUMULATION
     short_description: What can be done to eliminate uncollected waste andstanding water where Aedes Aegypti mosquitoes breed?
     focus: Trash and containers fill with standing water where mosquitoes breed. The goal of this session is to identify innovative and effective methods to prevent waste accumulation and water deposits from becoming more sources of breeding sites
     topic_description_summary: The problems have been fleshed out into a briefing designed to describe the root causes of the problem, current approaches in different countries, and lessons learned from other domains.
@@ -1057,6 +1061,7 @@
   english_document_link: https://docs.google.com/document/d/1xsokZgB4pmK5w5Qt6NlrGMZAkMHJuqjzh2RT54ZefcE/edit
   en:
     title: Information Collection/Data Governance
+    rec_name: SURVEILLANCE AND DATA SHARING
     short_description: How do we develop policies and practices for better epidemiological data collection and for sharing data with the appropriate authorities?
     focus: Slow and inaccurate collection and dissemination of epidemiological data reduces efficiency in the prevention and control of outbreaks. The goal of this session is to identify innovative and effective methods to collect reliable epidemiological data from institutions and individuals and make it available. We are looking for concrete and specific examples of responsible and effective public health data sharing practices.
     topic_description_summary: The problems have been fleshed out into a briefing designed to describe the root causes of the problem, current approaches in different countries, and lessons learned from other domains.
@@ -1420,6 +1425,7 @@
   english_document_link: https://docs.google.com/document/d/1-FOzl1PIpL4aeAvknr3zTVyqwRtX2AjlZjCIhiSDTZw/edit
   en:
     title: Long Term Care
+    rec_name: LONG-TERM CARE
     short_description: How do we provide support for families with members at risk or already suffering with chronic effects of Zika, like Microcephaly?
     focus: The Zika outbreak has created a surge of chronic conditions that calls for new investments in monitoring, diagnosis, and treatment.
     topic_description_summary: The problems have been fleshed out into a briefing designed to describe the root causes of the problem, current approaches in different countries, and lessons learned from other domains.

@@ -3,6 +3,8 @@ layout: default
 
 ---
 
+{% assign solutions = site.data.contentful.spaces.solutions.solution %}
+
 <section class="top-section top-section--main-color top-section--background-panel" style="background-image: url({{'/images/topics/' | append: page.image | relative_url}})">
   <div class="row expanded align-center">
     <div class="medium-10 large-9 column top-section__content">
@@ -75,4 +77,16 @@ layout: default
     </div>
   </div>
   {% endif %}
+
+  <div class="row align-center">
+    <div class="column large-9 medium-10">
+      <h5>RECOMMENDATIONS</h5>
+      {% for i in solutions %}
+        {% if i.focusArea == page.en.rec_name %}
+        <p>{{i.title}}</p>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
 </section>
