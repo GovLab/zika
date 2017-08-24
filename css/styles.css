@@ -331,14 +331,10 @@ li {
       font-size: 1rem; }
     .topic__date-past {
       color: #FFAA00; }
-  .topic__month {
+  .topic__month, .topic__day, .topic__year {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.4rem; }
-  .topic__day {
-    font-size: 3rem;
-    font-weight: 100;
-    font-style: normal; }
   .topic--disabled {
     color: rgba(255, 255, 255, 0.3);
     opacity: .6;
