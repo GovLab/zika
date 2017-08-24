@@ -2,7 +2,7 @@ li { margin-right: 20px; } // when titles/affiliations are long, text becomes un
 
 .topic {
   color: white;
-  
+
   position: relative;
   background-blend-mode: multiply;
   background-color: $main-color;
@@ -19,13 +19,13 @@ li { margin-right: 20px; } // when titles/affiliations are long, text becomes un
     @extend .u-transition;
   }
 
-  &__date { 
+  &__date {
     @include breakpoint($medium) { position: absolute; }
     text-align: right;
     right: 30px;
     bottom: 15px;
 
-    h6 { 
+    h6 {
       margin: 10px 0 0;
       line-height: 1;
       display: inline-block;
@@ -34,17 +34,17 @@ li { margin-right: 20px; } // when titles/affiliations are long, text becomes un
     &-past { color: $accent-color;}
   }
 
-  &__month {
+  &__month, &__day, &__year {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.4rem;
   }
 
-  &__day {
-    font-size: 3rem;
-    font-weight: 100;
-    font-style: normal;
-  }
+  // &__day {
+  //   font-size: 3rem;
+  //   font-weight: 100;
+  //   font-style: normal;
+  // }
 
   &--disabled {
     color: rgba(white, .3);

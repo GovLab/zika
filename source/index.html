@@ -95,7 +95,8 @@ custom_body: homepage
                 <!-- <h6>Conference on</h6> -->
                 <h6>{% t global.conference_on %}</h6>
                 <span class="topic__month">{{ topic.conference.date | date: "%b"}}</span>
-                <em class="topic__day">{{ topic.conference.date | date: "%d" }}</em>
+                <span class="topic__day">{{ topic.conference.date | date: "%d" }}</span>
+                <span class="topic__year">{{ topic.conference.date | date: "%Y" }}</span>
               </div>
             </div>
           {% endif %}
@@ -122,7 +123,8 @@ custom_body: homepage
                 <!-- <h6>Conference took place on</h6> -->
                 <h6>{% t global.conference_took_place_on %}</h6>
                 <span class="topic__month">{{ topic.conference.date | date: "%b" }}</span> <!-- topic.conference.date | dateFilter("month") | truncate(3, true, "")}} -->
-                <em class="topic__day">{{ topic.conference.date | date: "%d" }}</em> <!-- topic.conference.date | dateFilter("day")}} -->
+                <span class="topic__day">{{ topic.conference.date | date: "%d" }}</span> <!-- topic.conference.date | dateFilter("day")}} -->
+                <span class="topic__year">{{ topic.conference.date | date: "%Y" }}</span>
               </div>
             </div>
           {% endif %}
