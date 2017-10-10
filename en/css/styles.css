@@ -789,7 +789,9 @@ li {
     text-align: center;
     padding-bottom: 30px; }
     .footer-alt .footer__partner-logo img {
-      max-height: 80px; }
+      max-height: 80px;
+      border: dashed;
+      border-color: transparent; }
 
 .checkbox label {
   display: inline-block;
