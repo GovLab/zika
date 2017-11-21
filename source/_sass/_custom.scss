@@ -336,3 +336,19 @@
 }
 
 .main-buttons__map { margin-bottom: 0px; margin-top: -44px}
+
+
+.sticky {
+  background-color: rgba(0, 0, 0, 0.8);
+  .sticky__title {
+    font-size: 1.2rem;
+  }
+  p {
+    font-weight: 400;
+  }
+  img {
+    float: left;
+    width: 100px;
+    margin-right: 40px;
+  }
+}
