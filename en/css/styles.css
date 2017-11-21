@@ -296,6 +296,17 @@
   margin-bottom: 0px;
   margin-top: -44px; }
 
+.sticky {
+  background-color: rgba(0, 0, 0, 0.8); }
+  .sticky .sticky__title {
+    font-size: 1.2rem; }
+  .sticky p {
+    font-weight: 400; }
+  .sticky img {
+    float: left;
+    width: 100px;
+    margin-right: 40px; }
+
 li {
   margin-right: 20px; }
 
