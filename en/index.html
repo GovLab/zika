@@ -82,7 +82,7 @@
       <div class="main-buttons main-buttons__index">
         <!-- <a href="./call-for-participants.html" class="button button--accent-color">Participate</a> -->
         <!-- <a href="./call-for-participants.html" class="button nodisplay button--accent-color">Participa</a> -->
-             <a href="files/smarter-crowdsouring-for-zika-and-other-mosquito-borne-diseases.pdf" class="button button--accent-color">Download the Final Report</a>
+             <a href="files/smarter-crowdsouring-for-zika-and-other-mosquito-borne-diseases.pdf" class="button button--accent-color file-smarter-crowdsouring-for-zika-and-other-mosquito-borne-diseases" target="_blank">Download the Final Report</a>
 
         <!-- <a href="./topics.html" class="button nodisplay button--accent-color">Temas</a> -->
      <!--    <a href="https://drive.google.com/open?id=1X62chK6dRH_je5X-UjpEu8wlS2b76ghbMOvQbFzeWKY" class="button yesdisplay button--accent-color">READ THIS PAGE IN ENGLISH</a> -->
@@ -101,7 +101,7 @@
         <br>
         <br>
           <div class="side-buttons">
-            <div class="text-centered"><a href='https://docs.google.com/document/d/1AZNHKnjVlXpqRU5vkvz3PTKz0bS5oII8i_hu04QmoEw/edit#heading=h.qgmunizwlw4' class='button button--accent-color'>View the Playbook</a></div>
+            <div class="text-centered"><a href='https://docs.google.com/document/d/1AZNHKnjVlXpqRU5vkvz3PTKz0bS5oII8i_hu04QmoEw/' class='button button--accent-color file-playbook' target='_blank'>View the Playbook</a></div>
             <div class="text-centered"><a href="/en/files/zika-one-pager-oct2016.pdf" class='button button--accent-color' download>Project Description</a></div>
             <div class="text-centered"><a href="/en/files/metodologia.pdf" class='button button--accent-color' download>Methodology</a></div>
           </div>
@@ -313,7 +313,7 @@
         <div class="medium-10 large-9 column more-info">
         <p>For more background about <strong>Smarter Crowdsourcing: Zika</strong>, read our Playbook, a step-by-step guide for the development of the project. It provides answers to frequently asked questions about participation in this initiative.
 </p>
-          <div class="text-centered"><a href='https://docs.google.com/document/d/1AZNHKnjVlXpqRU5vkvz3PTKz0bS5oII8i_hu04QmoEw/edit#heading=h.qgmunizwlw4' target="_blank" class='button button--accent-color'>View the Playbook</a></div>
+          <div class="text-centered"><a href='https://docs.google.com/document/d/1AZNHKnjVlXpqRU5vkvz3PTKz0bS5oII8i_hu04QmoEw/' target="_blank" class='button button--accent-color file-playbook'>View the Playbook</a></div>
         </div>
       </div>
     </section>
@@ -337,14 +337,23 @@
       <div class="row">
         <div class="column small-12">
           <i class="material-icons sticky__close js-close-sticky">close</i>
-          <a href="/en/files/smarter-crowdsouring-for-zika-and-other-mosquito-borne-diseases.pdf"><img src="/en/images/smarter-crowdsouring-for-zika-and-other-mosquito-borne-diseases.png"></a>
+          <a href="/en/files/smarter-crowdsouring-for-zika-and-other-mosquito-borne-diseases.pdf" class="file-smarter-crowdsouring-for-zika-and-other-mosquito-borne-diseases" target="_blank"><img src="/en/images/smarter-crowdsouring-for-zika-and-other-mosquito-borne-diseases.png"></a>
           <h3 class="sticky__title">Smarter Crowdsourcing for Zika and Other Mosquito-Borne Diseases</h3>
-          <p> A handbook of innovative legal, technical, and policy proposals and a guide to their implementation. <br>Download it <a href="/en/files/smarter-crowdsouring-for-zika-and-other-mosquito-borne-diseases.pdf">here</a></p>
+          <p> A handbook of innovative legal, technical, and policy proposals and a guide to their implementation. <br>Download it <a href="/en/files/smarter-crowdsouring-for-zika-and-other-mosquito-borne-diseases.pdf" class="file-smarter-crowdsouring-for-zika-and-other-mosquito-borne-diseases" target="_blank">here</a></p>
         </div>
       </div>
     </div>
 
 </main>
+
+<script type="text/javascript">
+  $(".file-smarter-crowdsouring-for-zika-and-other-mosquito-borne-diseases").on('click', function() {
+    ga('send', 'event', 'File', 'download', 'Zika - Report');
+  });
+  $(".file-playbook").on('click', function() {
+    ga('send', 'event', 'File', 'download', 'Zika - Playbook');
+  });
+</script>
 
       
       <div id="overlay" class="js-overlay"></div>
